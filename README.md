@@ -35,7 +35,7 @@ powershell -ExecutionPolicy Bypass -File .\Setup-Offline.ps1 -PythonExe "C:\Pyth
 
 
 ## 大模型接入
-填写 `config/llm.json` 中的 `api_key`、`base_url`、`model`（均预留为空）。进入项目后使用“大模型工程助手”。详见 [配置说明](docs/大模型接入说明.md) 与 [测试报告](docs/大模型接入测试报告.md)。
+进入项目后使用“大模型工程助手”。详见 [配置说明](docs/大模型接入说明.md) 与 [测试报告](docs/大模型接入测试报告.md)。
 
 
 ## Agent 与 DWSIM（2026-10-10）
