@@ -1,0 +1,873 @@
+{
+  "streams": {
+    "FEED": {
+      "stream_id": "FEED",
+      "temperature": {
+        "value": 57.004380032573,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!C10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!C11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 4409.65200000002,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!C27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "液相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!C9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!C12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "REACT": {
+      "stream_id": "REACT",
+      "temperature": {
+        "value": 400.0,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!H10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!H11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 4409.65200000002,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!H27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "汽相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!H9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!H12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "COOL-OUT": {
+      "stream_id": "COOL-OUT",
+      "temperature": {
+        "value": -100.0,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!D10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!D11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 4409.65200000002,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!D27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "两相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!D9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.328496082679586,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!D12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "H2": {
+      "stream_id": "H2",
+      "temperature": {
+        "value": -100.00000000161,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!G10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!G11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 104.362525195544,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!G27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "汽相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!G9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!G12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "HEAT-IN": {
+      "stream_id": "HEAT-IN",
+      "temperature": {
+        "value": -100.00000000161,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!E10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!E11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 4305.28947480446,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!E27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "液相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!E9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!E12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "HEAT-OUT": {
+      "stream_id": "HEAT-OUT",
+      "temperature": {
+        "value": 50.0,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!F10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!F11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 4305.28947480446,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!F27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "两相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!F9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.252916078579657,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!F12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "COMP-IN": {
+      "stream_id": "COMP-IN",
+      "temperature": {
+        "value": 32.912589082548,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!I10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 13.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!I11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 44117.1349072977,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!I27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "汽相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!I9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!I12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "COMP-OUT": {
+      "stream_id": "COMP-OUT",
+      "temperature": {
+        "value": 55.151002089683,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!J10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 19.2,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!J11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 44117.1349072977,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!J27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "汽相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!J9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!J12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "REFLUX": {
+      "stream_id": "REFLUX",
+      "temperature": {
+        "value": 32.866305081647,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!K10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 13.0,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!K11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 42058.158429619,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!K27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "两相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!K9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.164738116634046,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!K12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "VALVE-IN": {
+      "stream_id": "VALVE-IN",
+      "temperature": {
+        "value": 49.999406877855,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!L10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 19.196,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!L11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 42058.2297323815,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!L27",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "液相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!L9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!L12",
+        "status": "REFERENCE"
+      },
+      "composition": {}
+    },
+    "PRO-D": {
+      "stream_id": "PRO-D",
+      "temperature": {
+        "value": 44.159747445917,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 18.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2058.84497713157,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q30",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "液相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q12",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "PROPY-01": {
+          "value": 0.996000040633808,
+          "unit": "fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "丙烯丙烷数据最最最最终版.xls",
+          "version": "2142c2d19cee0d23",
+          "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q28",
+          "status": "REFERENCE"
+        },
+        "PROPA-01": {
+          "value": 0.00399995936619205,
+          "unit": "fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "丙烯丙烷数据最最最最终版.xls",
+          "version": "2142c2d19cee0d23",
+          "locator": "3-内部热耦合精馏 物流结果（耦合后）!Q29",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "PRO-B": {
+      "stream_id": "PRO-B",
+      "temperature": {
+        "value": 38.801488740571,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!R10",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 13.444,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!R11",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2249.64021448393,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!R30",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "液相",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!R9",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 物流结果（耦合后）!R12",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "PROPY-01": {
+          "value": 0.0249999956649887,
+          "unit": "fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "丙烯丙烷数据最最最最终版.xls",
+          "version": "2142c2d19cee0d23",
+          "locator": "3-内部热耦合精馏 物流结果（耦合后）!R28",
+          "status": "REFERENCE"
+        },
+        "PROPA-01": {
+          "value": 0.975000004335011,
+          "unit": "fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "丙烯丙烷数据最最最最终版.xls",
+          "version": "2142c2d19cee0d23",
+          "locator": "3-内部热耦合精馏 物流结果（耦合后）!R29",
+          "status": "REFERENCE"
+        }
+      }
+    }
+  },
+  "energy": [
+    {
+      "id": "提馏段再沸器",
+      "duty": {
+        "value": 6.42581774136,
+        "unit": "kW",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 耦合后能耗 !B4",
+        "status": "REFERENCE"
+      }
+    },
+    {
+      "id": "过冷温度",
+      "duty": {
+        "value": -378.0512237178,
+        "unit": "kW",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 耦合后能耗 !B14",
+        "status": "REFERENCE"
+      }
+    },
+    {
+      "id": "压缩机功率",
+      "duty": {
+        "value": 349.053702,
+        "unit": "kW",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "3-内部热耦合精馏 耦合后能耗 !B23",
+        "status": "REFERENCE"
+      }
+    }
+  ],
+  "source": "丙烯丙烷数据最最最最终版.xls",
+  "notes": [
+    "仅回放存档，未新求解。",
+    "不同段结果存在质量不闭合，不自动校正。"
+  ],
+  "route_id": "route_c",
+  "backend": "REFERENCE_REPLAY",
+  "solver_status": "REPLAY_NOT_SOLVED",
+  "converged": null,
+  "topology": {
+    "route_id": "route_c",
+    "title": "内部热耦合精馏",
+    "units": [
+      {
+        "id": "REACTOR",
+        "type": "REACTOR",
+        "label": "反应器",
+        "parameters": {}
+      },
+      {
+        "id": "COOLER",
+        "type": "HX",
+        "label": "冷却器",
+        "parameters": {}
+      },
+      {
+        "id": "FLASH",
+        "type": "FLASH",
+        "label": "闪蒸罐",
+        "parameters": {}
+      },
+      {
+        "id": "HEATER",
+        "type": "HX",
+        "label": "加热器",
+        "parameters": {}
+      },
+      {
+        "id": "STRIP",
+        "type": "TOWER",
+        "label": "提馏塔",
+        "parameters": {}
+      },
+      {
+        "id": "COMP",
+        "type": "COMPRESSOR",
+        "label": "压缩机",
+        "parameters": {}
+      },
+      {
+        "id": "RECT",
+        "type": "TOWER",
+        "label": "精馏塔",
+        "parameters": {}
+      },
+      {
+        "id": "VALVE",
+        "type": "VALVE",
+        "label": "减压阀",
+        "parameters": {}
+      },
+      {
+        "id": "REB",
+        "type": "HX",
+        "label": "再沸器",
+        "parameters": {}
+      },
+      {
+        "id": "COND",
+        "type": "HX",
+        "label": "冷凝器",
+        "parameters": {}
+      }
+    ],
+    "streams": [
+      {
+        "stream_id": "FEED",
+        "from_unit": null,
+        "to_unit": "REACTOR"
+      },
+      {
+        "stream_id": "REACT",
+        "from_unit": "REACTOR",
+        "to_unit": "COOLER"
+      },
+      {
+        "stream_id": "COOL-OUT",
+        "from_unit": "COOLER",
+        "to_unit": "FLASH"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "FLASH",
+        "to_unit": null
+      },
+      {
+        "stream_id": "HEAT-IN",
+        "from_unit": "FLASH",
+        "to_unit": "HEATER"
+      },
+      {
+        "stream_id": "HEAT-OUT",
+        "from_unit": "HEATER",
+        "to_unit": "STRIP"
+      },
+      {
+        "stream_id": "COMP-IN",
+        "from_unit": "STRIP",
+        "to_unit": "COMP"
+      },
+      {
+        "stream_id": "COMP-OUT",
+        "from_unit": "COMP",
+        "to_unit": "RECT"
+      },
+      {
+        "stream_id": "VALVE-IN",
+        "from_unit": "RECT",
+        "to_unit": "VALVE"
+      },
+      {
+        "stream_id": "REFLUX",
+        "from_unit": "VALVE",
+        "to_unit": "STRIP"
+      },
+      {
+        "stream_id": "PRO-D",
+        "from_unit": "RECT",
+        "to_unit": null
+      },
+      {
+        "stream_id": "PRO-B",
+        "from_unit": "STRIP",
+        "to_unit": null
+      }
+    ],
+    "connections": [
+      {
+        "stream_id": "FEED",
+        "from_unit": null,
+        "to_unit": "REACTOR"
+      },
+      {
+        "stream_id": "REACT",
+        "from_unit": "REACTOR",
+        "to_unit": "COOLER"
+      },
+      {
+        "stream_id": "COOL-OUT",
+        "from_unit": "COOLER",
+        "to_unit": "FLASH"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "FLASH",
+        "to_unit": null
+      },
+      {
+        "stream_id": "HEAT-IN",
+        "from_unit": "FLASH",
+        "to_unit": "HEATER"
+      },
+      {
+        "stream_id": "HEAT-OUT",
+        "from_unit": "HEATER",
+        "to_unit": "STRIP"
+      },
+      {
+        "stream_id": "COMP-IN",
+        "from_unit": "STRIP",
+        "to_unit": "COMP"
+      },
+      {
+        "stream_id": "COMP-OUT",
+        "from_unit": "COMP",
+        "to_unit": "RECT"
+      },
+      {
+        "stream_id": "REFLUX",
+        "from_unit": "VALVE",
+        "to_unit": "STRIP"
+      },
+      {
+        "stream_id": "VALVE-IN",
+        "from_unit": "RECT",
+        "to_unit": "VALVE"
+      },
+      {
+        "stream_id": "PRO-D",
+        "from_unit": "RECT",
+        "to_unit": null
+      },
+      {
+        "stream_id": "PRO-B",
+        "from_unit": "STRIP",
+        "to_unit": null
+      }
+    ],
+    "energy_streams": [],
+    "source": {
+      "source_type": "USER_INPUT",
+      "source_name": "既有已审核流程可视化资产",
+      "version": "2026-10-06"
+    }
+  }
+}

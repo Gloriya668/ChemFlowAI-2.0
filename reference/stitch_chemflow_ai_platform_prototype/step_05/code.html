@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full space-y-space-md">
+<!-- Top Command & Convergence HUD Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm bg-surface-container-low p-space-md rounded-xl shadow-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/15 text-primary tracking-wider uppercase">Stage 05 // Process Simulation Engine</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container/15 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm">SOLVER: CONVERGED</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container-highest">TOL: 1.0e-6</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Step 05: 流程搭建与求解收敛 (Flowsheet Simulation &amp; Solver Convergence)</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">基于严格稳态机理模型的全系统稀疏矩阵联立求解，拓扑流股物料平衡与能量平衡达标</p>
+</div>
+<!-- Live Telemetry KPI Pills -->
+<div class="flex items-center gap-space-xs shrink-0 overflow-x-auto py-1">
+<div class="bg-surface-container p-space-sm rounded flex flex-col min-w-[124px]">
+<span class="font-label-sm text-label-sm text-outline">RESIDUAL MASS ERR</span>
+<span class="font-data-metric text-data-metric text-secondary">2.4e-7 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">kg/s</span></span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col min-w-[124px]">
+<span class="font-label-sm text-label-sm text-outline">ITERATION BURST</span>
+<span class="font-data-metric text-data-metric text-primary">14 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">steps / 184ms</span></span>
+</div>
+<div class="bg-surface-container p-space-sm rounded flex flex-col min-w-[124px]">
+<span class="font-label-sm text-label-sm text-outline">EQUILIBRIUM PURITY</span>
+<span class="font-data-metric text-data-metric text-secondary-fixed">99.92% <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">MEG</span></span>
+</div>
+</div>
+</div>
+<!-- Main Dual-Pane Layout: 70% Industrial Canvas / 30% Solver Telemetry Deck -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md w-full">
+<!-- LEFT 70% (8 Cols): CAD/Simulink Precision Flowsheet Workspace -->
+<div class="lg:col-span-8 flex flex-col rounded-xl bg-surface-container-lowest overflow-hidden shadow-lg">
+<!-- Flowsheet Docked Control Strip -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-low">
+<div class="flex items-center gap-1.5">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-1" id="btn-zoom-reset">
+<span class="material-symbols-outlined text-[14px]">fit_screen</span> 100%
+          </button>
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_tree</span> 拓扑自布局
+          </button>
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">grid_4x4</span> 节点对齐
+          </button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="px-2 py-1 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm flex items-center gap-1" id="stream-toggle">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 物性注记 [ON]
+          </button>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary-container font-headline-md text-body-sm font-semibold hover:shadow-[0_0_12px_rgba(0,229,255,0.35)] transition-all flex items-center gap-1" id="btn-solve-run">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span> 求解核运算
+          </button>
+<button class="p-1 rounded bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="重置初值设定">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Canvas SVG Diagram Container -->
+<div class="relative w-full h-[620px] bg-[#070b14] overflow-hidden select-none cursor-crosshair">
+<!-- Subtle Vector Grid Canvas Background -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="grid" patternunits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke="#3b494c" stroke-width="0.5"></path>
+<circle cx="0" cy="0" fill="#00e5ff" opacity="0.6" r="0.75"></circle>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- Dynamic Process Flow SVG Canvas -->
+<svg class="w-full h-full absolute inset-0" id="processCanvas" preserveaspectratio="xMidYMid meet" viewbox="0 0 920 620">
+<defs>
+<!-- Glowing Stream Filters -->
+<filter height="140%" id="laser-glow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#00e5ff" flood-opacity="0.7" stddeviation="2.5"></fedropshadow>
+</filter>
+<filter height="140%" id="green-glow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#7dffa2" flood-opacity="0.7" stddeviation="2"></fedropshadow>
+</filter>
+<marker id="arrow-cyan" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 8 5 L 0 9 z" fill="#00e5ff"></path>
+</marker>
+<marker id="arrow-green" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 8 5 L 0 9 z" fill="#7dffa2"></path>
+</marker>
+</defs>
+<!-- 1. FEED STREAM S-101 TO FLASH VESSEL (V-101) -->
+<path d="M 40 220 L 140 220" fill="none" filter="url(#laser-glow)" marker-end="url(#arrow-cyan)" stroke="#00e5ff" stroke-width="2.5"></path>
+<!-- 2. FLASH TOP VAPOR S-102 TO CONDENSER E-101 -->
+<path d="M 180 160 L 180 90 L 250 90" fill="none" filter="url(#green-glow)" marker-end="url(#arrow-green)" stroke="#7dffa2" stroke-width="2"></path>
+<!-- 3. FLASH BOTTOM LIQUID S-103 TO DWC T-201 -->
+<path d="M 180 270 L 180 340 L 330 340" fill="none" filter="url(#laser-glow)" marker-end="url(#arrow-cyan)" stroke="#00e5ff" stroke-width="2.5"></path>
+<!-- 4. DWC OVERHEAD TO MVR COMPRESSOR C-201 -->
+<path d="M 400 130 L 400 70 L 480 70" fill="none" filter="url(#green-glow)" marker-end="url(#arrow-green)" stroke="#7dffa2" stroke-width="2"></path>
+<!-- 5. MVR COMPRESSED HOT VAPOR TO REBOILER E-201 -->
+<path d="M 540 70 L 580 70 L 580 500 L 440 500" fill="none" filter="url(#laser-glow)" marker-end="url(#arrow-cyan)" stroke="#00e5ff" stroke-dasharray="4 2" stroke-width="2"></path>
+<!-- 6. DWC REBOILER RETURN -->
+<path d="M 370 470 L 370 500 L 400 500" fill="none" stroke="#7dffa2" stroke-width="1.5"></path>
+<path d="M 400 480 L 385 450" fill="none" marker-end="url(#arrow-green)" stroke="#7dffa2" stroke-width="1.5"></path>
+<!-- 7. DWC SIDE STREAM S-204 (MEG HIGH PURITY) TO TK-101 -->
+<path d="M 440 290 L 630 290" fill="none" filter="url(#green-glow)" marker-end="url(#arrow-green)" stroke="#7dffa2" stroke-width="2.5"></path>
+<!-- 8. DWC BOTTOM STREAM S-205 TO PURIFIER T-202 -->
+<path d="M 400 470 L 400 540 L 680 540 L 680 430" fill="none" filter="url(#laser-glow)" marker-end="url(#arrow-cyan)" stroke="#00e5ff" stroke-width="2"></path>
+<!-- 9. T-202 TOP 1,2-PG S-206 -->
+<path d="M 720 280 L 720 220 L 820 220" fill="none" filter="url(#green-glow)" marker-end="url(#arrow-green)" stroke="#7dffa2" stroke-width="2"></path>
+<!-- 10. T-202 BOTTOM GLYCEROL S-207 -->
+<path d="M 720 460 L 720 520 L 820 520" fill="none" filter="url(#laser-glow)" marker-end="url(#arrow-cyan)" stroke="#00e5ff" stroke-width="2"></path>
+<!-- ================= EQUIPMENT NODES ================= -->
+<!-- FLASH VESSEL V-101 -->
+<g transform="translate(140, 160)">
+<rect fill="#171c25" height="110" rx="20" stroke="#3b494c" stroke-width="1.5" width="80" x="0" y="0"></rect>
+<line stroke="#3b494c" stroke-dasharray="3 3" x1="10" x2="70" y1="55" y2="55"></line>
+<text fill="#c3f5ff" font-family="Space Grotesk" font-size="11" font-weight="600" text-anchor="middle" x="40" y="50">V-101</text>
+<text fill="#849396" font-family="Geist" font-size="9" text-anchor="middle" x="40" y="65">Pre-Flash</text>
+<circle cx="40" cy="95" fill="#7dffa2" r="3"></circle>
+</g>
+<!-- CONDENSER E-101 -->
+<g transform="translate(250, 65)">
+<circle cx="25" cy="25" fill="#1b2029" r="24" stroke="#3b494c" stroke-width="1.5"></circle>
+<path d="M 10 25 L 40 25 M 15 15 L 35 35 M 15 35 L 35 15" stroke="#00e5ff" stroke-width="1.2"></path>
+<text fill="#849396" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="25" y="-6">E-101 H2O-Cond</text>
+</g>
+<!-- DIVIDING WALL COLUMN (T-201) (FLAGSHIP DWC) -->
+<g transform="translate(340, 130)">
+<!-- Outer Column Shell -->
+<rect fill="#171c25" filter="url(#laser-glow)" height="340" rx="30" stroke="#00e5ff" stroke-width="1.8" width="100" x="0" y="0"></rect>
+<!-- Dividing Wall Partition (Internal) -->
+<line stroke="#ffb4ab" stroke-dasharray="6 3" stroke-width="2.5" x1="50" x2="50" y1="110" y2="240"></line>
+<rect fill="#ffb4ab" height="140" opacity="0.3" width="4" x="48" y="105"></rect>
+<!-- Tray indication lines -->
+<line stroke="#3b494c" stroke-width="1" x1="15" x2="85" y1="60" y2="60"></line>
+<line stroke="#3b494c" stroke-width="1" x1="15" x2="85" y1="85" y2="85"></line>
+<line stroke="#3b494c" stroke-width="1" x1="15" x2="85" y1="265" y2="265"></line>
+<line stroke="#3b494c" stroke-width="1" x1="15" x2="85" y1="290" y2="290"></line>
+<!-- Labels -->
+<text fill="#c3f5ff" font-family="Space Grotesk" font-size="12" font-weight="700" text-anchor="middle" x="50" y="40">T-201 DWC</text>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle" x="50" y="52">48 Theoretical Trays</text>
+<text fill="#849396" font-family="JetBrains Mono" font-size="9" x="28" y="180">Prefraction</text>
+<text fill="#849396" font-family="JetBrains Mono" font-size="9" x="55" y="180">Main-Draw</text>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle" x="50" y="325">Delta-P: 18.4 kPa</text>
+</g>
+<!-- MVR COMPRESSOR C-201 -->
+<g transform="translate(480, 45)">
+<polygon fill="#1b2029" points="0,10 60,0 60,50 0,40" stroke="#7dffa2" stroke-width="1.5"></polygon>
+<text fill="#7dffa2" font-family="Space Grotesk" font-size="10" font-weight="700" text-anchor="middle" x="30" y="28">C-201</text>
+<text fill="#849396" font-family="Geist" font-size="8.5" text-anchor="middle" x="30" y="62">MVR Comp (3.2x)</text>
+</g>
+<!-- DWC REBOILER E-201 -->
+<g transform="translate(400, 485)">
+<rect fill="#1b2029" height="30" rx="4" stroke="#3b494c" stroke-width="1.5" width="40" x="0" y="0"></rect>
+<circle cx="20" cy="15" fill="none" r="10" stroke="#ffb4ab" stroke-width="1"></circle>
+<text fill="#849396" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle" x="20" y="42">E-201 Reboiler</text>
+</g>
+<!-- PRODUCT STORAGE TK-101 -->
+<g transform="translate(630, 250)">
+<rect fill="#171c25" height="80" rx="10" stroke="#7dffa2" stroke-width="1.8" width="60" x="0" y="0"></rect>
+<path d="M 0 45 Q 30 40 60 45 L 60 80 L 0 80 Z" fill="#00e475" opacity="0.15"></path>
+<text fill="#c3f5ff" font-family="Space Grotesk" font-size="10" font-weight="700" text-anchor="middle" x="30" y="32">TK-101</text>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="9" font-weight="600" text-anchor="middle" x="30" y="48">MEG PROD</text>
+<text fill="#dfe2f0" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="30" y="68">99.92 wt%</text>
+</g>
+<!-- SECONDARY PURIFIER T-202 -->
+<g transform="translate(680, 280)">
+<rect fill="#171c25" height="180" rx="18" stroke="#3b494c" stroke-width="1.5" width="70" x="0" y="0"></rect>
+<text fill="#c3f5ff" font-family="Space Grotesk" font-size="11" font-weight="600" text-anchor="middle" x="35" y="40">T-202</text>
+<text fill="#849396" font-family="Geist" font-size="8" text-anchor="middle" x="35" y="55">Heavy Polishing</text>
+<line stroke="#3b494c" stroke-width="0.8" x1="12" x2="58" y1="90" y2="90"></line>
+<line stroke="#3b494c" stroke-width="0.8" x1="12" x2="58" y1="120" y2="120"></line>
+</g>
+<!-- STREAM METRIC TAG OVERLAYS -->
+<!-- Stream S-101 Tag -->
+<g class="cursor-pointer" transform="translate(50, 175)">
+<rect fill="#0f131d" height="40" rx="4" stroke="#00e5ff" stroke-width="1" width="78"></rect>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="9" font-weight="700" x="6" y="12">S-101 FEED</text>
+<text fill="#dfe2f0" font-family="JetBrains Mono" font-size="8" x="6" y="24">45.0 t/h | 25°C</text>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="8" x="6" y="34">P: 0.25 MPa ●</text>
+</g>
+<!-- Stream S-102 Top Vapor -->
+<g transform="translate(195, 75)">
+<rect fill="#0f131d" height="28" rx="3" stroke="#3b494c" stroke-width="0.8" width="50"></rect>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="8" x="4" y="11">S-102 H2O</text>
+<text fill="#849396" font-family="JetBrains Mono" font-size="7.5" x="4" y="22">12.3 t/h</text>
+</g>
+<!-- Stream S-103 Bottom Liquid -->
+<g transform="translate(200, 315)">
+<rect fill="#0f131d" height="38" rx="4" stroke="#00e5ff" stroke-width="1" width="84"></rect>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="8.5" font-weight="700" x="6" y="12">S-103 CRUDE</text>
+<text fill="#dfe2f0" font-family="JetBrains Mono" font-size="8" x="6" y="23">T: 142.3°C</text>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="8" x="6" y="33">P: 0.08 MPa ●</text>
+</g>
+<!-- Stream S-204 MEG Purified Draw -->
+<g transform="translate(460, 255)">
+<rect fill="#0f131d" height="42" rx="4" stroke="#7dffa2" stroke-width="1.2" width="90"></rect>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="9" font-weight="700" x="6" y="13">S-204 MEG DRAW</text>
+<text fill="#dfe2f0" font-family="JetBrains Mono" font-size="8" x="6" y="25">Flow: 28.1 t/h</text>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="8" x="6" y="36">Purity: 99.92%</text>
+</g>
+<!-- Stream S-206 1,2-PG -->
+<g transform="translate(740, 185)">
+<rect fill="#0f131d" height="30" rx="3" stroke="#3b494c" stroke-width="0.8" width="70"></rect>
+<text fill="#7dffa2" font-family="JetBrains Mono" font-size="8" x="5" y="12">S-206 1,2-PG</text>
+<text fill="#849396" font-family="JetBrains Mono" font-size="7.5" x="5" y="23">2.8 t/h | 99.1%</text>
+</g>
+<!-- Stream S-207 Heavy Residue -->
+<g transform="translate(740, 485)">
+<rect fill="#0f131d" height="30" rx="3" stroke="#3b494c" stroke-width="0.8" width="75"></rect>
+<text fill="#c3f5ff" font-family="JetBrains Mono" font-size="8" x="5" y="12">S-207 GLYCER</text>
+<text fill="#849396" font-family="JetBrains Mono" font-size="7.5" x="5" y="23">1.8 t/h Heavy</text>
+</g>
+</svg>
+<!-- Floating Coordinate HUD / Mode indicator -->
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/80 backdrop-blur px-2.5 py-1 rounded flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline">VIEW: ISOMETRIC_ORTHO</span>
+<span class="font-label-sm text-label-sm text-secondary">EOS: UNIQUAC-HOC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="coord-hud">X: 428 Y: 310</span>
+</div>
+<!-- Canvas Mini-Map Floating Widget -->
+<div class="absolute top-3 right-3 bg-surface-container-low/90 backdrop-blur p-2 rounded w-32 hidden md:flex flex-col gap-1 pointer-events-none">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Nav Mini-Map</span>
+<div class="w-full h-14 bg-surface-container rounded relative overflow-hidden">
+<div class="w-3 h-6 bg-primary/40 absolute top-4 left-3 rounded-xs"></div>
+<div class="w-4 h-10 bg-primary absolute top-2 left-10 rounded-xs"></div>
+<div class="w-3 h-8 bg-secondary/60 absolute top-3 right-3 rounded-xs"></div>
+<div class="absolute inset-0 ring-1 ring-primary/40"></div>
+</div>
+</div>
+</div>
+<!-- Canvas Realtime Stream Inspector Table (Bottom Strip) -->
+<div class="p-space-sm bg-surface-container-low overflow-x-auto">
+<div class="flex items-center justify-between pb-1 px-1">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">重点流股平衡性校核列表 (Key Streams Balance)</span>
+<span class="font-label-sm text-label-sm text-secondary">全 16 股流状态正常 (NRTL-RadFrac 同步无液泛)</span>
+</div>
+<table class="w-full text-left font-label-sm text-label-sm">
+<thead>
+<tr class="text-outline bg-surface-container-highest/40">
+<th class="py-1 px-2">流股 ID</th>
+<th class="py-1 px-2">来源 -&gt; 去向</th>
+<th class="py-1 px-2">温度 (°C)</th>
+<th class="py-1 px-2">压力 (MPa)</th>
+<th class="py-1 px-2">质量流量 (t/h)</th>
+<th class="py-1 px-2">主组分纯度</th>
+<th class="py-1 px-2 text-right">热力学校验</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-on-surface-variant font-mono">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-1 px-2 text-primary font-bold">S-101</td>
+<td class="py-1 px-2">粗醇进料 -&gt; V-101</td>
+<td class="py-1 px-2">25.0</td>
+<td class="py-1 px-2">0.250</td>
+<td class="py-1 px-2">45.00</td>
+<td class="py-1 px-2">EG: 62.4% / H2O: 27.3%</td>
+<td class="py-1 px-2 text-right text-secondary">VERIFIED ✓</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-1 px-2 text-primary font-bold">S-103</td>
+<td class="py-1 px-2">V-101 釜液 -&gt; T-201</td>
+<td class="py-1 px-2">142.3</td>
+<td class="py-1 px-2">0.080</td>
+<td class="py-1 px-2">32.70</td>
+<td class="py-1 px-2">EG: 85.9% / Heavy: 14.1%</td>
+<td class="py-1 px-2 text-right text-secondary">VERIFIED ✓</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-1 px-2 text-secondary font-bold">S-204</td>
+<td class="py-1 px-2">T-201 侧线 -&gt; TK-101</td>
+<td class="py-1 px-2">197.8</td>
+<td class="py-1 px-2">0.095</td>
+<td class="py-1 px-2">28.10</td>
+<td class="py-1 px-2 text-secondary-fixed">MEG: 99.92 wt%</td>
+<td class="py-1 px-2 text-right text-secondary">SPEC PASS ★</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-1 px-2 text-primary font-bold">S-206</td>
+<td class="py-1 px-2">T-202 塔顶 -&gt; 1,2-PG 储槽</td>
+<td class="py-1 px-2">188.2</td>
+<td class="py-1 px-2">0.075</td>
+<td class="py-1 px-2">2.80</td>
+<td class="py-1 px-2">1,2-PG: 99.12 wt%</td>
+<td class="py-1 px-2 text-right text-secondary">VERIFIED ✓</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- RIGHT 30% (4 Cols): Solver Convergence Telemetry Deck -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Panel 1: Convergence Status Gauge & Engine Specs -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">求解引擎核心状态</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">100% 稳态平衡收敛</span>
+</div>
+<!-- Big Metric Visual Card -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">迭代闭合度 (Closure Level)</span>
+<span class="font-headline-xl text-headline-xl text-secondary font-bold tracking-tight">99.9999%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">非线性残差平稳归零</span>
+</div>
+<div class="w-14 h-14 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+</div>
+<!-- Convergence Iteration Mini Line/Spark Chart -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>残差对数衰减曲线 (Log Error Decay)</span>
+<span class="text-primary font-mono">14 次迭代收敛 (184ms)</span>
+</div>
+<!-- Sparkline representation -->
+<div class="h-16 w-full bg-surface-container-lowest rounded p-1.5 flex items-end">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 280 50">
+<path d="M 0 5 Q 40 8, 80 18 T 160 38 T 230 46 L 280 48" fill="none" stroke="#00e5ff" stroke-width="2"></path>
+<path d="M 0 5 Q 40 8, 80 18 T 160 38 T 230 46 L 280 48 L 280 50 L 0 50 Z" fill="#00e5ff" fill-opacity="0.1"></path>
+<!-- Markers at iteration milestones -->
+<circle cx="0" cy="5" fill="#ffb4ab" r="2.5"></circle>
+<circle cx="80" cy="18" fill="#00daf3" r="2.5"></circle>
+<circle cx="160" cy="38" fill="#7dffa2" r="2.5"></circle>
+<circle cx="280" cy="48" fill="#7dffa2" r="3.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Solver Specs Grid -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="p-2 rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">算法内核</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Sparse Newton-Raphson</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">非线性联立求解</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">热量残差闭合</span>
+<span class="font-body-sm text-body-sm font-semibold text-secondary font-mono">0.0012 kW</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">全热负荷守恒检验</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">阻尼因子 (Damping)</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface font-mono">λ = 0.85 (自适应)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">抗撕裂发散控制</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">物料残差闭合</span>
+<span class="font-body-sm text-body-sm font-semibold text-secondary font-mono">2.4e-7 kg/s</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">极微质量漂移</span>
+</div>
+</div>
+</div>
+<!-- Panel 2: Topology Diagnostics & Phase Stability -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">拓扑与相平衡热力学诊断</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+<div class="space-y-2">
+<!-- Diagnostic item 1 -->
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">全域相态稳定性 (Phase Envelope) 检验合格</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16 个主要节点均处于预定气/液相区，未触发非预期两相液-液裂化 (LLE)。</span>
+</div>
+</div>
+<!-- Diagnostic item 2 -->
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">隔壁塔 T-201 气液返混阻抗合格</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">隔壁主隔板两侧压降平衡 0.12 kPa，无跨隔板蒸汽走漏与液泛隐患。</span>
+</div>
+</div>
+<!-- Diagnostic item 3 -->
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">MVR 循环增压比工况平稳</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">压缩机绝热效率 82.5%，排气温度 214°C，未达乙二醇自聚温度限值。</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Quick Action & Initial Guess Configuration -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">求解配置调整与初值注入</span>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">最大迭代步数</span>
+<span class="font-mono text-primary bg-surface-container px-2 py-0.5 rounded">50 Steps</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">雅可比矩阵刷新</span>
+<span class="font-mono text-primary bg-surface-container px-2 py-0.5 rounded">Broyden 更新 (每 2 步)</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="w-full py-1.5 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-body-sm font-medium transition-colors flex items-center justify-center gap-1" id="btn-adjust-guess">
+<span class="material-symbols-outlined text-[16px]">tune</span> 调整步长与初值
+          </button>
+<button class="py-1.5 px-3 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="下载求解收敛日志">
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Global Workflow Action Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-lg mt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">严格机理模型验证通过 (Flowsheet Simulation Verified)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">系统全回路已实现严格稳态收敛，物料与能量方程残差均在 1.0e-6 容差门槛以内。</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors flex items-center justify-center gap-1.5" id="btn-sec-adjust">
+<span class="material-symbols-outlined text-[16px]">settings_input_component</span>
+<span>调整模拟步长与初值设定</span>
+</button>
+<button class="flex-1 sm:flex-none px-space-lg py-2.5 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_18px_rgba(0,229,255,0.45)] transition-all flex items-center justify-center gap-2" id="btn-next-step">
+<span>流程校核通过，进入能量与设备分析 (Step 06)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple Micro-Interactions for Industrial Canvas Experience
+  const canvas = document.getElementById('processCanvas');
+  const coordHud = document.getElementById('coord-hud');
+  const runBtn = document.getElementById('btn-solve-run');
+  const toggleBtn = document.getElementById('stream-toggle');
+  let streamVisible = true;
+
+  if (canvas && coordHud) {
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = Math.round(e.clientX - rect.left);
+      const y = Math.round(e.clientY - rect.top);
+      coordHud.textContent = `X: ${x} Y: ${y}`;
+    });
+  }
+
+  if (runBtn) {
+    runBtn.addEventListener('click', () => {
+      runBtn.classList.add('opacity-70');
+      runBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> 计算求解中...';
+      setTimeout(() => {
+        runBtn.classList.remove('opacity-70');
+        runBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> 稳态重收敛完毕 (128ms)';
+        setTimeout(() => {
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">play_arrow</span> 求解核运算';
+        }, 2200);
+      }, 700);
+    });
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      streamVisible = !streamVisible;
+      toggleBtn.classList.toggle('text-outline');
+      toggleBtn.classList.toggle('text-primary');
+      toggleBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">visibility</span> 物性注记 [${streamVisible ? 'ON' : 'OFF'}]`;
+    });
+  }
+
+  const nextBtn = document.getElementById('btn-next-step');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const targetNav = document.querySelector('a[data-path="step-06-energy-equipment"]');
+      if (targetNav) {
+        targetNav.click();
+      } else {
+        alert('即将进入 Step 06: 能量与设备分析 (Energy & Equipment Analysis)');
+      }
+    });
+  }
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

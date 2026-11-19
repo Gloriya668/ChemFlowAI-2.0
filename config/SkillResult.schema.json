@@ -1,0 +1,51 @@
+{
+  "properties": {
+    "skill": {
+      "title": "Skill",
+      "type": "string"
+    },
+    "step": {
+      "title": "Step",
+      "type": "integer"
+    },
+    "status": {
+      "title": "Status",
+      "type": "string"
+    },
+    "observation": {
+      "title": "Observation",
+      "type": "string"
+    },
+    "evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "risk": {
+      "title": "Risk",
+      "type": "string"
+    },
+    "recommendation": {
+      "title": "Recommendation",
+      "type": "string"
+    },
+    "action_required": {
+      "title": "Action Required",
+      "type": "string"
+    }
+  },
+  "required": [
+    "skill",
+    "step",
+    "status",
+    "observation",
+    "evidence",
+    "risk",
+    "recommendation",
+    "action_required"
+  ],
+  "title": "SkillResult",
+  "type": "object"
+}

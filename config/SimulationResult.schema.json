@@ -1,0 +1,226 @@
+{
+  "$defs": {
+    "EquipmentResult": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "duty": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProvenanceRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "EquipmentResult",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "default": "",
+          "title": "Unit",
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "USER_INPUT",
+            "REFERENCE_DATA",
+            "LITERATURE",
+            "DATABASE",
+            "RULE",
+            "LLM",
+            "SIMULATOR",
+            "CALCULATED"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "version": {
+          "default": "1",
+          "title": "Version",
+          "type": "string"
+        },
+        "locator": {
+          "default": "",
+          "title": "Locator",
+          "type": "string"
+        },
+        "status": {
+          "default": "UNVERIFIED",
+          "title": "Status",
+          "type": "string"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        },
+        "parents": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Parents",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "StreamResult": {
+      "properties": {
+        "stream_id": {
+          "title": "Stream Id",
+          "type": "string"
+        },
+        "temperature": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "pressure": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "mass_flow": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "phase": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "vapor_fraction": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProvenanceRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "composition": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ProvenanceRecord"
+          },
+          "title": "Composition",
+          "type": "object"
+        }
+      },
+      "required": [
+        "stream_id",
+        "temperature",
+        "pressure",
+        "mass_flow",
+        "phase"
+      ],
+      "title": "StreamResult",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "route_id": {
+      "title": "Route Id",
+      "type": "string"
+    },
+    "backend": {
+      "title": "Backend",
+      "type": "string"
+    },
+    "solver_status": {
+      "title": "Solver Status",
+      "type": "string"
+    },
+    "converged": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Converged"
+    },
+    "streams": {
+      "additionalProperties": {
+        "$ref": "#/$defs/StreamResult"
+      },
+      "title": "Streams",
+      "type": "object"
+    },
+    "energy": {
+      "items": {
+        "$ref": "#/$defs/EquipmentResult"
+      },
+      "title": "Energy",
+      "type": "array"
+    },
+    "topology": {
+      "additionalProperties": true,
+      "title": "Topology",
+      "type": "object"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "route_id",
+    "backend",
+    "solver_status",
+    "converged",
+    "streams",
+    "energy",
+    "topology",
+    "source",
+    "notes"
+  ],
+  "title": "SimulationResult",
+  "type": "object"
+}

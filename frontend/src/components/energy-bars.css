@@ -1,0 +1,14 @@
+.energy-chart-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px;color:#91b0bd;font-size:11px}
+.energy-chart-controls>span{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.energy-chart-controls>span i{display:inline-block;width:8px;height:8px;border-radius:2px}.energy-legend-cool{background:#52dedb}.energy-chart-controls .energy-legend-heat{background:#b6b3ef;margin-left:12px}
+.energy-chart-controls button{padding:5px 9px;font-size:11px;background:transparent;border-color:#456574;color:#a9c9d5}
+.energy-animated-chart .energy-animated-row{grid-template-columns:minmax(100px,150px) minmax(0,1fr) minmax(116px,145px);align-items:center;gap:18px;padding:15px 0;border-radius:5px;min-width:0;transition:background .18s}
+.energy-animated-chart .energy-animated-row:hover{background:#8ac9cf08}.energy-animated-chart .energy-animated-row:focus-visible{outline:2px solid #72cbc9;outline-offset:4px}
+.energy-animated-row .energy-device-name{font-size:12px;color:#c5dae1;overflow-wrap:anywhere;line-height:1.6}
+.energy-animated-row .energy-bar-track{height:10px;display:block;background:#142b3b;overflow:hidden;border-radius:2px}
+.energy-bar-fill{display:block;height:100%;transform:scaleX(0);transform-origin:left center;border-radius:2px}
+.energy-bar-cool{background:linear-gradient(90deg,#27bec6,#58e4de)}.energy-bar-heat{background:linear-gradient(90deg,#8f91d2,#b8b5ef)}
+.energy-bars-started .energy-bar-fill{animation:energy-bar-reveal 1.25s cubic-bezier(.22,.75,.25,1) both}.energy-bars-offscreen .energy-bar-fill{animation-play-state:paused}
+.energy-animated-row b{font:12px var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;color:#d5e5e9}
+@keyframes energy-bar-reveal{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:700px){.energy-animated-chart .energy-animated-row{grid-template-columns:minmax(0,1fr) auto;gap:9px;padding:13px 0}.energy-animated-row .energy-bar-track{grid-column:1/-1;grid-row:2;height:11px}.energy-animated-row b{grid-column:2;grid-row:1;font-size:11px}.energy-chart-controls{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.energy-bar-fill{transform:none}.energy-bars-started .energy-bar-fill{animation:none}}

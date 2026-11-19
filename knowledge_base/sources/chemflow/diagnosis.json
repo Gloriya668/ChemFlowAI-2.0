@@ -1,0 +1,18 @@
+{
+  "id": "guide-diagnosis",
+  "title": "自由度与结构诊断",
+  "skill": "chemflow-simulation-review",
+  "split": "dev",
+  "queries": [
+    "方程模型求解前如何检查自由度",
+    "模型结构奇异时先检查什么"
+  ],
+  "text": "IDAES 建议从最简单、已明确规格的模型开始，先检查自由度、结构奇异和单位一致性，再初始化与求解。数值结果出现后检查变量边界和缩放；模型变化后重新检查。此流程是诊断参考，不能直接声称 ChemFlow 已安装或执行 IDAES DiagnosticsToolbox。",
+  "required_inputs": "方程与变量规格；单位；初值；求解器日志",
+  "expected_output": "结构问题、初值问题和数值问题分开记录",
+  "local_reference": "knowledge_base/sources/idaes/docs__explanations__model_diagnostics__index.rst",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

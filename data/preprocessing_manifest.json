@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "path": "E:\\Desktop\\丙烯丙烷数据最最最最终版.xls",
+      "sha256": "2142c2d19cee0d2398cbb76abb513ad9dafb43d819062656ec3cecf2dab99c79"
+    },
+    {
+      "path": "E:\\Desktop\\四氢糠醇_所有流股结果.xlsx",
+      "sha256": "94e558816537378e715e34bd91551387591dd258efab4ad5016193221c134f33"
+    }
+  ],
+  "asset_source": "E:\\CodexOutputs\\工程归档流程可视化",
+  "counts": {
+    "route_a": 8,
+    "route_b": 18,
+    "route_c": 12,
+    "pyridine": 13
+  },
+  "replay_lineage": "same archived 工程归档 source as evaluator benchmark; not independent"
+}

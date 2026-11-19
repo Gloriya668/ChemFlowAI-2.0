@@ -1,0 +1,2 @@
+export async function api(path:string,method='GET',body?:unknown){const r=await fetch('/api'+path,{method,headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined});const data=await r.json();if(!r.ok)throw new Error(typeof data.detail==='string'?data.detail:JSON.stringify(data.detail));return data;}
+export const fmt=(v:unknown,d=2)=>typeof v==='number'?v.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:0}):v==null?'—':String(v);

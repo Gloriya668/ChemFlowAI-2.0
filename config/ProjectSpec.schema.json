@@ -1,0 +1,303 @@
+{
+  "$defs": {
+    "ComponentSpec": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "source_type": {
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "source_type",
+        "source_name"
+      ],
+      "title": "ComponentSpec",
+      "type": "object"
+    },
+    "FeedSpec": {
+      "properties": {
+        "stream_id": {
+          "title": "Stream Id",
+          "type": "string"
+        },
+        "component_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Component Ids",
+          "type": "array"
+        },
+        "temperature": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "pressure": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "mass_flow": {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        "molar_flow": {
+          "anyOf": [
+            { "$ref": "#/$defs/ProvenanceRecord" },
+            { "type": "null" }
+          ],
+          "default": null
+        },
+        "composition": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ProvenanceRecord"
+          },
+          "title": "Composition",
+          "type": "object"
+        }
+      },
+      "required": [
+        "stream_id",
+        "temperature",
+        "pressure",
+        "mass_flow"
+      ],
+      "title": "FeedSpec",
+      "type": "object"
+    },
+    "ProductTarget": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "purity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProvenanceRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_type": {
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProductTarget",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "default": "",
+          "title": "Unit",
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "VALIDATION_INPUT",
+            "IMPORTED_INPUT",
+            "USER_INPUT",
+            "REFERENCE_DATA",
+            "LITERATURE",
+            "DATABASE",
+            "RULE",
+            "LLM",
+            "SIMULATOR",
+            "CALCULATED"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "version": {
+          "default": "1",
+          "title": "Version",
+          "type": "string"
+        },
+        "locator": {
+          "default": "",
+          "title": "Locator",
+          "type": "string"
+        },
+        "status": {
+          "default": "UNVERIFIED",
+          "title": "Status",
+          "type": "string"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        },
+        "parents": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Parents",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "ReactionSpec": {
+      "properties": {
+        "equation": {
+          "title": "Equation",
+          "type": "string"
+        },
+        "source_type": {
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "equation",
+        "source_type",
+        "source_name"
+      ],
+      "title": "ReactionSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "project_id": {
+      "default": "",
+      "title": "Project Id",
+      "type": "string"
+    },
+    "dataset": {
+      "enum": [
+        "pdh",
+        "pyridine"
+      ],
+      "title": "Dataset",
+      "type": "string"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/ComponentSpec"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "feeds": {
+      "items": {
+        "$ref": "#/$defs/FeedSpec"
+      },
+      "title": "Feeds",
+      "type": "array"
+    },
+    "reaction": {
+      "$ref": "#/$defs/ReactionSpec"
+    },
+    "target_products": {
+      "items": {
+        "$ref": "#/$defs/ProductTarget"
+      },
+      "title": "Target Products",
+      "type": "array"
+    },
+    "byproducts": {
+      "items": {
+        "$ref": "#/$defs/ProductTarget"
+      },
+      "title": "Byproducts",
+      "type": "array"
+    },
+    "capacity": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ProvenanceRecord"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "constraints": {
+      "additionalProperties": true,
+      "title": "Constraints",
+      "type": "object"
+    },
+    "utilities": {
+      "additionalProperties": true,
+      "title": "Utilities",
+      "type": "object"
+    },
+    "source": {
+      "additionalProperties": true,
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "required": [
+    "dataset",
+    "components",
+    "feeds",
+    "reaction",
+    "target_products",
+    "source"
+  ],
+  "title": "ProjectSpec",
+  "type": "object"
+}

@@ -1,0 +1,2845 @@
+{
+  "route_id": "pyridine",
+  "backend": "REFERENCE_REPLAY",
+  "solver_status": "SOURCE_RESULTS_WITH_WARNINGS",
+  "converged": null,
+  "streams": {
+    "2AP": {
+      "stream_id": "2AP",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 119.385437,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 126.115104,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 1.34,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 5.94613186e-06,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 3.11231063e-07,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 1.59720651e-32,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.000261099721,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.999732643,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/2AP/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/2AP/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "3-PY": {
+      "stream_id": "3-PY",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 70.7757541,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 174.267143,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 1.9,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.099786498,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.000153974396,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 3.25684643e-36,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.897540951,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0025185767,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/3-PY/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/3-PY/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-R": {
+      "stream_id": "A-R",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 550.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2979.094,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 115.990678,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.194690265,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.389380531,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.389380531,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.0149557522,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0115929204,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-R/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-R/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-S1": {
+      "stream_id": "A-S1",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2836.9567,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 69.4941294,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.318756315,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.636951063,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.00010946338,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.0248372508,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0193459081,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S1/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S1/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-S2": {
+      "stream_id": "A-S2",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": -231.462924,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/RES_STR",
+        "status": "ANOMALY"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2710.8416,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 68.1541294,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.325023367,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.649474354,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000111615574,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.0253204504,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 7.02128516e-05,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S2/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S2/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-S3": {
+      "stream_id": "A-S3",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": -231.62443,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/RES_STR",
+        "status": "ANOMALY"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2536.57446,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 66.2541294,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.331482588,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.668095212,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000114816425,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.000307383748,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 5.56835024e-13,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S3/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S3/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-S4": {
+      "stream_id": "A-S4",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": -19.4532745,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 18527.3884,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 253.290504,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.000166655364,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.127243421,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.17778792,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000145276703,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.694742979,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 8.04034986e-05,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 1.45653387e-13,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S4/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "MIXED",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S4/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "A-S5": {
+      "stream_id": "A-S5",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 29.1047876,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 16946.3924,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 233.290504,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.0526073379,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.192936592,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000157731278,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.754298339,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 2.90930637e-13,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 2.78864693e-39,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/A-S5/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/A-S5/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "H2": {
+      "stream_id": "H2",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 142.137298,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 46.4965487,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.00926011304,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.0193595499,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.971188315,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.000186781963,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 5.24028117e-06,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "H2O": {
+      "stream_id": "H2O",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 955.820598,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 46.2569072,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.0433538926,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.956447412,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000164457759,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 3.42380984e-05,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 1.92259162e-13,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/H2O/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/H2O/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "NH3": {
+      "stream_id": "NH3",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 425.764,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 25.0,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 1.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/NH3/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/NH3/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "PY": {
+      "stream_id": "PY",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 114.591964,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 1580.99606,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 20.0,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.997837895,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.0010858523,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 1.10424412e-17,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 5.79801711e-05,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.00101827213,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 1.84463099e-12,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/PY/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/PY/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "RE": {
+      "stream_id": "RE",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 15990.814,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 187.036374,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.0548955251,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.00410575314,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.000156066686,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.940842655,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 3.17080583e-13,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/RE/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/RE/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    },
+    "THFA": {
+      "stream_id": "THFA",
+      "component_ids": [
+        "THFA",
+        "NH3",
+        "Pyridine",
+        "Water",
+        "H2",
+        "n-Hexane",
+        "Methanol",
+        "3-Methylpyridine",
+        "2-Aminopyridine"
+      ],
+      "temperature": {
+        "value": 20.0,
+        "unit": "C",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/RES_STR",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1.0,
+        "unit": "bar",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/RES_STR",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2553.33,
+        "unit": "kg/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/RES_STR",
+        "status": "REFERENCE"
+      },
+      "molar_flow": {
+        "value": 25.0,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/RES_STR",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0.0,
+        "unit": "mol/mol",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/RES_STR",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "THFA": {
+          "value": 1.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/THFA",
+          "status": "REFERENCE"
+        },
+        "NH3": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/NH3",
+          "status": "REFERENCE"
+        },
+        "Pyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/Pyridine",
+          "status": "REFERENCE"
+        },
+        "Water": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/Water",
+          "status": "REFERENCE"
+        },
+        "H2": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/H2",
+          "status": "REFERENCE"
+        },
+        "n-Hexane": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/n-Hexane",
+          "status": "REFERENCE"
+        },
+        "Methanol": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/Methanol",
+          "status": "REFERENCE"
+        },
+        "3-Methylpyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/3-Methylpyridine",
+          "status": "REFERENCE"
+        },
+        "2-Aminopyridine": {
+          "value": 0.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "SUMMARY/STREAM/THFA/STR_MAIN/MOLEFRAC/2-Aminopyridine",
+          "status": "REFERENCE"
+        }
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/THFA/STR_MAIN",
+        "status": "REFERENCE"
+      }
+    }
+  },
+  "energy": [
+    {
+      "id": "2AP-SPR 冷凝器",
+      "duty": {
+        "value": -7966.39859264,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/2AP-SPR/RESD/0",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": -1904014.96,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/2AP-SPR/RESD/0",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2AP-SPR 再沸器",
+      "duty": {
+        "value": 7501.78719128,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/2AP-SPR/RESD/1",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": 1792970.17,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/2AP-SPR/RESD/1",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3-PY-SPR 冷凝器",
+      "duty": {
+        "value": -5085.52070608,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/3-PY-SPR/RESD/0",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": -1215468.62,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/3-PY-SPR/RESD/0",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3-PY-SPR 再沸器",
+      "duty": {
+        "value": 5120.175313680001,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/3-PY-SPR/RESD/1",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": 1223751.27,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/3-PY-SPR/RESD/1",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MIXER 冷凝器",
+      "duty": {
+        "value": -12367.492127040001,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/MIXER/RESD/0",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": -2955901.56,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/MIXER/RESD/0",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MIXER 再沸器",
+      "duty": {
+        "value": 13008.103404720001,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/BLOCK/MIXER/RESD/1",
+        "status": "REFERENCE",
+        "formula": "cal/s × 4.184 / 1000 = kW",
+        "parents": [
+          {
+            "value": 3109011.33,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "SUMMARY/BLOCK/MIXER/RESD/1",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PY-R 净热负荷（焓差）",
+      "duty": {
+        "value": 2173.2157009856,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/STR_MAIN/HFLMX",
+        "status": "REFERENCE",
+        "formula": "(sum(outlet enthalpy flow)-sum(inlet enthalpy flow)) × 0.004184; from imported stream results",
+        "parents": [
+          {
+            "value": -76423.0974,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "NH3/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -705759.449,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "THFA/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -262771.528,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-R/HFLMX",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SPR 净热负荷（焓差）",
+      "duty": {
+        "value": -1820.2812314487999,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/STR_MAIN/HFLMX",
+        "status": "REFERENCE",
+        "formula": "(sum(outlet enthalpy flow)-sum(inlet enthalpy flow)) × 0.004184; from imported stream results",
+        "parents": [
+          {
+            "value": -262771.528,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-R/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -687008.119,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-S1/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -10821.0647,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "H2/HFLMX",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PY-SPR 净热负荷（焓差）",
+      "duty": {
+        "value": 8.36799942329526e-06,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/STR_MAIN/HFLMX",
+        "status": "REFERENCE",
+        "formula": "(sum(outlet enthalpy flow)-sum(inlet enthalpy flow)) × 0.004184; from imported stream results",
+        "parents": [
+          {
+            "value": -805825.712,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-S3/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -2273668.69,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "RE/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -3079494.4,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-S4/HFLMX",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DECANTER 净热负荷（焓差）",
+      "duty": {
+        "value": -106.1956897360008,
+        "unit": "kW",
+        "source_type": "CALCULATED",
+        "source_name": "525存档.apwz",
+        "version": "8eb3a6e674b8bcb3",
+        "locator": "SUMMARY/STREAM/STR_MAIN/HFLMX",
+        "status": "REFERENCE",
+        "formula": "(sum(outlet enthalpy flow)-sum(inlet enthalpy flow)) × 0.004184; from imported stream results",
+        "parents": [
+          {
+            "value": -3076035.27,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "A-S5/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -827747.959,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "H2O/HFLMX",
+            "status": "REFERENCE"
+          },
+          {
+            "value": -2273668.69,
+            "unit": "cal/s",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "RE/HFLMX",
+            "status": "REFERENCE"
+          }
+        ]
+      }
+    }
+  ],
+  "topology": {
+    "route_id": "pyridine",
+    "title": "四氢糠醇制吡啶 · 分相与溶剂循环",
+    "units": [
+      {
+        "id": "PY-R",
+        "type": "REACTOR",
+        "label": "产率反应器",
+        "parameters": {
+          "TEMP": {
+            "value": 550.0,
+            "unit": "C",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/PY-R/TEMP",
+            "status": "REFERENCE"
+          },
+          "PRES": {
+            "value": 1.0,
+            "unit": "bar",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/PY-R/PRES",
+            "status": "REFERENCE"
+          }
+        }
+      },
+      {
+        "id": "SPR",
+        "type": "FLASH",
+        "label": "气液闪蒸分离器",
+        "parameters": {
+          "TEMP": {
+            "value": 20.0,
+            "unit": "C",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/SPR/TEMP",
+            "status": "REFERENCE"
+          },
+          "PRES": {
+            "value": 1.0,
+            "unit": "bar",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/SPR/PRES",
+            "status": "REFERENCE"
+          }
+        }
+      },
+      {
+        "id": "2AP-SPR",
+        "type": "TOWER",
+        "label": "2-氨基吡啶分离塔",
+        "parameters": {
+          "NSTAGE": {
+            "value": 8.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/2AP-SPR/NSTAGE",
+            "status": "REFERENCE"
+          },
+          "FEED-STAGE": {
+            "value": 4.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/2AP-SPR/FEED-STAGE",
+            "status": "REFERENCE"
+          },
+          "BASIS-RR": {
+            "value": 5.0,
+            "unit": "mol/mol",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/2AP-SPR/BASIS-RR",
+            "status": "REFERENCE"
+          },
+          "BASIS-B": {
+            "value": 1.34,
+            "unit": "kmol/h",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/2AP-SPR/BASIS-B",
+            "status": "REFERENCE"
+          },
+          "PRES1": {
+            "value": 10.0,
+            "unit": "kPa",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/2AP-SPR/PRES1",
+            "status": "REFERENCE"
+          }
+        }
+      },
+      {
+        "id": "3-PY-SPR",
+        "type": "TOWER",
+        "label": "3-甲基吡啶分离塔",
+        "parameters": {
+          "NSTAGE": {
+            "value": 10.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/3-PY-SPR/NSTAGE",
+            "status": "REFERENCE"
+          },
+          "FEED-STAGE": {
+            "value": 5.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/3-PY-SPR/FEED-STAGE",
+            "status": "REFERENCE"
+          },
+          "BASIS-RR": {
+            "value": 3.0,
+            "unit": "mol/mol",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/3-PY-SPR/BASIS-RR",
+            "status": "REFERENCE"
+          },
+          "BASIS-B": {
+            "value": 1.9,
+            "unit": "kmol/h",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/3-PY-SPR/BASIS-B",
+            "status": "REFERENCE"
+          },
+          "PRES1": {
+            "value": 10.0,
+            "unit": "kPa",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/3-PY-SPR/PRES1",
+            "status": "REFERENCE"
+          }
+        }
+      },
+      {
+        "id": "PY-SPR",
+        "type": "MIXER",
+        "label": "循环溶剂混合器",
+        "parameters": {}
+      },
+      {
+        "id": "MIXER",
+        "type": "TOWER",
+        "label": "吡啶精制塔",
+        "parameters": {
+          "NSTAGE": {
+            "value": 22.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/MIXER/NSTAGE",
+            "status": "REFERENCE"
+          },
+          "FEED-STAGE": {
+            "value": 20.0,
+            "unit": "stage",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/MIXER/FEED-STAGE",
+            "status": "REFERENCE"
+          },
+          "BASIS-RR": {
+            "value": 4.0,
+            "unit": "mol/mol",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/MIXER/BASIS-RR",
+            "status": "REFERENCE"
+          },
+          "BASIS-B": {
+            "value": 20.0,
+            "unit": "kmol/h",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/MIXER/BASIS-B",
+            "status": "REFERENCE"
+          },
+          "PRES1": {
+            "value": 1.0,
+            "unit": "bar",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/MIXER/PRES1",
+            "status": "REFERENCE"
+          }
+        }
+      },
+      {
+        "id": "DECANTER",
+        "type": "DECANTER",
+        "label": "液液分相器",
+        "parameters": {
+          "TEMP": {
+            "value": 20.0,
+            "unit": "C",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/DECANTER/TEMP",
+            "status": "REFERENCE"
+          },
+          "PRES": {
+            "value": 1.0,
+            "unit": "bar",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/DECANTER/PRES",
+            "status": "REFERENCE"
+          },
+          "L2-CUTOFF": {
+            "value": 0.199,
+            "unit": "",
+            "source_type": "IMPORTED_INPUT",
+            "source_name": "525存档.apwz",
+            "version": "8eb3a6e674b8bcb3",
+            "locator": "INPUT/BLOCK/DECANTER/L2-CUTOFF",
+            "status": "REFERENCE"
+          }
+        }
+      }
+    ],
+    "streams": [
+      {
+        "stream_id": "2AP",
+        "from_unit": "2AP-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "3-PY",
+        "from_unit": "3-PY-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-R",
+        "from_unit": "PY-R",
+        "to_unit": "SPR"
+      },
+      {
+        "stream_id": "A-S1",
+        "from_unit": "SPR",
+        "to_unit": "2AP-SPR"
+      },
+      {
+        "stream_id": "A-S2",
+        "from_unit": "2AP-SPR",
+        "to_unit": "3-PY-SPR"
+      },
+      {
+        "stream_id": "A-S3",
+        "from_unit": "3-PY-SPR",
+        "to_unit": "PY-SPR"
+      },
+      {
+        "stream_id": "A-S4",
+        "from_unit": "PY-SPR",
+        "to_unit": "MIXER"
+      },
+      {
+        "stream_id": "A-S5",
+        "from_unit": "MIXER",
+        "to_unit": "DECANTER"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "H2O",
+        "from_unit": "DECANTER",
+        "to_unit": null
+      },
+      {
+        "stream_id": "NH3",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "PY",
+        "from_unit": "MIXER",
+        "to_unit": null
+      },
+      {
+        "stream_id": "RE",
+        "from_unit": "DECANTER",
+        "to_unit": "PY-SPR"
+      },
+      {
+        "stream_id": "THFA",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      }
+    ],
+    "connections": [
+      {
+        "stream_id": "2AP",
+        "from_unit": "2AP-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "3-PY",
+        "from_unit": "3-PY-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-R",
+        "from_unit": "PY-R",
+        "to_unit": "SPR"
+      },
+      {
+        "stream_id": "A-S1",
+        "from_unit": "SPR",
+        "to_unit": "2AP-SPR"
+      },
+      {
+        "stream_id": "A-S2",
+        "from_unit": "2AP-SPR",
+        "to_unit": "3-PY-SPR"
+      },
+      {
+        "stream_id": "A-S3",
+        "from_unit": "3-PY-SPR",
+        "to_unit": "PY-SPR"
+      },
+      {
+        "stream_id": "A-S4",
+        "from_unit": "PY-SPR",
+        "to_unit": "MIXER"
+      },
+      {
+        "stream_id": "A-S5",
+        "from_unit": "MIXER",
+        "to_unit": "DECANTER"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "H2O",
+        "from_unit": "DECANTER",
+        "to_unit": null
+      },
+      {
+        "stream_id": "NH3",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "PY",
+        "from_unit": "MIXER",
+        "to_unit": null
+      },
+      {
+        "stream_id": "RE",
+        "from_unit": "DECANTER",
+        "to_unit": "PY-SPR"
+      },
+      {
+        "stream_id": "THFA",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      }
+    ],
+    "energy_streams": [],
+    "source": {
+      "file": "525存档.apwz",
+      "sha256": "8eb3a6e674b8bcb3869a30f2aac512dac5d912c30d2b37098b580194dab172eb",
+      "variant": "pyridine525"
+    }
+  },
+  "source": "525存档.apwz",
+  "notes": [
+    "PY-R：指定产率已归一化以维持质量平衡。",
+    "MIXER（精制塔）：进料压力低于进料级压力（0.1 bar → 1 bar），需核查增压设备。",
+    "A-S2、A-S3 温度低于 −200°C，保留源值并待复核。",
+    "已导入源模型结果；本工作台未执行独立求解。"
+  ]
+}

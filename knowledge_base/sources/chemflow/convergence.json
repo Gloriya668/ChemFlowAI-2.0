@@ -1,0 +1,18 @@
+{
+  "id": "guide-convergence",
+  "title": "求解状态与静态案例区分",
+  "skill": "chemflow-simulation-review",
+  "split": "train",
+  "queries": [
+    "保存文件中 calculated=true 能证明本次求解吗",
+    "加载归档成功和真实收敛有什么区别"
+  ],
+  "text": "静态文件中的历史计算标志不能替代本次求解日志。要求本次输入指纹、求解器返回、对象计算状态和错误列表一致。REPLAY_NOT_SOLVED 仅表示参考回放；SOLVED 后仍须审核守恒、边界、物性和独立验证。",
+  "required_inputs": "本次运行标识；输入指纹；对象状态；错误日志",
+  "expected_output": "真实求解、静态参考、未评估明确分开",
+  "local_reference": "backend/dwsim_solver.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

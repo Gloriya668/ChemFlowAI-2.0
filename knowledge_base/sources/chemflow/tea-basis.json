@@ -1,0 +1,18 @@
+{
+  "id": "guide-tea-basis",
+  "title": "经济评价基年币种与价格来源",
+  "skill": "chemflow-optimization-tea",
+  "split": "train",
+  "queries": [
+    "经济评价缺失电价和开工小时应怎么处理",
+    "不同年份的设备费用能直接比较吗"
+  ],
+  "text": "记录基年、币种、价格日期、开工小时、产能基准和成本边界。设备成本、安装投资、固定运营费和变动运营费分列。换年换币须有来源，不把归档报价视为当前市场价格。缺失价格或关联式时不输出猜测的 CAPEX 或利润。",
+  "required_inputs": "基年；币种；价格来源；开工小时；成本边界；关联式",
+  "expected_output": "缺失经济输入清单或有来源的部分计算",
+  "local_reference": "skills/chemflow-optimization-tea/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

@@ -1,0 +1,27 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict');
+const base=process.env.CHEMFLOW_TEST_URL||'http://127.0.0.1:8880';
+(async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});
+ try{const page=await browser.newPage({viewport:{width:1500,height:1100}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(base);await page.getByText('服务版本 · 2026-10-10-v3',{exact:true}).waitFor();
+  await page.goto(base+'/workspace/new');
+  assert.equal(await page.getByText('内置案例分析',{exact:true}).count(),0);
+  const responsePromise=page.waitForResponse(r=>r.url()===base+'/api/projects'&&r.request().method()==='POST');
+  await page.getByRole('button',{name:'创建并进入 Step 01',exact:true}).click();
+  const project=await (await responsePromise).json();assert.equal(project.backend,'dwsim');assert.equal(project.mode,'blind');
+  const assistant=page.locator('section.panel').filter({has:page.getByRole('heading',{name:'大模型工程助手',exact:true})});
+  await assistant.getByText('AI · 未配置',{exact:true}).waitFor();
+  await assistant.getByRole('button',{name:'测试连接',exact:true}).click();
+  await assistant.getByText('AI · 最近请求失败',{exact:true}).waitFor();
+  // Browser-only HTTP stubs verify stale UI state handling; no stub in the shipped backend.
+  await page.route('**/api/llm/test',r=>r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({model:'UI_TEST_STUB',status:'CONNECTED'})}));
+  await assistant.getByRole('button',{name:'测试连接',exact:true}).click();
+  await assistant.getByText('本次连接测试成功 · UI_TEST_STUB',{exact:true}).waitFor();
+  await page.unroute('**/api/llm/test');
+  await assistant.getByRole('button',{name:'测试连接',exact:true}).click();
+  await assistant.getByText('AI · 最近请求失败',{exact:true}).waitFor();
+  assert.equal(await assistant.getByText('本次连接测试成功 · UI_TEST_STUB',{exact:true}).count(),0);
+  assert.equal(await assistant.getByText('AI · 最近请求成功',{exact:true}).count(),0);
+  await assistant.screenshot({path:process.env.CHEMFLOW_SCREENSHOT||'runtime-v3-ui.png'});
+  assert.deepEqual(errors,[]);console.log('PASS: V3 build identity, real-backend task creation, missing config fails, old success cleared. Success branch used browser-only stub, not a real provider.');
+ }finally{await browser.close()}})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,18 @@
+{
+  "id": "guide-runtime",
+  "title": "DWSIM 运行依赖与连接故障",
+  "skill": "chemflow-simulation-review",
+  "split": "train",
+  "queries": [
+    "源码压缩包是否等于可以运行的仿真器",
+    "Windows 拦截 DWSIM 时能把回放当成功吗"
+  ],
+  "text": "源码 ZIP 与编译运行包不同。状态配置不代表已通过连接和求解测试。发生依赖缺失、CAPE-OPEN 插件缺失或系统应用控制拦截时保留错误并说明未求解；不能替换成参考回放冒充成功，也不绕过系统策略。",
+  "required_inputs": "运行文件；版本；插件；连接日志；错误码",
+  "expected_output": "依赖或部署问题报告；等待可信部署修复",
+  "local_reference": "docs/Agent与DWSIM接入说明.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

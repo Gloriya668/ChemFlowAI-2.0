@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full gap-y-space-lg text-on-surface">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-lg bg-surface-container rounded-xl shadow-lg relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs z-10">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold tracking-wider">PHASE 08</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          ISO-14040 Certified LCA | Benchmark: 2025 Standard
+        </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+          GATEWAY ID: #LCA-2025-08-ETH
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+        Step 08: 经济与环境评价 <span class="text-primary font-body-lg text-body-lg font-normal">(Techno-Economic &amp; Life-Cycle Assessment)</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+        双维度综合校核智能仿真工艺流程。针对低碳乙二醇生产工艺，依托严格的热力学平衡质量能量流闭环，输出可审计的技术经济指标 (TEA) 及摇篮到大门 (Cradle-to-Gate) 碳核算模型。
+      </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 z-10">
+<div class="p-space-md bg-surface-container-lowest rounded-lg flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">综合可行性评分 / CFS</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold">96.8</span>
+<span class="font-label-sm text-label-sm text-outline">/ 100</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> 最优收敛区间
+        </span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg">
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">经济性关键指标 (TEA Metrics)</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">CAPEX / OPEX / IRR 动态平衡分析 (基准年 2025)</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary">
+          高收益评级 (Class-AAA)
+        </span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>总投资 (CAPEX)</span>
+<span class="material-symbols-outlined text-[14px]">pie_chart</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface font-semibold">1.08</span>
+<span class="font-label-sm text-label-sm text-outline">亿元</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> 较基准节省 1,600 万元
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>年综合操作成本 (OPEX)</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface font-semibold">5,140</span>
+<span class="font-label-sm text-label-sm text-outline">万元/年</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_downward</span> -38.9% 优化降幅
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>吨产品综合成本</span>
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-primary font-semibold">¥ 3,820</span>
+<span class="font-label-sm text-label-sm text-outline">/吨</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            售价 ¥5,400 (毛利 <span class="text-secondary font-semibold">29.3%</span>)
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>净现值 (NPV @ 10%)</span>
+<span class="material-symbols-outlined text-[14px]">show_chart</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-secondary font-semibold">¥ 1.42</span>
+<span class="font-label-sm text-label-sm text-outline">亿元</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">贴现基准点: 年初工程期</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>内部收益率 (IRR)</span>
+<span class="material-symbols-outlined text-[14px]">percent</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-secondary font-semibold">24.8%</span>
+<span class="font-label-sm text-label-sm text-outline">税后</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> 行业基准 14.5%
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>动态投资回收期 (PBP)</span>
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface font-semibold">2.85</span>
+<span class="font-label-sm text-label-sm text-outline">年</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">含建设工程周期 1.0 年</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">eco</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">环境与双碳指标 (LCA &amp; ESG)</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">全生命周期碳排轨迹与资源循环评价</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-secondary">
+          国家一级能效推荐
+        </span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>单位产品碳足迹</span>
+<span class="material-symbols-outlined text-[14px]">co2</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-secondary font-semibold">0.42</span>
+<span class="font-label-sm text-label-sm text-outline">t CO₂e/t</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_down</span> -54.3% vs 石油传统路线
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>全流程🔥效率 (Exergy)</span>
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface font-semibold">72.4%</span>
+<span class="font-label-sm text-label-sm text-outline">热力学效率</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">arrow_upward</span> +18.2% 换热网络回收
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>年蒸汽消耗节约量</span>
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-primary font-semibold">34.5</span>
+<span class="font-label-sm text-label-sm text-outline">万吨/年</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            相当于年减排标煤 3.2 万吨
+          </span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>工业用水循环率</span>
+<span class="material-symbols-outlined text-[14px]">sync</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-secondary font-semibold">98.6%</span>
+<span class="font-label-sm text-label-sm text-outline">梯级利用</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">高压冷凝水 100% 回用</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>年碳减排总量</span>
+<span class="material-symbols-outlined text-[14px]">nature_people</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-secondary font-semibold">11.8</span>
+<span class="font-label-sm text-label-sm text-outline">万吨 CO₂</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">碳资产年价值: ¥1,003 万元</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>固体副产资源转化</span>
+<span class="material-symbols-outlined text-[14px]">recycling</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface font-semibold">99.4%</span>
+<span class="font-label-sm text-label-sm text-outline">循环级</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">零重度废弃物填埋</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">waterfall_chart</span>
+</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">IRR 敏感度单因素龙卷风图 (Sensitivity Tornado Chart)</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">扰动基准: 内部收益率基线值 IRR = 24.8%</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm">
+<span class="flex items-center gap-1 text-primary"><span class="w-2.5 h-2.5 rounded bg-primary"></span> 正向变动 (+20%)</span>
+<span class="flex items-center gap-1 text-error"><span class="w-2.5 h-2.5 rounded bg-error"></span> 负向变动 (-20%)</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-lg flex flex-col gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center justify-between text-on-surface-variant pb-space-xs border-b border-surface-container-highest">
+<span class="w-40 shrink-0">风险/不确定性敏感因子</span>
+<div class="flex-1 flex justify-between px-4 text-center">
+<span>18.0% (-6.8%)</span>
+<span>21.0%</span>
+<span class="text-secondary font-bold">24.8% 基准线</span>
+<span>28.0%</span>
+<span>32.0% (+7.2%)</span>
+</div>
+<span class="w-24 text-right shrink-0">敏感系数 |S|</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-40 text-on-surface truncate font-body-sm text-body-sm">主要原料单价 (±20%)</span>
+<div class="flex-1 h-7 bg-surface-container relative rounded flex items-center">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/40 z-10"></div>
+<div class="absolute right-1/2 top-1.5 bottom-1.5 bg-error/80 rounded-l flex items-center justify-start pl-1 text-[9px] text-on-error font-bold" style="width: 38%;">
+                18.2%
+              </div>
+<div class="absolute left-1/2 top-1.5 bottom-1.5 bg-primary/80 rounded-r flex items-center justify-end pr-1 text-[9px] text-on-primary font-bold" style="width: 42%;">
+                31.8%
+              </div>
+</div>
+<span class="w-24 text-right text-primary font-data-metric text-body-sm font-semibold">1.41 (极高)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-40 text-on-surface truncate font-body-sm text-body-sm">最终产品销售价格 (±15%)</span>
+<div class="flex-1 h-7 bg-surface-container relative rounded flex items-center">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/40 z-10"></div>
+<div class="absolute right-1/2 top-1.5 bottom-1.5 bg-error/80 rounded-l flex items-center justify-start pl-1 text-[9px] text-on-error font-bold" style="width: 33%;">
+                19.1%
+              </div>
+<div class="absolute left-1/2 top-1.5 bottom-1.5 bg-primary/80 rounded-r flex items-center justify-end pr-1 text-[9px] text-on-primary font-bold" style="width: 36%;">
+                30.4%
+              </div>
+</div>
+<span class="w-24 text-right text-primary font-data-metric text-body-sm font-semibold">1.22 (高)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-40 text-on-surface truncate font-body-sm text-body-sm">高压蒸汽/电网电价 (±20%)</span>
+<div class="flex-1 h-7 bg-surface-container relative rounded flex items-center">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/40 z-10"></div>
+<div class="absolute right-1/2 top-1.5 bottom-1.5 bg-error/80 rounded-l flex items-center justify-start pl-1 text-[9px] text-on-error font-bold" style="width: 14%;">
+                22.4%
+              </div>
+<div class="absolute left-1/2 top-1.5 bottom-1.5 bg-primary/80 rounded-r flex items-center justify-end pr-1 text-[9px] text-on-primary font-bold" style="width: 16%;">
+                27.1%
+              </div>
+</div>
+<span class="w-24 text-right text-on-surface-variant font-data-metric text-body-sm">0.48 (中)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-40 text-on-surface truncate font-body-sm text-body-sm">设备总投资 CAPEX (±15%)</span>
+<div class="flex-1 h-7 bg-surface-container relative rounded flex items-center">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/40 z-10"></div>
+<div class="absolute right-1/2 top-1.5 bottom-1.5 bg-error/80 rounded-l flex items-center justify-start pl-1 text-[9px] text-on-error font-bold" style="width: 11%;">
+                23.0%
+              </div>
+<div class="absolute left-1/2 top-1.5 bottom-1.5 bg-primary/80 rounded-r flex items-center justify-end pr-1 text-[9px] text-on-primary font-bold" style="width: 12%;">
+                26.7%
+              </div>
+</div>
+<span class="w-24 text-right text-on-surface-variant font-data-metric text-body-sm">0.36 (低)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-40 text-on-surface truncate font-body-sm text-body-sm">引入碳税 (¥100/t CO₂)</span>
+<div class="flex-1 h-7 bg-surface-container relative rounded flex items-center">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-secondary/40 z-10"></div>
+<div class="absolute left-1/2 top-1.5 bottom-1.5 bg-secondary/80 rounded-r flex items-center justify-end pr-1 text-[9px] text-on-secondary font-bold" style="width: 8%;">
+                25.9%
+              </div>
+</div>
+<span class="w-24 text-right text-secondary font-data-metric text-body-sm font-semibold">+0.22 (正向溢价)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          * 注：由于本绿色合成工艺单位产品碳排放远低于行业基准碳配额（基准 0.92 t CO₂e/t），引入碳税机制后，富余碳配额转为收益，驱动 IRR 反向提升 1.1%。
+        </p>
+</div>
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">bar_chart</span>
+</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">全生命周期碳足迹阶段分解 (Stage-wise LCA Stacked Footprint)</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">单位：kg CO₂ 当量 / 吨 产品 (Cradle-to-Gate 标准)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-bold">Total: 420 kg CO₂e/t</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface font-semibold">传统石油基乙二醇 (Petro-Route Benchmark)</span>
+<span class="text-error font-data-metric font-semibold">920 kg CO₂e / t</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex">
+<div class="bg-error/70 h-full flex items-center justify-center text-[10px] text-on-error font-bold" style="width: 48%;" title="原料采掘与炼油">
+                原料采掘 440
+              </div>
+<div class="bg-error/90 h-full flex items-center justify-center text-[10px] text-on-error font-bold" style="width: 32%;" title="高温反应与压缩">
+                催化氧化 295
+              </div>
+<div class="bg-error h-full flex items-center justify-center text-[10px] text-on-error font-bold" style="width: 20%;" title="常规多塔分离">
+                多塔精制 185
+              </div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-secondary font-semibold">本绿色低碳工艺 (ChemFlow Green Route)</span>
+</div>
+<span class="text-secondary font-data-metric font-semibold">420 kg CO₂e / t (-54.3%)</span>
+</div>
+<div class="h-8 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary/80 h-full flex items-center justify-center text-[11px] text-on-primary font-bold transition-all hover:brightness-110 cursor-pointer" style="width: 38%;" title="阶段1: 原料上游采掘与预处理">
+                原料采掘 160 (38.1%)
+              </div>
+<div class="bg-surface-tint h-full flex items-center justify-center text-[11px] text-on-primary font-bold transition-all hover:brightness-110 cursor-pointer" style="width: 35.7%;" title="阶段2: 高效流化反应转化">
+                反应转化 150 (35.7%)
+              </div>
+<div class="bg-secondary h-full flex items-center justify-center text-[11px] text-on-secondary font-bold transition-all hover:brightness-110 cursor-pointer" style="width: 19%;" title="阶段3: 隔壁塔(DWC)低能耗精馏分离">
+                隔壁精制 80 (19.0%)
+              </div>
+<div class="bg-secondary-fixed h-full flex items-center justify-center text-[11px] text-on-secondary-fixed font-bold transition-all hover:brightness-110 cursor-pointer" style="width: 7.3%;" title="阶段4: 废物流捕集与梯级处理">
+                残渣回用 30 (7.2%)
+              </div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-primary shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface">原料预处理</span>
+<span class="font-data-metric text-[12px] text-on-surface-variant font-medium">160 kg</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-surface-tint shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface">高效催化反应</span>
+<span class="font-data-metric text-[12px] text-on-surface-variant font-medium">150 kg</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-secondary shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface">DWC隔壁塔精馏</span>
+<span class="font-data-metric text-[12px] text-secondary font-medium">80 kg (-57%)</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-secondary-fixed shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface">副产与回收端</span>
+<span class="font-data-metric text-[12px] text-on-surface-variant font-medium">30 kg</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">rule</span>
+</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">核算边界与工程假定</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">System Boundary &amp; Modeling Baseline</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">装置设计运行寿命</span>
+<span class="font-data-metric text-body-sm text-on-surface font-semibold">15 年 (8,000 h/a)</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">基准折现率 (Discount Rate)</span>
+<span class="font-data-metric text-body-sm text-secondary font-semibold">10.0% / 年</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">碳配额基准交易价</span>
+<span class="font-data-metric text-body-sm text-primary font-semibold">¥ 85.00 / 吨 CO₂</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">所得税率 / 增值税率</span>
+<span class="font-data-metric text-body-sm text-on-surface font-semibold">15% (高新) / 13%</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">公用工程电力因子</span>
+<span class="font-data-metric text-body-sm text-on-surface font-semibold">0.5703 kg CO₂/kWh</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">policy</span>
+<span>可追溯数据源认证 (Data Provenance)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            生命周期因子已严格锚定 <span class="text-on-surface font-medium">国家生态环境部环境规划院 (CAEP 2024)</span> 官方数据库，辅以 <span class="text-on-surface font-medium">Ecoinvent v3.9</span> 全球背景流。计算模型通过 ISO 14040/14044 严苛三方逻辑一致性校验。
+          </p>
+<div class="mt-1 flex items-center justify-between text-label-sm font-label-sm text-outline">
+<span>HASH: 8f9b...3c12</span>
+<span class="text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 校验链条完整
+            </span>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">综合环境影响多维雷达</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">绿色等级：A+</span>
+</div>
+<div class="relative w-full h-44 flex items-center justify-center bg-surface-container-lowest rounded-lg p-2">
+<svg class="w-full h-full max-w-[220px]" viewbox="0 0 200 200">
+<polygon class="text-surface-container-high" fill="none" points="100,20 176,55 176,145 100,180 24,145 24,55" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-surface-container-high" fill="none" points="100,45 152,70 152,130 100,155 48,130 48,70" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-surface-container-high" fill="none" points="100,70 128,82 128,118 100,130 72,118 72,82" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-error/40" fill="none" points="100,32 165,62 148,135 100,165 38,132 40,65" stroke="currentColor" stroke-dasharray="2,2" stroke-width="1.5"></polygon>
+<polygon class="text-secondary/25" fill="currentColor" points="100,55 125,82 110,122 100,138 68,115 58,82" stroke="currentColor" stroke-width="1.5"></polygon>
+<circle class="fill-secondary" cx="100" cy="55" r="2.5"></circle>
+<circle class="fill-secondary" cx="125" cy="82" r="2.5"></circle>
+<circle class="fill-secondary" cx="110" cy="122" r="2.5"></circle>
+<circle class="fill-secondary" cx="100" cy="138" r="2.5"></circle>
+<circle class="fill-secondary" cx="68" cy="115" r="2.5"></circle>
+<circle class="fill-secondary" cx="58" cy="82" r="2.5"></circle>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="middle" x="100" y="14">全球变暖 (GWP)</text>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="start" x="180" y="52">酸化 (AP)</text>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="start" x="180" y="148">富营养 (EP)</text>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="middle" x="100" y="194">光化学臭氧 (POCP)</text>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="end" x="18" y="148">水资源损耗 (WU)</text>
+<text class="fill-on-surface-variant text-[8px] font-label-sm" text-anchor="end" x="18" y="52">化石资源耗竭 (FFD)</text>
+</svg>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm px-1">
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2 h-0.5 bg-error/60 border-b border-dashed border-error"></span> 传统石化工艺基线</span>
+<span class="flex items-center gap-1 text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span> 本工艺优化成果</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container rounded-xl shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">评价结论已达成设计规范约束</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          全生命周期 IRR (24.8%) 与碳减排比 (-54.3%) 均超越投资决策警戒门槛，各项收敛物料能量流平衡数据已锁定并数字签名。
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-body-sm text-body-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>导出技术经济核算细表 (Excel/PDF)</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim transition-all font-body-md text-body-md font-semibold flex items-center gap-2 shadow-md hover:shadow-primary/30" type="button">
+<span>确认评价结论，进入复核与成果交付 (Step 09)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

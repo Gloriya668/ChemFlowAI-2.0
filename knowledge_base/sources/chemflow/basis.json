@@ -1,0 +1,18 @@
+{
+  "id": "guide-basis",
+  "title": "设计基准与缺失输入",
+  "skill": "chemflow-intake",
+  "split": "train",
+  "queries": [
+    "请列出进料基准应包含哪些字段",
+    "设计目标没有纯度约束该怎么补充"
+  ],
+  "text": "先核对组分身份、组成基准、流量、温度、压力、产品目标和操作边界；区分用户输入、文献值、归档参考和待确认假设。缺失字段保持空值，不能把未知填成零。组成的质量或摩尔基准必须显式指定。",
+  "required_inputs": "组分标识；进料组成及基准；流量与单位；温压；目标与约束",
+  "expected_output": "缺失字段清单和待确认问题，不输出猜测工况",
+  "local_reference": "skills/chemflow-intake/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

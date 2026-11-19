@@ -1,0 +1,26 @@
+{
+  "documents": 79,
+  "source_groups": 37,
+  "flowsheets": 21,
+  "ranking_queries": {
+    "train": 92,
+    "dev": 14,
+    "test": 22
+  },
+  "sft_examples": {
+    "train": 92,
+    "dev": 14,
+    "test": 22
+  },
+  "split_policy": "Entire source file/flowsheet group is exclusive to train, dev or test. All corpus documents remain retrievable.",
+  "labels": "Synthetic and authored; not chemical-engineer-reviewed real conversations.",
+  "excluded": [
+    "data/validation",
+    "data/replay",
+    "user project outputs",
+    "API secrets",
+    "saved numerical simulation results"
+  ],
+  "sft_status": "PREPARED_NOT_FINETUNED",
+  "limits": "No solver trajectory labels, no experimental ground truth, no independent engineering accuracy claim."
+}

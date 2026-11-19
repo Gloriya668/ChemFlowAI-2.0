@@ -1,0 +1,18 @@
+{
+  "id": "guide-topology",
+  "title": "流程连接与模板映射",
+  "skill": "chemflow-process-synthesis",
+  "split": "train",
+  "queries": [
+    "模板流股标签应该怎么映射到项目",
+    "流程文件改变以后原登记能继续用吗"
+  ],
+  "text": "登记模板路径、文件哈希、IR 指纹、设备与流股标签、组分映射及外部边界。标签需一一对应，进料和出口须完整。模板或流程拓扑变更后重新核对登记；可加载文件不等于设备连接或设计规格正确。",
+  "required_inputs": "模板文件；标签；IR；外部边界；组分映射",
+  "expected_output": "映射缺失和指纹不匹配清单；不隐式修正用户工艺",
+  "local_reference": "backend/dwsim_solver.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

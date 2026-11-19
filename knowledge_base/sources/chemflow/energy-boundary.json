@@ -1,0 +1,18 @@
+{
+  "id": "guide-energy-boundary",
+  "title": "能量衡算证据不足",
+  "skill": "chemflow-simulation-review",
+  "split": "test",
+  "queries": [
+    "只有换热负荷就能宣布能量衡算闭合吗",
+    "尚未提取边界焓流应怎样报告"
+  ],
+  "text": "完整能量核对需要一致的边界、焓基准、物料焓流、热量与功的符号约定，并按所建模型考虑蓄积等项。设备 duty 或质量闭合不足以证明能量闭合。当前 ChemFlow 未提取完整边界焓流时，能量验证保持 NOT_ASSESSED。",
+  "required_inputs": "边界焓流；热量；功；符号；状态与基准",
+  "expected_output": "能量验证未评估以及缺失证据列表",
+  "local_reference": "backend/evaluator.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

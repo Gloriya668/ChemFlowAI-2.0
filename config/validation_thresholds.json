@@ -1,0 +1,7 @@
+{
+  "temperature_abs_C": 0.05,
+  "pressure_abs_bar": 0.005,
+  "mass_flow_relative": 0.0001,
+  "material_balance_relative": 0.001,
+  "energy_relative": 0.0001
+}

@@ -1,0 +1,1125 @@
+{
+  "model": {
+    "format_version": 1,
+    "algorithm": "pairwise_logistic_linear_ranker",
+    "features": [
+      "bm25",
+      "coverage",
+      "title_coverage",
+      "word_coverage"
+    ],
+    "weights": [
+      0.6912289346553384,
+      0.6394822201930215,
+      0.6917385837404667,
+      0.7796834976586036
+    ],
+    "selected_epoch": 25,
+    "enabled": true,
+    "fallback": "BM25 if dev MRR is lower or corpus hash changes",
+    "corpus_sha256": "62d9038740fcca99cf41e59f866bbaf22f930250673933c6f1882534356a2a55",
+    "seed": 20261010,
+    "training_pairs": 736,
+    "epochs_run": 300,
+    "training_data_sha256": "e62eff6ec7cfb476610ea5b20203597fdc1405f4dcc31aa76b9044efba50e24d"
+  },
+  "split_groups": {
+    "train": [
+      "CavettProblem",
+      "ChemSepColumnSnapshot",
+      "ColdNaphthaStabiliser",
+      "ExtractiveDistillation",
+      "GasLiquidSeparatorSizing",
+      "GibbsAndEquilibriumReactors",
+      "HydrocycloneCustomUnitOperation",
+      "SO2OxidationEquilibrium",
+      "SimpleAbsorberSample",
+      "SimpleLNGExchangerCustomUnitOperation",
+      "TraceMethaneStripper",
+      "VesselDepressurization",
+      "WideBoilingStripper",
+      "fluent-api",
+      "idaes-initialization",
+      "idaes-workflow",
+      "rule-chemflow-intake",
+      "rule-chemflow-process-synthesis",
+      "rule-chemflow-property-modeling",
+      "rule-chemflow-simulation-review",
+      "source-212cfa7bd560",
+      "source-4085290d4aa6",
+      "source-edf6c2a3d90b",
+      "sslw"
+    ],
+    "dev": [
+      "BiodieselProduction",
+      "MembraneCustomUnitOperation",
+      "PetroleumDistillation",
+      "idaes-model_diagnostics",
+      "rule-chemflow-validation"
+    ],
+    "test": [
+      "HeatExchangerSizingAndDesign",
+      "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+      "LiquidLiquidExtraction",
+      "NaturalGasProcessingUnit",
+      "ThreePhaseSeparator",
+      "costing-framework",
+      "rule-chemflow-optimization-tea",
+      "source-a68384a1116b"
+    ]
+  },
+  "history": [
+    {
+      "epoch": 25,
+      "pairwise_loss": 0.3622193898282144,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 50,
+      "pairwise_loss": 0.282702017456869,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 75,
+      "pairwise_loss": 0.2476057289874774,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 100,
+      "pairwise_loss": 0.22717891707357818,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 125,
+      "pairwise_loss": 0.2135320190183363,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 150,
+      "pairwise_loss": 0.20364062785213904,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 175,
+      "pairwise_loss": 0.19607775488725113,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 200,
+      "pairwise_loss": 0.1900738087810939,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 225,
+      "pairwise_loss": 0.18517310957170807,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 250,
+      "pairwise_loss": 0.18108659054858772,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 275,
+      "pairwise_loss": 0.1776209078086859,
+      "dev_mrr": 0.8630952380952381
+    },
+    {
+      "epoch": 300,
+      "pairwise_loss": 0.1746412069261142,
+      "dev_mrr": 0.8630952380952381
+    }
+  ],
+  "dev": {
+    "bm25": {
+      "n": 14,
+      "hit_at_1": 0.7857142857142857,
+      "hit_at_3": 0.9285714285714286,
+      "mrr": 0.8630952380952381,
+      "queries": [
+        {
+          "query_id": "BiodieselProduction-0",
+          "query": "生物柴油生产流程",
+          "rank": 1,
+          "top3": [
+            "BiodieselProduction",
+            "CavettProblem",
+            "guide-recycle"
+          ]
+        },
+        {
+          "query_id": "BiodieselProduction-1",
+          "query": "biodiesel production compounds",
+          "rank": 1,
+          "top3": [
+            "BiodieselProduction",
+            "VesselDepressurization",
+            "ExtractiveDistillation"
+          ]
+        },
+        {
+          "query_id": "MembraneCustomUnitOperation-0",
+          "query": "膜分离案例",
+          "rank": 1,
+          "top3": [
+            "MembraneCustomUnitOperation",
+            "ThreePhaseSeparator",
+            "GasLiquidSeparatorSizing"
+          ]
+        },
+        {
+          "query_id": "MembraneCustomUnitOperation-1",
+          "query": "membrane custom unit operation",
+          "rank": 1,
+          "top3": [
+            "MembraneCustomUnitOperation",
+            "HydrocycloneCustomUnitOperation",
+            "SimpleLNGExchangerCustomUnitOperation"
+          ]
+        },
+        {
+          "query_id": "PetroleumDistillation-0",
+          "query": "石油蒸馏案例",
+          "rank": 1,
+          "top3": [
+            "PetroleumDistillation",
+            "VesselDepressurization",
+            "ExtractiveDistillation"
+          ]
+        },
+        {
+          "query_id": "PetroleumDistillation-1",
+          "query": "petroleum distillation units",
+          "rank": 1,
+          "top3": [
+            "PetroleumDistillation",
+            "sslw-cost_vertical_vessel",
+            "sslw-cost_vessel"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-0",
+          "query": "方程模型求解前如何检查自由度",
+          "rank": 1,
+          "top3": [
+            "guide-diagnosis",
+            "idaes-model_diagnostics-2",
+            "idaes-model_diagnostics-0"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-1",
+          "query": "模型结构奇异时先检查什么",
+          "rank": 1,
+          "top3": [
+            "guide-diagnosis",
+            "rule-chemflow-process-synthesis",
+            "guide-units"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-2",
+          "query": "回流流程不收敛时应该收集哪些信息",
+          "rank": 2,
+          "top3": [
+            "CavettProblem",
+            "guide-recycle",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-3",
+          "query": "如何逐步定位循环流程的失败单元",
+          "rank": 1,
+          "top3": [
+            "guide-recycle",
+            "guide-optimization",
+            "guide-tool-policy"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-0",
+          "query": "独立验证和同源回放的区别",
+          "rank": 1,
+          "top3": [
+            "rule-chemflow-validation",
+            "guide-provenance",
+            "guide-convergence"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-1",
+          "query": "Ground Truth 验证边界",
+          "rank": 1,
+          "top3": [
+            "rule-chemflow-validation",
+            "guide-energy-boundary",
+            "guide-mass-boundary"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-2",
+          "query": "同一个归档既训练又评测有什么问题",
+          "rank": 4,
+          "top3": [
+            "guide-optimization",
+            "guide-basis",
+            "guide-diagnosis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-3",
+          "query": "应该怎样记录数据来源和适用范围",
+          "rank": 3,
+          "top3": [
+            "guide-property",
+            "guide-recycle",
+            "guide-provenance"
+          ]
+        }
+      ]
+    },
+    "trained": {
+      "n": 14,
+      "hit_at_1": 0.7857142857142857,
+      "hit_at_3": 0.9285714285714286,
+      "mrr": 0.8630952380952381,
+      "queries": [
+        {
+          "query_id": "BiodieselProduction-0",
+          "query": "生物柴油生产流程",
+          "rank": 1,
+          "top3": [
+            "BiodieselProduction",
+            "CavettProblem",
+            "guide-recycle"
+          ]
+        },
+        {
+          "query_id": "BiodieselProduction-1",
+          "query": "biodiesel production compounds",
+          "rank": 1,
+          "top3": [
+            "BiodieselProduction",
+            "VesselDepressurization",
+            "ExtractiveDistillation"
+          ]
+        },
+        {
+          "query_id": "MembraneCustomUnitOperation-0",
+          "query": "膜分离案例",
+          "rank": 1,
+          "top3": [
+            "MembraneCustomUnitOperation",
+            "ThreePhaseSeparator",
+            "GasLiquidSeparatorSizing"
+          ]
+        },
+        {
+          "query_id": "MembraneCustomUnitOperation-1",
+          "query": "membrane custom unit operation",
+          "rank": 1,
+          "top3": [
+            "MembraneCustomUnitOperation",
+            "HydrocycloneCustomUnitOperation",
+            "SimpleLNGExchangerCustomUnitOperation"
+          ]
+        },
+        {
+          "query_id": "PetroleumDistillation-0",
+          "query": "石油蒸馏案例",
+          "rank": 1,
+          "top3": [
+            "PetroleumDistillation",
+            "guide-convergence",
+            "VesselDepressurization"
+          ]
+        },
+        {
+          "query_id": "PetroleumDistillation-1",
+          "query": "petroleum distillation units",
+          "rank": 1,
+          "top3": [
+            "PetroleumDistillation",
+            "sslw-cost_vertical_vessel",
+            "sslw-cost_vessel"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-0",
+          "query": "方程模型求解前如何检查自由度",
+          "rank": 1,
+          "top3": [
+            "guide-diagnosis",
+            "idaes-model_diagnostics-2",
+            "idaes-model_diagnostics-0"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-1",
+          "query": "模型结构奇异时先检查什么",
+          "rank": 1,
+          "top3": [
+            "guide-diagnosis",
+            "rule-chemflow-process-synthesis",
+            "guide-units"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-2",
+          "query": "回流流程不收敛时应该收集哪些信息",
+          "rank": 2,
+          "top3": [
+            "CavettProblem",
+            "guide-recycle",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "idaes-model_diagnostics-3",
+          "query": "如何逐步定位循环流程的失败单元",
+          "rank": 1,
+          "top3": [
+            "guide-recycle",
+            "HydrocycloneCustomUnitOperation",
+            "MembraneCustomUnitOperation"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-0",
+          "query": "独立验证和同源回放的区别",
+          "rank": 1,
+          "top3": [
+            "rule-chemflow-validation",
+            "guide-provenance",
+            "guide-convergence"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-1",
+          "query": "Ground Truth 验证边界",
+          "rank": 1,
+          "top3": [
+            "rule-chemflow-validation",
+            "guide-mass-boundary",
+            "guide-energy-boundary"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-2",
+          "query": "同一个归档既训练又评测有什么问题",
+          "rank": 4,
+          "top3": [
+            "guide-optimization",
+            "guide-basis",
+            "guide-diagnosis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-validation-3",
+          "query": "应该怎样记录数据来源和适用范围",
+          "rank": 3,
+          "top3": [
+            "guide-property",
+            "guide-recycle",
+            "guide-provenance"
+          ]
+        }
+      ]
+    }
+  },
+  "test": {
+    "legacy": {
+      "n": 22,
+      "hit_at_1": 0.0,
+      "hit_at_3": 0.0,
+      "mrr": 0.0,
+      "queries": [
+        {
+          "query_id": "HeatExchangerSizingAndDesign-0",
+          "query": "换热设备的尺寸设计有没有官方案例？",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "HeatExchangerSizingAndDesign-1",
+          "query": "Need an example of heat exchanger sizing.",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-0",
+          "query": "想找甲烷水蒸气重整制氢的参考流程",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-1",
+          "query": "Show a catalytic steam reforming hydrogen example.",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-0",
+          "query": "两种液相之间的萃取怎么找参考文件？",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-1",
+          "query": "Find liquid liquid extraction compounds.",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-0",
+          "query": "天然气加工的流程案例有哪些组分？",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-1",
+          "query": "Find a natural gas processing flowsheet and its unit types.",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-0",
+          "query": "三相分离设备参考流程里的物性方法是什么？",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-1",
+          "query": "Find a three phase separator example.",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "costing-framework-0",
+          "query": "资本费用和运行费用如何在 IDAES 中组织？",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "costing-framework-1",
+          "query": "How are unit costing blocks connected to flowsheet costing?",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-0",
+          "query": "只有营业收入可以计算净现值吗",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-1",
+          "query": "没有投资现金流能给内部收益率吗",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-2",
+          "query": "没有可行基准能否称为完成流程优化",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-3",
+          "query": "优化问题要先明确什么",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-4",
+          "query": "经济评价缺失电价和开工小时应怎么处理",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-5",
+          "query": "不同年份的设备费用能直接比较吗",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-0",
+          "query": "只有换热负荷就能宣布能量衡算闭合吗",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-1",
+          "query": "尚未提取边界焓流应怎样报告",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-2",
+          "query": "质量衡算时是否把循环流也算作外部进料",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-3",
+          "query": "外部进出口质量差应如何解释",
+          "rank": null,
+          "top3": [
+            "rule-chemflow-intake",
+            "rule-chemflow-optimization-tea",
+            "rule-chemflow-process-synthesis"
+          ]
+        }
+      ]
+    },
+    "bm25": {
+      "n": 22,
+      "hit_at_1": 0.8181818181818182,
+      "hit_at_3": 0.9545454545454546,
+      "mrr": 0.8873966942148761,
+      "queries": [
+        {
+          "query_id": "HeatExchangerSizingAndDesign-0",
+          "query": "换热设备的尺寸设计有没有官方案例？",
+          "rank": 1,
+          "top3": [
+            "HeatExchangerSizingAndDesign",
+            "GasLiquidSeparatorSizing",
+            "SimpleLNGExchangerCustomUnitOperation"
+          ]
+        },
+        {
+          "query_id": "HeatExchangerSizingAndDesign-1",
+          "query": "Need an example of heat exchanger sizing.",
+          "rank": 1,
+          "top3": [
+            "HeatExchangerSizingAndDesign",
+            "sslw-cost_heat_exchanger",
+            "sslw-cost_fired_heater"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-0",
+          "query": "想找甲烷水蒸气重整制氢的参考流程",
+          "rank": 1,
+          "top3": [
+            "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+            "rule-chemflow-optimization-tea",
+            "TraceMethaneStripper"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-1",
+          "query": "Show a catalytic steam reforming hydrogen example.",
+          "rank": 1,
+          "top3": [
+            "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+            "fluent-api",
+            "costing-framework-0"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-0",
+          "query": "两种液相之间的萃取怎么找参考文件？",
+          "rank": 2,
+          "top3": [
+            "ExtractiveDistillation",
+            "LiquidLiquidExtraction",
+            "guide-convergence"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-1",
+          "query": "Find liquid liquid extraction compounds.",
+          "rank": 1,
+          "top3": [
+            "LiquidLiquidExtraction",
+            "GasLiquidSeparatorSizing",
+            "idaes-workflow-5"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-0",
+          "query": "天然气加工的流程案例有哪些组分？",
+          "rank": 2,
+          "top3": [
+            "SimpleLNGExchangerCustomUnitOperation",
+            "NaturalGasProcessingUnit",
+            "VesselDepressurization"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-1",
+          "query": "Find a natural gas processing flowsheet and its unit types.",
+          "rank": 1,
+          "top3": [
+            "NaturalGasProcessingUnit",
+            "idaes-workflow-5",
+            "costing-framework-0"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-0",
+          "query": "三相分离设备参考流程里的物性方法是什么？",
+          "rank": 1,
+          "top3": [
+            "ThreePhaseSeparator",
+            "guide-property",
+            "rule-chemflow-property-modeling"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-1",
+          "query": "Find a three phase separator example.",
+          "rank": 1,
+          "top3": [
+            "ThreePhaseSeparator",
+            "costing-framework-0",
+            "GasLiquidSeparatorSizing"
+          ]
+        },
+        {
+          "query_id": "costing-framework-0",
+          "query": "资本费用和运行费用如何在 IDAES 中组织？",
+          "rank": 1,
+          "top3": [
+            "costing-framework-6",
+            "costing-framework-5",
+            "costing-framework-8"
+          ]
+        },
+        {
+          "query_id": "costing-framework-1",
+          "query": "How are unit costing blocks connected to flowsheet costing?",
+          "rank": 1,
+          "top3": [
+            "costing-framework-9",
+            "costing-framework-6",
+            "costing-framework-0"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-0",
+          "query": "只有营业收入可以计算净现值吗",
+          "rank": 1,
+          "top3": [
+            "guide-cashflow",
+            "guide-convergence",
+            "rule-chemflow-intake"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-1",
+          "query": "没有投资现金流能给内部收益率吗",
+          "rank": 1,
+          "top3": [
+            "guide-cashflow",
+            "rule-chemflow-optimization-tea",
+            "guide-mass-boundary"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-2",
+          "query": "没有可行基准能否称为完成流程优化",
+          "rank": 1,
+          "top3": [
+            "guide-optimization",
+            "rule-chemflow-optimization-tea",
+            "guide-units"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-3",
+          "query": "优化问题要先明确什么",
+          "rank": 1,
+          "top3": [
+            "guide-optimization",
+            "rule-chemflow-optimization-tea",
+            "guide-diagnosis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-4",
+          "query": "经济评价缺失电价和开工小时应怎么处理",
+          "rank": 1,
+          "top3": [
+            "guide-tea-basis",
+            "rule-chemflow-optimization-tea",
+            "NaturalGasProcessingUnit"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-5",
+          "query": "不同年份的设备费用能直接比较吗",
+          "rank": 44,
+          "top3": [
+            "guide-diagnosis",
+            "guide-units",
+            "guide-cashflow"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-0",
+          "query": "只有换热负荷就能宣布能量衡算闭合吗",
+          "rank": 2,
+          "top3": [
+            "rule-chemflow-simulation-review",
+            "guide-energy-boundary",
+            "guide-mass-boundary"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-1",
+          "query": "尚未提取边界焓流应怎样报告",
+          "rank": 1,
+          "top3": [
+            "guide-energy-boundary",
+            "guide-mass-boundary",
+            "rule-chemflow-simulation-review"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-2",
+          "query": "质量衡算时是否把循环流也算作外部进料",
+          "rank": 1,
+          "top3": [
+            "guide-mass-boundary",
+            "guide-energy-boundary",
+            "guide-tool-policy"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-3",
+          "query": "外部进出口质量差应如何解释",
+          "rank": 1,
+          "top3": [
+            "guide-mass-boundary",
+            "guide-topology",
+            "rule-chemflow-process-synthesis"
+          ]
+        }
+      ]
+    },
+    "trained": {
+      "n": 22,
+      "hit_at_1": 0.8636363636363636,
+      "hit_at_3": 0.9545454545454546,
+      "mrr": 0.9101239669421488,
+      "queries": [
+        {
+          "query_id": "HeatExchangerSizingAndDesign-0",
+          "query": "换热设备的尺寸设计有没有官方案例？",
+          "rank": 1,
+          "top3": [
+            "HeatExchangerSizingAndDesign",
+            "GasLiquidSeparatorSizing",
+            "SimpleLNGExchangerCustomUnitOperation"
+          ]
+        },
+        {
+          "query_id": "HeatExchangerSizingAndDesign-1",
+          "query": "Need an example of heat exchanger sizing.",
+          "rank": 1,
+          "top3": [
+            "HeatExchangerSizingAndDesign",
+            "sslw-cost_heat_exchanger",
+            "fluent-api"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-0",
+          "query": "想找甲烷水蒸气重整制氢的参考流程",
+          "rank": 1,
+          "top3": [
+            "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+            "TraceMethaneStripper",
+            "rule-chemflow-optimization-tea"
+          ]
+        },
+        {
+          "query_id": "HydrogenproductionthroughMethaneCatalyticSteamReforming-1",
+          "query": "Show a catalytic steam reforming hydrogen example.",
+          "rank": 1,
+          "top3": [
+            "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+            "fluent-api",
+            "costing-framework-0"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-0",
+          "query": "两种液相之间的萃取怎么找参考文件？",
+          "rank": 2,
+          "top3": [
+            "ExtractiveDistillation",
+            "LiquidLiquidExtraction",
+            "guide-convergence"
+          ]
+        },
+        {
+          "query_id": "LiquidLiquidExtraction-1",
+          "query": "Find liquid liquid extraction compounds.",
+          "rank": 1,
+          "top3": [
+            "LiquidLiquidExtraction",
+            "GasLiquidSeparatorSizing",
+            "idaes-workflow-5"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-0",
+          "query": "天然气加工的流程案例有哪些组分？",
+          "rank": 2,
+          "top3": [
+            "SimpleLNGExchangerCustomUnitOperation",
+            "NaturalGasProcessingUnit",
+            "CavettProblem"
+          ]
+        },
+        {
+          "query_id": "NaturalGasProcessingUnit-1",
+          "query": "Find a natural gas processing flowsheet and its unit types.",
+          "rank": 1,
+          "top3": [
+            "NaturalGasProcessingUnit",
+            "idaes-workflow-5",
+            "costing-framework-0"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-0",
+          "query": "三相分离设备参考流程里的物性方法是什么？",
+          "rank": 1,
+          "top3": [
+            "ThreePhaseSeparator",
+            "rule-chemflow-property-modeling",
+            "guide-property"
+          ]
+        },
+        {
+          "query_id": "ThreePhaseSeparator-1",
+          "query": "Find a three phase separator example.",
+          "rank": 1,
+          "top3": [
+            "ThreePhaseSeparator",
+            "costing-framework-0",
+            "idaes-model_diagnostics-4"
+          ]
+        },
+        {
+          "query_id": "costing-framework-0",
+          "query": "资本费用和运行费用如何在 IDAES 中组织？",
+          "rank": 1,
+          "top3": [
+            "costing-framework-6",
+            "costing-framework-5",
+            "costing-framework-8"
+          ]
+        },
+        {
+          "query_id": "costing-framework-1",
+          "query": "How are unit costing blocks connected to flowsheet costing?",
+          "rank": 1,
+          "top3": [
+            "costing-framework-9",
+            "costing-framework-6",
+            "costing-framework-1"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-0",
+          "query": "只有营业收入可以计算净现值吗",
+          "rank": 1,
+          "top3": [
+            "guide-cashflow",
+            "guide-convergence",
+            "rule-chemflow-intake"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-1",
+          "query": "没有投资现金流能给内部收益率吗",
+          "rank": 1,
+          "top3": [
+            "guide-cashflow",
+            "rule-chemflow-optimization-tea",
+            "guide-mass-boundary"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-2",
+          "query": "没有可行基准能否称为完成流程优化",
+          "rank": 1,
+          "top3": [
+            "guide-optimization",
+            "rule-chemflow-optimization-tea",
+            "guide-units"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-3",
+          "query": "优化问题要先明确什么",
+          "rank": 1,
+          "top3": [
+            "guide-optimization",
+            "rule-chemflow-optimization-tea",
+            "guide-diagnosis"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-4",
+          "query": "经济评价缺失电价和开工小时应怎么处理",
+          "rank": 1,
+          "top3": [
+            "guide-tea-basis",
+            "rule-chemflow-optimization-tea",
+            "NaturalGasProcessingUnit"
+          ]
+        },
+        {
+          "query_id": "rule-chemflow-optimization-tea-5",
+          "query": "不同年份的设备费用能直接比较吗",
+          "rank": 44,
+          "top3": [
+            "costing-framework-6",
+            "costing-framework-2",
+            "costing-framework-8"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-0",
+          "query": "只有换热负荷就能宣布能量衡算闭合吗",
+          "rank": 1,
+          "top3": [
+            "guide-energy-boundary",
+            "rule-chemflow-simulation-review",
+            "guide-mass-boundary"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-1",
+          "query": "尚未提取边界焓流应怎样报告",
+          "rank": 1,
+          "top3": [
+            "guide-energy-boundary",
+            "guide-mass-boundary",
+            "rule-chemflow-simulation-review"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-2",
+          "query": "质量衡算时是否把循环流也算作外部进料",
+          "rank": 1,
+          "top3": [
+            "guide-mass-boundary",
+            "guide-energy-boundary",
+            "guide-tool-policy"
+          ]
+        },
+        {
+          "query_id": "source-a68384a1116b-3",
+          "query": "外部进出口质量差应如何解释",
+          "rank": 1,
+          "top3": [
+            "guide-mass-boundary",
+            "guide-topology",
+            "rule-chemflow-process-synthesis"
+          ]
+        }
+      ]
+    }
+  },
+  "seconds": 1.2896207999438047,
+  "llm_finetuned": false,
+  "limits": [
+    "Small authored test set, not independent expert validation.",
+    "Corpus expansion and tokenization are separate from learned ranking gains.",
+    "Retrieval accuracy is not simulation, economic prediction or tool-use accuracy.",
+    "No numeric solver results or validation/replay files used."
+  ]
+}

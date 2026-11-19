@@ -1,0 +1,1900 @@
+{
+  "streams": {
+    "1": {
+      "stream_id": "1",
+      "temperature": {
+        "value": 20,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!C9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!C10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 15167.1802,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!C7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!C4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!C11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G2",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G3",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G4",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G5",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G6",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 1,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G7",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G8",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G9",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G10",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "3": {
+      "stream_id": "3",
+      "temperature": {
+        "value": 44.9367994,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!D9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!D10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 16122.9845,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!D7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!D4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!D11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G11",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G12",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.00985762982,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G13",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.0494307544,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G14",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 9.51121969e-07,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G15",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0.940710665,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G16",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G17",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 6.20234767e-17,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G18",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 1.14276063e-47,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G19",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "4": {
+      "stream_id": "4",
+      "temperature": {
+        "value": 114.572324,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!E9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!E10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 1580.82289,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!E7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!E4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!E11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G20",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G21",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.998234464,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G22",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.000289065768,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G23",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 6.68866912e-20,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G24",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 7.38409431e-05,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G25",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G26",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.0014026291,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G27",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 3.33244126e-12,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G28",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "6": {
+      "stream_id": "6",
+      "temperature": {
+        "value": -21.8344675,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!F9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!F10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 17703.8074,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!F7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "MIXED",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!F4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1.4249885e-05,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!F11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G29",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G30",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.0981125849,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G31",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.0450427544,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G32",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 8.66193606e-07,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G33",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0.85671855,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G34",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G35",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.000125244708,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G36",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 2.97563078e-13,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G37",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "2AP": {
+      "stream_id": "2AP",
+      "temperature": {
+        "value": 119.38579,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!G9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!G10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 126.115076,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!G7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!G4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!G11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G38",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G39",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 5.84326978e-06,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G40",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 9.15098438e-08,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G41",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 7.35747572e-34,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G42",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G43",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G44",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.000251358323,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G45",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.999742707,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G46",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "3-PY": {
+      "stream_id": "3-PY",
+      "temperature": {
+        "value": 70.702716,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!H9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!H10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 174.214435,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!H7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!H4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!H11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G47",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G48",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.0876147014,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G49",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 3.7731089e-05,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G50",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 1.05065999e-37,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G51",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G52",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G53",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.909766674,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G54",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.0025808939,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G55",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "A-R": {
+      "stream_id": "A-R",
+      "temperature": {
+        "value": 550,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!I9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!I10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2979.094,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!I7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!I4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!I11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G56",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G57",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.599608123,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G58",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.273120394,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G59",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 0.0305617198,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G60",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G61",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G62",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.0542286646,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G63",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.0424810994,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G64",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "A-S1": {
+      "stream_id": "A-S1",
+      "temperature": {
+        "value": 20,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!J9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!J10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2836.9567,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!J7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!J4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!J11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G65",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G66",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.617644528,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G67",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.281088122,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G68",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 5.40541374e-06,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G69",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G70",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G71",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.0566605392,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G72",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.0446014055,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G73",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "A-S2": {
+      "stream_id": "A-S2",
+      "temperature": {
+        "value": -231.462924,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!K9",
+        "status": "ANOMALY"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!K10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2710.84163,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!K7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!K4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!K11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G74",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G75",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.646378612,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G76",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.294165034,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G77",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 5.65688699e-06,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G78",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G79",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G80",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.0592848341,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G81",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.000165863242,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G82",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "A-S3": {
+      "stream_id": "A-S3",
+      "temperature": {
+        "value": -231.624423,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!L9",
+        "status": "ANOMALY"
+      },
+      "pressure": {
+        "value": 0.1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!L10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2536.62719,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!L7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!L4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!L11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G83",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G84",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.68475427,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G85",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.314365568,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G86",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 6.04539949e-06,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G87",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G88",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G89",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.000874116698,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G90",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 2.07677322e-12,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G91",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "H2": {
+      "stream_id": "H2",
+      "temperature": {
+        "value": 20,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!M9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!M10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 142.137298,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!M7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!M4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!M11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G92",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G93",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0.239614635,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G94",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0.114090356,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G95",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 0.640443448,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G96",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G97",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G98",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0.00569022404,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G99",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0.000161335993,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G100",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "NH3": {
+      "stream_id": "NH3",
+      "temperature": {
+        "value": 20,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!N9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!N10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 425.764,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!N7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "VAPOR",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!N4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 1,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!N11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G101",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 1,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G102",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G103",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G104",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G105",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G106",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G107",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G108",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G109",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    "THFA": {
+      "stream_id": "THFA",
+      "temperature": {
+        "value": 20,
+        "unit": "C",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!O9",
+        "status": "REFERENCE"
+      },
+      "pressure": {
+        "value": 1,
+        "unit": "bar",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!O10",
+        "status": "REFERENCE"
+      },
+      "mass_flow": {
+        "value": 2553.33,
+        "unit": "kg/h",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!O7",
+        "status": "REFERENCE"
+      },
+      "phase": {
+        "value": "LIQUID",
+        "unit": "",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!O4",
+        "status": "REFERENCE"
+      },
+      "vapor_fraction": {
+        "value": 0,
+        "unit": "fraction",
+        "source_type": "REFERENCE_DATA",
+        "source_name": "四氢糠醇_所有流股结果.xlsx",
+        "version": "94e558816537378e",
+        "locator": "流股总表!O11",
+        "status": "REFERENCE"
+      },
+      "composition": {
+        "TETRA-01": {
+          "value": 1,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G110",
+          "status": "REFERENCE"
+        },
+        "AMMON-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G111",
+          "status": "REFERENCE"
+        },
+        "PYRID-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G112",
+          "status": "REFERENCE"
+        },
+        "WATER": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G113",
+          "status": "REFERENCE"
+        },
+        "HYDRO-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G114",
+          "status": "REFERENCE"
+        },
+        "N-HEX-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G115",
+          "status": "REFERENCE"
+        },
+        "METHA-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G116",
+          "status": "REFERENCE"
+        },
+        "3-MET-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G117",
+          "status": "REFERENCE"
+        },
+        "2-PYR-01": {
+          "value": 0,
+          "unit": "mass fraction",
+          "source_type": "REFERENCE_DATA",
+          "source_name": "四氢糠醇_所有流股结果.xlsx",
+          "version": "94e558816537378e",
+          "locator": "组分结果!G118",
+          "status": "REFERENCE"
+        }
+      }
+    }
+  },
+  "energy": [],
+  "source": "四氢糠醇_所有流股结果.xlsx",
+  "notes": [
+    "开循环结果，不含分相器与回流。",
+    "A-S2/A-S3 为异常低温原值。",
+    "PY-R/B2 存档存在警告；未重新求解。"
+  ],
+  "route_id": "pyridine",
+  "backend": "REFERENCE_REPLAY",
+  "solver_status": "REPLAY_NOT_SOLVED",
+  "converged": null,
+  "topology": {
+    "route_id": "pyridine",
+    "title": "四氢糠醇转化制吡啶 · 全分离流程",
+    "units": [
+      {
+        "id": "PY-R",
+        "type": "REACTOR",
+        "label": "RYield 反应器",
+        "parameters": {}
+      },
+      {
+        "id": "2AP-SPR",
+        "type": "FLASH",
+        "label": "Flash2 气液分离器",
+        "parameters": {}
+      },
+      {
+        "id": "SPR",
+        "type": "TOWER",
+        "label": "第一精馏塔",
+        "parameters": {}
+      },
+      {
+        "id": "3-PY-SPR",
+        "type": "TOWER",
+        "label": "第二精馏塔",
+        "parameters": {}
+      },
+      {
+        "id": "B4",
+        "type": "MIXER",
+        "label": "Mixer 混合器",
+        "parameters": {}
+      },
+      {
+        "id": "B2",
+        "type": "TOWER",
+        "label": "第三精馏塔",
+        "parameters": {}
+      }
+    ],
+    "streams": [
+      {
+        "stream_id": "NH3",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "THFA",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "A-R",
+        "from_unit": "PY-R",
+        "to_unit": "2AP-SPR"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "2AP-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-S1",
+        "from_unit": "2AP-SPR",
+        "to_unit": "SPR"
+      },
+      {
+        "stream_id": "A-S2",
+        "from_unit": "SPR",
+        "to_unit": "3-PY-SPR"
+      },
+      {
+        "stream_id": "2AP",
+        "from_unit": "SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-S3",
+        "from_unit": "3-PY-SPR",
+        "to_unit": "B4"
+      },
+      {
+        "stream_id": "3-PY",
+        "from_unit": "3-PY-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "1",
+        "from_unit": null,
+        "to_unit": "B4"
+      },
+      {
+        "stream_id": "6",
+        "from_unit": "B4",
+        "to_unit": "B2"
+      },
+      {
+        "stream_id": "3",
+        "from_unit": "B2",
+        "to_unit": null
+      },
+      {
+        "stream_id": "4",
+        "from_unit": "B2",
+        "to_unit": null
+      }
+    ],
+    "connections": [
+      {
+        "stream_id": "NH3",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "THFA",
+        "from_unit": null,
+        "to_unit": "PY-R"
+      },
+      {
+        "stream_id": "A-R",
+        "from_unit": "PY-R",
+        "to_unit": "2AP-SPR"
+      },
+      {
+        "stream_id": "H2",
+        "from_unit": "2AP-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-S1",
+        "from_unit": "2AP-SPR",
+        "to_unit": "SPR"
+      },
+      {
+        "stream_id": "A-S2",
+        "from_unit": "SPR",
+        "to_unit": "3-PY-SPR"
+      },
+      {
+        "stream_id": "2AP",
+        "from_unit": "SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "A-S3",
+        "from_unit": "3-PY-SPR",
+        "to_unit": "B4"
+      },
+      {
+        "stream_id": "3-PY",
+        "from_unit": "3-PY-SPR",
+        "to_unit": null
+      },
+      {
+        "stream_id": "1",
+        "from_unit": null,
+        "to_unit": "B4"
+      },
+      {
+        "stream_id": "6",
+        "from_unit": "B4",
+        "to_unit": "B2"
+      },
+      {
+        "stream_id": "3",
+        "from_unit": "B2",
+        "to_unit": null
+      },
+      {
+        "stream_id": "4",
+        "from_unit": "B2",
+        "to_unit": null
+      }
+    ],
+    "energy_streams": [],
+    "source": {
+      "source_type": "USER_INPUT",
+      "source_name": "既有已审核流程可视化资产",
+      "version": "2026-10-06"
+    }
+  }
+}

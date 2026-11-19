@@ -1,0 +1,21 @@
+{
+  "reference_replay": {
+    "enabled": true
+  },
+  "dwsim": {
+    "enabled": false,
+    "endpoint": null
+  },
+  "external_mcp": {
+    "enabled": false,
+    "endpoint": null,
+    "allowed_tools": [
+      "load_model",
+      "set_feed",
+      "set_unit_parameter",
+      "solve",
+      "get_streams",
+      "get_duties"
+    ]
+  }
+}

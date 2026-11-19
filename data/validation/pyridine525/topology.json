@@ -1,0 +1,402 @@
+{
+  "route_id": "pyridine",
+  "title": "四氢糠醇制吡啶 · 分相与溶剂循环",
+  "units": [
+    {
+      "id": "PY-R",
+      "type": "REACTOR",
+      "label": "产率反应器",
+      "parameters": {
+        "TEMP": {
+          "value": 550.0,
+          "unit": "C",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/PY-R/TEMP",
+          "status": "REFERENCE"
+        },
+        "PRES": {
+          "value": 1.0,
+          "unit": "bar",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/PY-R/PRES",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    {
+      "id": "SPR",
+      "type": "FLASH",
+      "label": "气液闪蒸分离器",
+      "parameters": {
+        "TEMP": {
+          "value": 20.0,
+          "unit": "C",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/SPR/TEMP",
+          "status": "REFERENCE"
+        },
+        "PRES": {
+          "value": 1.0,
+          "unit": "bar",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/SPR/PRES",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    {
+      "id": "2AP-SPR",
+      "type": "TOWER",
+      "label": "2-氨基吡啶分离塔",
+      "parameters": {
+        "NSTAGE": {
+          "value": 8.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/2AP-SPR/NSTAGE",
+          "status": "REFERENCE"
+        },
+        "FEED-STAGE": {
+          "value": 4.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/2AP-SPR/FEED-STAGE",
+          "status": "REFERENCE"
+        },
+        "BASIS-RR": {
+          "value": 5.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/2AP-SPR/BASIS-RR",
+          "status": "REFERENCE"
+        },
+        "BASIS-B": {
+          "value": 1.34,
+          "unit": "kmol/h",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/2AP-SPR/BASIS-B",
+          "status": "REFERENCE"
+        },
+        "PRES1": {
+          "value": 10.0,
+          "unit": "kPa",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/2AP-SPR/PRES1",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    {
+      "id": "3-PY-SPR",
+      "type": "TOWER",
+      "label": "3-甲基吡啶分离塔",
+      "parameters": {
+        "NSTAGE": {
+          "value": 10.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/3-PY-SPR/NSTAGE",
+          "status": "REFERENCE"
+        },
+        "FEED-STAGE": {
+          "value": 5.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/3-PY-SPR/FEED-STAGE",
+          "status": "REFERENCE"
+        },
+        "BASIS-RR": {
+          "value": 3.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/3-PY-SPR/BASIS-RR",
+          "status": "REFERENCE"
+        },
+        "BASIS-B": {
+          "value": 1.9,
+          "unit": "kmol/h",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/3-PY-SPR/BASIS-B",
+          "status": "REFERENCE"
+        },
+        "PRES1": {
+          "value": 10.0,
+          "unit": "kPa",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/3-PY-SPR/PRES1",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    {
+      "id": "PY-SPR",
+      "type": "MIXER",
+      "label": "循环溶剂混合器",
+      "parameters": {}
+    },
+    {
+      "id": "MIXER",
+      "type": "TOWER",
+      "label": "吡啶精制塔",
+      "parameters": {
+        "NSTAGE": {
+          "value": 22.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/MIXER/NSTAGE",
+          "status": "REFERENCE"
+        },
+        "FEED-STAGE": {
+          "value": 20.0,
+          "unit": "stage",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/MIXER/FEED-STAGE",
+          "status": "REFERENCE"
+        },
+        "BASIS-RR": {
+          "value": 4.0,
+          "unit": "mol/mol",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/MIXER/BASIS-RR",
+          "status": "REFERENCE"
+        },
+        "BASIS-B": {
+          "value": 20.0,
+          "unit": "kmol/h",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/MIXER/BASIS-B",
+          "status": "REFERENCE"
+        },
+        "PRES1": {
+          "value": 1.0,
+          "unit": "bar",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/MIXER/PRES1",
+          "status": "REFERENCE"
+        }
+      }
+    },
+    {
+      "id": "DECANTER",
+      "type": "DECANTER",
+      "label": "液液分相器",
+      "parameters": {
+        "TEMP": {
+          "value": 20.0,
+          "unit": "C",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/DECANTER/TEMP",
+          "status": "REFERENCE"
+        },
+        "PRES": {
+          "value": 1.0,
+          "unit": "bar",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/DECANTER/PRES",
+          "status": "REFERENCE"
+        },
+        "L2-CUTOFF": {
+          "value": 0.199,
+          "unit": "",
+          "source_type": "IMPORTED_INPUT",
+          "source_name": "525存档.apwz",
+          "version": "8eb3a6e674b8bcb3",
+          "locator": "INPUT/BLOCK/DECANTER/L2-CUTOFF",
+          "status": "REFERENCE"
+        }
+      }
+    }
+  ],
+  "streams": [
+    {
+      "stream_id": "2AP",
+      "from_unit": "2AP-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "3-PY",
+      "from_unit": "3-PY-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-R",
+      "from_unit": "PY-R",
+      "to_unit": "SPR"
+    },
+    {
+      "stream_id": "A-S1",
+      "from_unit": "SPR",
+      "to_unit": "2AP-SPR"
+    },
+    {
+      "stream_id": "A-S2",
+      "from_unit": "2AP-SPR",
+      "to_unit": "3-PY-SPR"
+    },
+    {
+      "stream_id": "A-S3",
+      "from_unit": "3-PY-SPR",
+      "to_unit": "PY-SPR"
+    },
+    {
+      "stream_id": "A-S4",
+      "from_unit": "PY-SPR",
+      "to_unit": "MIXER"
+    },
+    {
+      "stream_id": "A-S5",
+      "from_unit": "MIXER",
+      "to_unit": "DECANTER"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "H2O",
+      "from_unit": "DECANTER",
+      "to_unit": null
+    },
+    {
+      "stream_id": "NH3",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "PY",
+      "from_unit": "MIXER",
+      "to_unit": null
+    },
+    {
+      "stream_id": "RE",
+      "from_unit": "DECANTER",
+      "to_unit": "PY-SPR"
+    },
+    {
+      "stream_id": "THFA",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    }
+  ],
+  "connections": [
+    {
+      "stream_id": "2AP",
+      "from_unit": "2AP-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "3-PY",
+      "from_unit": "3-PY-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-R",
+      "from_unit": "PY-R",
+      "to_unit": "SPR"
+    },
+    {
+      "stream_id": "A-S1",
+      "from_unit": "SPR",
+      "to_unit": "2AP-SPR"
+    },
+    {
+      "stream_id": "A-S2",
+      "from_unit": "2AP-SPR",
+      "to_unit": "3-PY-SPR"
+    },
+    {
+      "stream_id": "A-S3",
+      "from_unit": "3-PY-SPR",
+      "to_unit": "PY-SPR"
+    },
+    {
+      "stream_id": "A-S4",
+      "from_unit": "PY-SPR",
+      "to_unit": "MIXER"
+    },
+    {
+      "stream_id": "A-S5",
+      "from_unit": "MIXER",
+      "to_unit": "DECANTER"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "H2O",
+      "from_unit": "DECANTER",
+      "to_unit": null
+    },
+    {
+      "stream_id": "NH3",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "PY",
+      "from_unit": "MIXER",
+      "to_unit": null
+    },
+    {
+      "stream_id": "RE",
+      "from_unit": "DECANTER",
+      "to_unit": "PY-SPR"
+    },
+    {
+      "stream_id": "THFA",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    }
+  ],
+  "energy_streams": [],
+  "source": {
+    "file": "525存档.apwz",
+    "sha256": "8eb3a6e674b8bcb3869a30f2aac512dac5d912c30d2b37098b580194dab172eb",
+    "variant": "pyridine525"
+  }
+}

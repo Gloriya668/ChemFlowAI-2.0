@@ -1,0 +1,18 @@
+{
+  "id": "guide-units",
+  "title": "单位与压力基准核对",
+  "skill": "chemflow-simulation-review",
+  "split": "train",
+  "queries": [
+    "导入工况时要如何防止温压单位错误",
+    "绝压和表压未说明可以直接送求解吗"
+  ],
+  "text": "每个数值与单位绑定，原始值和换算值分开记录。DWSIM 适配器使用 K、Pa、kg/s 等 SI 输入；界面单位不能直接混入接口。摄氏温度转换需处理偏置；表压需确认参考压力，不能当绝压。转换由确定性代码完成，模型仅说明检查过程。",
+  "required_inputs": "原始值；原始单位；目标单位；压力基准；换算依据",
+  "expected_output": "单位核对记录；有歧义时停止自动提交",
+  "local_reference": "backend/dwsim_solver.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

@@ -1,0 +1,13 @@
+{
+  "package": "ChemFlowAI latest demo",
+  "packaged_at": "2026-10-23T15:50:36.610484+08:00",
+  "source_build": "2026-10-10-v3",
+  "frontend_build": "latest successful production build",
+  "features": [
+    "dynamic-control-learning",
+    "environment-noise-safety-learning",
+    "hazop-7x5-matrix"
+  ],
+  "contains_saved_demo_projects": true,
+  "application_tests_rerun": false
+}

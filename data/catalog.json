@@ -1,0 +1,40 @@
+{
+  "datasets": [
+    {
+      "id": "pdh",
+      "title": "丙烷脱氢工程验证",
+      "description": "反应与 C3 分离 · 三条路线",
+      "routes": [
+        "route_a",
+        "route_b",
+        "route_c"
+      ]
+    },
+    {
+      "id": "pyridine",
+      "title": "四氢糠醇制吡啶工程验证",
+      "description": "多级分离 · 开循环存档",
+      "routes": [
+        "pyridine"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "route_a",
+      "title": "普通精馏"
+    },
+    {
+      "id": "route_b",
+      "title": "热泵精馏"
+    },
+    {
+      "id": "route_c",
+      "title": "内部热耦合精馏"
+    },
+    {
+      "id": "pyridine",
+      "title": "四氢糠醇转化制吡啶 · 全分离流程"
+    }
+  ]
+}

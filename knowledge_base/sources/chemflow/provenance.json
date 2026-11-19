@@ -1,0 +1,18 @@
+{
+  "id": "guide-provenance",
+  "title": "实验真值与来源隔离",
+  "skill": "chemflow-validation",
+  "split": "train",
+  "queries": [
+    "同一个归档既训练又评测有什么问题",
+    "应该怎样记录数据来源和适用范围"
+  ],
+  "text": "区分实验测量、文献、数据库、模拟输出、用户输入和合成文本。保留来源、版本、单位、条件、转换过程和不确定性。按来源或流程家族隔离训练测试；同源回放不能证明独立数值精度。公开来源也要保留许可，不能自动当作已审核真值。",
+  "required_inputs": "原文件；版本；许可；来源类型；条件；划分组",
+  "expected_output": "来源链和泄漏检查记录",
+  "local_reference": "skills/chemflow-validation/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

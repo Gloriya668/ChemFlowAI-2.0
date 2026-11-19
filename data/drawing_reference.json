@@ -1,0 +1,12 @@
+{
+  "file": "1.zip",
+  "sha256": "0edbef42443f671c615871bb280e92a127ffec924c91e5aa248534b3dd651c1c",
+  "files": [
+    "1/1-PFD 工艺流程图/1-PFD工艺物料流程图.pdf",
+    "1/2-P&ID 管道及仪表流程图/2-PI&D管道及仪表流程图.pdf",
+    "1/3-设备条件图/E0309正丁醇萃取精馏塔进料冷却器工艺条件图.pdf",
+    "1/3-设备条件图/R0201滴流床反应器工艺条件图.pdf",
+    "1/3-设备条件图/T0305正丁醇回收塔工艺条件图.pdf"
+  ],
+  "usage": "Layout, equipment symbol and drawing-table reference only; process values are bound to current project. Instrumentation is conceptual. No source-specific dimensions, approval signatures or company titleblocks copied."
+}

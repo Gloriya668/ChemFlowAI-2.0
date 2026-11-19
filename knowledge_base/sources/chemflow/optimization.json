@@ -1,0 +1,18 @@
+{
+  "id": "guide-optimization",
+  "title": "优化目标约束与可行基准",
+  "skill": "chemflow-optimization-tea",
+  "split": "dev",
+  "queries": [
+    "没有可行基准能否称为完成流程优化",
+    "优化问题要先明确什么"
+  ],
+  "text": "先核对可行基准，再定义变量、上下界、约束和目标以及指标来源。比较静态归档方案不等于运行优化器。失败工况不能补零成本进入最优方案排序；最优候选要重新求解并复核约束。当前未接优化器时仅保存问题定义，不宣称寻优完成。",
+  "required_inputs": "可行基准；变量；上下界；约束；目标；失败处理",
+  "expected_output": "问题定义或未求解状态；不绘制伪最优前沿",
+  "local_reference": "skills/chemflow-optimization-tea/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

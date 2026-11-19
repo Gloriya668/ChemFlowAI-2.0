@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "status": "PASS",
+  "checks": 1047,
+  "failures": [],
+  "documents": 79,
+  "source_groups": 37,
+  "stats": {
+    "train": {
+      "retrieval_queries": 92,
+      "retrieval_sft": 92,
+      "agent_cases": 24,
+      "agent_sft": 24
+    },
+    "dev": {
+      "retrieval_queries": 14,
+      "retrieval_sft": 14,
+      "agent_cases": 8,
+      "agent_sft": 8
+    },
+    "test": {
+      "retrieval_queries": 22,
+      "retrieval_sft": 22,
+      "agent_cases": 16,
+      "agent_sft": 16
+    }
+  },
+  "files": [
+    {
+      "path": "training/agent/cases_dev.jsonl",
+      "rows": 8,
+      "sha256": "bf97cd9bdc30aec281c44231cc6f3c5cda43e49327a4ae36b957fe2001653fd2"
+    },
+    {
+      "path": "training/agent/cases_test.jsonl",
+      "rows": 16,
+      "sha256": "0bb10dd9dad5b9d851db994bbc5f21be76fcda7ed676232eb456e8edf1e5f9c7"
+    },
+    {
+      "path": "training/agent/cases_train.jsonl",
+      "rows": 24,
+      "sha256": "657e62f026c54f29dcffb6c1600f5442e61333c435394745d300dfe7a73a16a6"
+    },
+    {
+      "path": "training/agent/prompts_dev.jsonl",
+      "rows": 8,
+      "sha256": "dd7b79de942a3f8a374550868c00e992ab7ed627f3d5f7b3a79e0983bf648a84"
+    },
+    {
+      "path": "training/agent/prompts_test.jsonl",
+      "rows": 16,
+      "sha256": "9e88f0db05f9e7277a8290c3ead7b4899b9a4fac9bda066a8ddd94d036183ea3"
+    },
+    {
+      "path": "training/agent/prompts_train.jsonl",
+      "rows": 24,
+      "sha256": "3abec604b869d4bfa7bf434f08abfa38fc6a010637c2ea420a66fbe1f983d199"
+    },
+    {
+      "path": "training/agent/sft_dev.jsonl",
+      "rows": 8,
+      "sha256": "1265d0d48aab7d769ba9a2806a12db39d76ca103150e77f4c9c72f6459c1d18f"
+    },
+    {
+      "path": "training/agent/sft_test.jsonl",
+      "rows": 16,
+      "sha256": "0af2345c1da9bf9e1529b8e18fdd7d13536381e08313bdecf79e1aa4f7829784"
+    },
+    {
+      "path": "training/agent/sft_train.jsonl",
+      "rows": 24,
+      "sha256": "ccf4550855561fc21af6e5c515be2c115622caf3582f8df53bd29255af87f521"
+    },
+    {
+      "path": "training/ranking_dev.jsonl",
+      "rows": 14,
+      "sha256": "c0ecdf4fb7c94eb0d252fcf108f145a91ed21d94092bf3bd37072ef288cd86b8"
+    },
+    {
+      "path": "training/ranking_test.jsonl",
+      "rows": 22,
+      "sha256": "96be7b609e4f12d49ef94b1e530525806d03d0562e4f76424a5900d35d56a835"
+    },
+    {
+      "path": "training/ranking_train.jsonl",
+      "rows": 92,
+      "sha256": "e62eff6ec7cfb476610ea5b20203597fdc1405f4dcc31aa76b9044efba50e24d"
+    },
+    {
+      "path": "training/ready/dev.jsonl",
+      "rows": 22,
+      "sha256": "c3cbce62ab327dc37fd350c2eef1fda2ac80b4e90a054712dc901a1c3464ebeb"
+    },
+    {
+      "path": "training/ready/test.jsonl",
+      "rows": 38,
+      "sha256": "0ae7e8b8f327f37b7d55d5cd80746626037ebdc78f3e83ee6c930c4a2ef58269"
+    },
+    {
+      "path": "training/ready/train.jsonl",
+      "rows": 116,
+      "sha256": "b4badcd92d846e4e34ce0726a931147a50fe62dee39605f4fc4c3c730ed8d0e3"
+    },
+    {
+      "path": "training/review_queue.jsonl",
+      "rows": 79,
+      "sha256": "fd9dc9449c9571c66ac864724ebc06252b3a17d5ff3bd2cabf7520e9e3050327"
+    },
+    {
+      "path": "training/sft_dev.jsonl",
+      "rows": 14,
+      "sha256": "728c9af7c2649325c5c864a28a000fd05a9c4edf19deaf5d92239c439dbfb2f5"
+    },
+    {
+      "path": "training/sft_test.jsonl",
+      "rows": 22,
+      "sha256": "c754d66a0fad564ee7945d0836296a2797b94859bbcd07c85b4d998bf6d980ae"
+    },
+    {
+      "path": "training/sft_train.jsonl",
+      "rows": 92,
+      "sha256": "f3315a00da8a623a8cd10ab1d20f498032d91b0fe4f5688a414d478a59ca0fec"
+    }
+  ],
+  "model_evaluation": "NOT_RUN; dataset audit is not a model score",
+  "limits": [
+    "Exact duplicates and declared provenance groups checked; semantic leakage still requires expert review.",
+    "Historical v1 holdouts remain regression cases and are not fresh blind benchmarks.",
+    "All Agent examples synthetic; no real simulator trajectories."
+  ]
+}

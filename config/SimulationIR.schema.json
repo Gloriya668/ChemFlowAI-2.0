@@ -1,0 +1,330 @@
+{
+  "$defs": {
+    "ComponentSpec": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "source_type": {
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "source_type",
+        "source_name"
+      ],
+      "title": "ComponentSpec",
+      "type": "object"
+    },
+    "Connection": {
+      "properties": {
+        "stream_id": {
+          "title": "Stream Id",
+          "type": "string"
+        },
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        }
+      },
+      "required": [
+        "stream_id"
+      ],
+      "title": "Connection",
+      "type": "object"
+    },
+    "EnergyStream": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        },
+        "duty": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProvenanceRecord"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "EnergyStream",
+      "type": "object"
+    },
+    "MaterialStream": {
+      "properties": {
+        "stream_id": {
+          "title": "Stream Id",
+          "type": "string"
+        },
+        "from_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Unit"
+        },
+        "to_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Unit"
+        }
+      },
+      "required": [
+        "stream_id"
+      ],
+      "title": "MaterialStream",
+      "type": "object"
+    },
+    "ProvenanceRecord": {
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "default": "",
+          "title": "Unit",
+          "type": "string"
+        },
+        "source_type": {
+          "enum": [
+            "USER_INPUT",
+            "REFERENCE_DATA",
+            "LITERATURE",
+            "DATABASE",
+            "RULE",
+            "LLM",
+            "SIMULATOR",
+            "CALCULATED"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "version": {
+          "default": "1",
+          "title": "Version",
+          "type": "string"
+        },
+        "locator": {
+          "default": "",
+          "title": "Locator",
+          "type": "string"
+        },
+        "status": {
+          "default": "UNVERIFIED",
+          "title": "Status",
+          "type": "string"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        },
+        "parents": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Parents",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_name"
+      ],
+      "title": "ProvenanceRecord",
+      "type": "object"
+    },
+    "UnitOperation": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "label"
+      ],
+      "title": "UnitOperation",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "route_id": {
+      "title": "Route Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/ComponentSpec"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "property_method": {
+      "default": "",
+      "title": "Property Method",
+      "type": "string"
+    },
+    "units": {
+      "items": {
+        "$ref": "#/$defs/UnitOperation"
+      },
+      "title": "Units",
+      "type": "array"
+    },
+    "streams": {
+      "items": {
+        "$ref": "#/$defs/MaterialStream"
+      },
+      "title": "Streams",
+      "type": "array"
+    },
+    "connections": {
+      "items": {
+        "$ref": "#/$defs/Connection"
+      },
+      "title": "Connections",
+      "type": "array"
+    },
+    "energy_streams": {
+      "items": {
+        "$ref": "#/$defs/EnergyStream"
+      },
+      "title": "Energy Streams",
+      "type": "array"
+    },
+    "source": {
+      "additionalProperties": true,
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "required": [
+    "route_id",
+    "title",
+    "units",
+    "streams",
+    "connections",
+    "source"
+  ],
+  "title": "SimulationIR",
+  "type": "object"
+}

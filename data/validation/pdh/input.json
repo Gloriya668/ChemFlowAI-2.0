@@ -1,0 +1,133 @@
+{
+  "project_id": "",
+  "dataset": "pdh",
+  "components": [
+    {
+      "id": "C3H8",
+      "name": "Propane / 丙烷",
+      "source_type": "VALIDATION_INPUT",
+      "source_name": "任务定义"
+    },
+    {
+      "id": "C3H6",
+      "name": "Propylene / 丙烯",
+      "source_type": "VALIDATION_INPUT",
+      "source_name": "任务定义"
+    },
+    {
+      "id": "H2",
+      "name": "Hydrogen / 氢气",
+      "source_type": "VALIDATION_INPUT",
+      "source_name": "任务定义"
+    }
+  ],
+  "feeds": [
+    {
+      "stream_id": "FEED",
+      "temperature": {
+        "value": 57.004380032573,
+        "unit": "C",
+        "source_type": "VALIDATION_INPUT",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "1-普通精馏 物流结果!C10",
+        "status": "KNOWN_INPUT"
+      },
+      "pressure": {
+        "value": 20.0,
+        "unit": "bar",
+        "source_type": "VALIDATION_INPUT",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "1-普通精馏 物流结果!C11",
+        "status": "KNOWN_INPUT"
+      },
+      "mass_flow": {
+        "value": 4409.65200000002,
+        "unit": "kg/h",
+        "source_type": "VALIDATION_INPUT",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "1-普通精馏 物流结果!C27",
+        "status": "KNOWN_INPUT"
+      },
+      "molar_flow": {
+        "value": 100.0,
+        "unit": "kmol/h",
+        "source_type": "IMPORTED_INPUT",
+        "source_name": "丙烯丙烷数据最最最最终版.xls",
+        "version": "2142c2d19cee0d23",
+        "locator": "1-普通精馏 物流结果!C26",
+        "status": "REFERENCE"
+      },
+      "composition": {},
+      "component_ids": [
+        "C3H8"
+      ]
+    }
+  ],
+  "reaction": {
+    "equation": "C3H8 → C3H6 + H2",
+    "source_type": "VALIDATION_INPUT",
+    "source_name": "任务定义"
+  },
+  "target_products": [
+    {
+      "name": "",
+      "purity": null,
+      "source_type": "USER_INPUT",
+      "source_name": "人工输入",
+      "product_role": "TOP",
+      "purity_operator": ">="
+    },
+    {
+      "name": "",
+      "purity": null,
+      "source_type": "USER_INPUT",
+      "source_name": "人工输入",
+      "product_role": "BOTTOM",
+      "purity_operator": ">="
+    }
+  ],
+  "capacity": null,
+  "constraints": {
+    "product_target_requirements": [
+      {
+        "product_role": "TOP",
+        "component_id": "C3H6",
+        "minimum_mole_fraction": 0.996,
+        "unit": "mol/mol",
+        "operator": ">=",
+        "source_type": "VALIDATION_INPUT",
+        "source_name": "用户提供的设计要求（图片）",
+        "locator": "塔顶产品丙烯摩尔分率不低于 99.6%"
+      },
+      {
+        "product_role": "BOTTOM",
+        "component_id": "C3H8",
+        "minimum_mole_fraction": 0.975,
+        "unit": "mol/mol",
+        "operator": ">=",
+        "source_type": "VALIDATION_INPUT",
+        "source_name": "用户提供的设计要求（图片）",
+        "locator": "塔底产品丙烷摩尔分率不低于 97.5%"
+      }
+    ]
+  },
+  "utilities": {},
+  "source": {
+    "source_type": "VALIDATION_INPUT",
+    "source_name": "仅进料输入；非下游标准答案",
+    "version": "1",
+    "input_path": "data/validation/pdh/input.json",
+    "request_text": "丙烷脱氢制丙烯"
+  },
+  "byproducts": [
+    {
+      "name": "Hydrogen / H2",
+      "purity": null,
+      "source_type": "VALIDATION_INPUT",
+      "source_name": "PDH 反应任务定义"
+    }
+  ]
+}

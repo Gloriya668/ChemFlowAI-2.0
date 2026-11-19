@@ -1,0 +1,138 @@
+{
+  "route_id": "route_a",
+  "title": "普通精馏",
+  "units": [
+    {
+      "id": "REACTOR",
+      "type": "REACTOR",
+      "label": "反应器",
+      "parameters": {}
+    },
+    {
+      "id": "COOLER",
+      "type": "HX",
+      "label": "冷却器",
+      "parameters": {}
+    },
+    {
+      "id": "FLASH",
+      "type": "FLASH",
+      "label": "闪蒸罐",
+      "parameters": {}
+    },
+    {
+      "id": "HEATER",
+      "type": "HX",
+      "label": "加热器",
+      "parameters": {}
+    },
+    {
+      "id": "COLUMN",
+      "type": "TOWER",
+      "label": "精馏塔",
+      "parameters": {}
+    },
+    {
+      "id": "COND",
+      "type": "HX",
+      "label": "冷凝器",
+      "parameters": {}
+    },
+    {
+      "id": "REB",
+      "type": "HX",
+      "label": "再沸器",
+      "parameters": {}
+    }
+  ],
+  "streams": [
+    {
+      "stream_id": "FEED",
+      "from_unit": null,
+      "to_unit": "REACTOR"
+    },
+    {
+      "stream_id": "REACT",
+      "from_unit": "REACTOR",
+      "to_unit": "COOLER"
+    },
+    {
+      "stream_id": "COOL-OUT",
+      "from_unit": "COOLER",
+      "to_unit": "FLASH"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "FLASH",
+      "to_unit": null
+    },
+    {
+      "stream_id": "HEAT-IN",
+      "from_unit": "FLASH",
+      "to_unit": "HEATER"
+    },
+    {
+      "stream_id": "HEAT-OUT",
+      "from_unit": "HEATER",
+      "to_unit": "COLUMN"
+    },
+    {
+      "stream_id": "PRO-D",
+      "from_unit": "COLUMN",
+      "to_unit": null
+    },
+    {
+      "stream_id": "PRO-B",
+      "from_unit": "COLUMN",
+      "to_unit": null
+    }
+  ],
+  "connections": [
+    {
+      "stream_id": "FEED",
+      "from_unit": null,
+      "to_unit": "REACTOR"
+    },
+    {
+      "stream_id": "REACT",
+      "from_unit": "REACTOR",
+      "to_unit": "COOLER"
+    },
+    {
+      "stream_id": "COOL-OUT",
+      "from_unit": "COOLER",
+      "to_unit": "FLASH"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "FLASH",
+      "to_unit": null
+    },
+    {
+      "stream_id": "HEAT-IN",
+      "from_unit": "FLASH",
+      "to_unit": "HEATER"
+    },
+    {
+      "stream_id": "HEAT-OUT",
+      "from_unit": "HEATER",
+      "to_unit": "COLUMN"
+    },
+    {
+      "stream_id": "PRO-D",
+      "from_unit": "COLUMN",
+      "to_unit": null
+    },
+    {
+      "stream_id": "PRO-B",
+      "from_unit": "COLUMN",
+      "to_unit": null
+    }
+  ],
+  "energy_streams": [],
+  "source": {
+    "source_type": "USER_INPUT",
+    "source_name": "既有已审核流程可视化资产",
+    "version": "2026-10-06"
+  }
+}

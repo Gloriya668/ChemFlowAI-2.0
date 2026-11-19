@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full">
+<!-- Subtle ambient glow background decoration -->
+<div class="absolute -top-12 -right-12 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 left-1/3 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Block: Compact, Technical & Sharp -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded bg-surface-container-high text-primary tracking-widest">PHASE // 03</span>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-primary-container/15 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider">AI RECOMMENDED | THERMODYNAMIC AUDIT</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified_user</span>
+          PARITY RUN #EG-2025-V3
+        </span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Step 03: 模型选择与验证</h1>
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:inline">Model Architecture Synthesis &amp; Cross-Domain Validation</span>
+</div>
+</div>
+<!-- Quick Telemetry HUD Chips -->
+<div class="flex items-center gap-space-xs shrink-0 self-start lg:self-auto">
+<div class="bg-surface-container-low px-space-md py-space-xs rounded flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-outline">BIP COVERAGE</span>
+<span class="font-data-metric text-data-metric text-secondary font-bold">100%</span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-xs rounded flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-outline">GLOBAL RMSD</span>
+<span class="font-data-metric text-data-metric text-primary-container font-bold">0.0120</span>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-xs rounded flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-outline">AUDIT STATUS</span>
+<span class="font-label-md text-label-md text-secondary-fixed flex items-center gap-1 pt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> READY
+        </span>
+</div>
+</div>
+</div>
+<!-- Main Multi-Pane Viewport Grid (Left 2/3 Matrix, Right 1/3 Reasoning + Approval) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- LEFT 2/3 COLUMN: AI Recommended Models Matrix (8 cols on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- DOMAIN 1: Thermodynamic Phase Equilibrium Model (Hero Card) -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary-container/10 via-transparent to-transparent pointer-events-none"></div>
+<!-- Section Top Tag & Title -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded bg-primary-container/20 text-primary-container flex items-center justify-center font-label-md text-label-md font-bold">01</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">DOMAIN 01 // THERMODYNAMICS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">热力学活度与相平衡模型 (Phase Equilibrium)</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start sm:self-auto">
+<span class="px-space-sm py-1 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              已完成验证 (相图 R² = 0.9984)
+            </span>
+</div>
+</div>
+<!-- Model Highlight Header -->
+<div class="bg-surface-container rounded p-space-md mb-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="px-space-md py-1.5 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-bold tracking-tight shadow-sm">
+              NRTL-HOC
+            </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Non-Random Two-Liquid with Hayden-O'Connell Vapor Association</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">非随机双液体活度系数模型 + Hayden-O'Connell 气相缔合状态方程修正</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-primary">PRIORITY: HIGH</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-secondary">AUTO-TUNED</span>
+</div>
+</div>
+<!-- 3-Column Param Specs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mb-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">scatter_plot</span> 适用物系
+            </span>
+<span class="font-body-md text-body-md text-on-surface mt-1 font-medium">强极性、氢键缔合多醇水溶液体系</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">乙二醇 (EG) - 丙二醇 (PG) - 甘油 - 水体系</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">speed</span> 适用操作工况
+            </span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-data-metric text-data-metric text-primary font-bold">P &lt; 1.0 MPa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T: 40°C - 240°C</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">当前设计最高 0.4 MPa (安全裕度 250%)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">dataset</span> 二元交互参数 (BIP)
+            </span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-data-metric text-data-metric text-secondary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">全拟合库覆盖</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">DECHEMA / Aspen Physical Databank 回归</span>
+</div>
+</div>
+<!-- Integrated Visual: Phase Diagram Parity Mini-Curve & Risk Callout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-sm items-stretch">
+<!-- Binary VLE Parity Micro-Chart Canvas -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md rounded flex flex-col justify-between">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">EG - Water VLE Verification Plot (101.3 kPa)</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">Res. &lt; 0.16%</span>
+</div>
+<!-- Scaled Inline SVG Vapor-Liquid Equilibrium (x-y & T-x-y) -->
+<div class="w-full h-32 flex items-center justify-center">
+<svg class="w-full h-full" fill="none" viewbox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid background subtle ticks -->
+<path d="M 40 10 H 400 M 40 40 H 400 M 40 70 H 400 M 40 100 H 400" opacity="0.4" stroke="#3b494c" stroke-dasharray="2 3" stroke-width="0.5"></path>
+<path d="M 40 10 V 100 M 130 10 V 100 M 220 10 V 100 M 310 10 V 100 M 400 10 V 100" opacity="0.4" stroke="#3b494c" stroke-dasharray="2 3" stroke-width="0.5"></path>
+<!-- Baseline x=y reference -->
+<line opacity="0.3" stroke="#849396" stroke-dasharray="4 4" stroke-width="0.8" x1="40" x2="400" y1="100" y2="10"></line>
+<!-- Experimental VLE Data Points (Scatter) -->
+<circle cx="76" cy="74" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="112" cy="56" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="148" cy="42" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="202" cy="29" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="256" cy="22" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="310" cy="17" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<circle cx="364" cy="13" fill="#7dffa2" opacity="0.8" r="2.5"></circle>
+<!-- Fitted NRTL-HOC Curve -->
+<path d="M 40 100 Q 120 48 220 28 T 400 10" stroke="#00e5ff" stroke-linecap="round" stroke-width="2"></path>
+<!-- Annotations -->
+<text class="font-label-sm" fill="#00e5ff" font-size="9" x="45" y="24">NRTL-HOC Fit (R² = 0.9984)</text>
+<text class="font-label-sm" fill="#7dffa2" font-size="8" x="260" y="55">Exp. Pilot Data Points</text>
+<!-- Axis labels -->
+<text fill="#849396" font-size="8" x="40" y="112">0.0 (x_EG)</text>
+<text fill="#849396" font-size="8" x="375" y="112">1.0 (x_EG)</text>
+<text fill="#849396" font-size="8" x="12" y="14">y_EG</text>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">P01: 乙二醇二聚物缔合常数 η = -1.488</span>
+<span class="font-label-sm text-label-sm text-secondary">HOC 蒸汽相校正已收敛</span>
+</div>
+</div>
+<!-- Risk & Boundary Inspector Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-md rounded flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">适用范围与风险校核</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                高压超临界条件不适用。本模型针对低中压气相非理想性采用 HOC 维里展开。
+              </p>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded mt-space-sm">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface">当前工艺设计压力上限</span>
+<span class="text-secondary font-mono">0.40 MPa</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm mt-1">
+<span class="text-on-surface">模型有效性上限</span>
+<span class="text-primary-container font-mono">1.00 MPa</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 40%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1.5 block">安全区间内 (Margin: 60.0% Headroom)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- DOMAIN 2: Reaction Kinetics & Thermodynamics Model -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md">
+<!-- Section Top Tag & Title -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded bg-primary-container/20 text-primary-container flex items-center justify-center font-label-md text-label-md font-bold">02</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">DOMAIN 02 // KINETICS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">反应动力学与热力学反应模型 (Reaction Kinetics)</h2>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm flex items-center gap-1 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            动力学拟合通过
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Left Specs Area -->
+<div class="md:col-span-8 flex flex-col gap-space-sm">
+<div class="bg-surface-container rounded p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="px-space-md py-1.5 rounded bg-primary text-on-primary font-headline-md text-headline-md font-bold">
+                  LHHW
+                </div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Langmuir-Hinshelwood-Hougen-Watson 催化动力学</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">非均相加氢精制多位吸附-表面反应联合机理方程</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">适用反应物系</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1">微量醛类 (羟基乙醛)、有机酸催化加氢转化为乙二醇及多元醇</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1 font-mono">Selectivity &gt; 99.4%</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">动力学参数来源</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1">实验中试固定床反应装置 (Pilot Rig #3)</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary font-mono">Ea = 62.4 kJ/mol</span>
+<span class="font-label-sm text-label-sm text-outline">|</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">k0 = 4.12×10⁶ s⁻¹</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Kinetic Mechanism Micro-Card -->
+<div class="md:col-span-4 bg-surface-container-lowest p-space-md rounded flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-outline">RATE LAW EXPRESSION</span>
+<div class="py-2 font-mono text-[11px] text-primary-container leading-loose bg-surface-container-high/40 p-2 rounded">
+              r = <span class="text-secondary">k·K_A·P_A·K_H2·P_H2</span><br/>
+                  ÷ (1 + K_A·P_A + √[K_H2·P_H2])²
+            </div>
+<div class="flex items-center justify-between text-label-sm font-label-sm pt-2">
+<span class="text-on-surface-variant">吸附平衡常数 K_A</span>
+<span class="text-secondary font-mono">0.342 bar⁻¹</span>
+</div>
+</div>
+</div>
+</section>
+<!-- DOMAIN 3: Rigorous Unit Operation Models -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md">
+<!-- Section Top Tag & Title -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded bg-primary-container/20 text-primary-container flex items-center justify-center font-label-md text-label-md font-bold">03</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">DOMAIN 03 // RIGOROUS EQUIPMENT</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">核心单元操作严密模型 (Rigorous Unit Models)</h2>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm flex items-center gap-1 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+            算法求解器就绪
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Unit 1: RadFrac Column -->
+<div class="bg-surface-container rounded p-space-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold px-2 py-0.5 rounded bg-primary-container/10">RadFrac 严密多级塔</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">NON-EQUILIBRIUM</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-1">精馏与水分离系统 (Distillation &amp; Separation)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                严密非等温非平衡级填料/浮阀塔模型，内嵌 Sulzer Mellapak 250Y 规整填料水力学与 O'Connell 塔板效率校核，精确预测多元醇微量共沸与夹带。
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded">
+<div class="grid grid-cols-3 gap-1 text-center font-label-sm text-label-sm">
+<div class="flex flex-col">
+<span class="text-outline">压降模型</span>
+<span class="text-on-surface font-mono mt-0.5">Bravo (1985)</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline">收敛法</span>
+<span class="text-secondary font-mono mt-0.5">Inside-Out</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline">最大理论板</span>
+<span class="text-primary font-mono mt-0.5">85 Stages</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Unit 2: HeatX Exchanger -->
+<div class="bg-surface-container rounded p-space-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold px-2 py-0.5 rounded bg-primary-container/10">HeatX 严格热交换</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">RATING &amp; SIZING</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-1">换热网络与再沸器 (Heat Integration)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                严格多股流热交换模型，支持 TEMA E/F/J 壳管式及高通量焊接板式换热器几何尺寸反算校核，计入高粘度二元醇相变膜系数及污垢热阻。
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm rounded">
+<div class="grid grid-cols-3 gap-1 text-center font-label-sm text-label-sm">
+<div class="flex flex-col">
+<span class="text-outline">核算等级</span>
+<span class="text-on-surface font-mono mt-0.5">Rigorous Geom</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline">相变校核</span>
+<span class="text-secondary font-mono mt-0.5">Two-Phase L/V</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline">流道压降</span>
+<span class="text-primary font-mono mt-0.5">&lt; 35 kPa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT 1/3 COLUMN: AI Recommendation Reasoning & Engineer Approval Console (4 cols on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- AI Reasoning Engine Card -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">AI REASONING ENGINE // 推理内核</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">LLM-CHEM-v4.8</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">模型多维度决策比选依据</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">
+          ChemFlow 自动文献代理检索了 <span class="text-primary font-mono font-bold">3,420</span> 篇权威化工热力学文献，调取了 <span class="text-primary font-mono font-bold">12</span> 个同类万吨级乙二醇工业化项目工程运行标定数据库。
+        </p>
+<!-- Benchmark Comparison Table -->
+<div class="mt-space-md bg-surface-container-lowest rounded p-space-sm">
+<span class="font-label-sm text-label-sm text-outline px-1 block mb-2">THERMODYNAMIC MODEL BENCHMARK RESIDUALS</span>
+<div class="space-y-1.5">
+<!-- Row 1: NRTL-HOC (Winner) -->
+<div class="bg-surface-container-high/80 p-space-xs rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">NRTL-HOC</span>
+<span class="text-[9px] font-label-sm px-1 rounded bg-secondary/20 text-secondary">最优推荐</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline">RMSD:</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono font-bold">0.0120</span>
+</div>
+</div>
+<!-- Row 2: UNIQUAC -->
+<div class="bg-surface-container/60 p-space-xs rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UNIQUAC</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline">RMSD:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">0.0245</span>
+</div>
+</div>
+<!-- Row 3: Wilson -->
+<div class="bg-surface-container/60 p-space-xs rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wilson</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline">RMSD:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">0.0381</span>
+</div>
+</div>
+<!-- Row 4: Peng-Robinson (PR-BM) -->
+<div class="bg-surface-container/60 p-space-xs rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PR-BM</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-outline">RMSD:</span>
+<span class="font-label-sm text-label-sm text-error font-mono">0.0892</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Engineering Insights List -->
+<div class="mt-space-md space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[15px] text-secondary mt-0.5 shrink-0">check</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">气相缔合修正：</strong> 乙二醇与水在常减压精馏塔顶蒸气中存在强氢键二聚，HOC 修正相较于理想气体状态方程降低分离负荷估算偏差 14.2%。
+            </p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[15px] text-secondary mt-0.5 shrink-0">check</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">液相活度系数：</strong> NRTL 针对大沸点差醇水混合物（ΔTb &gt; 97°C）液液分相与活度交叉吻合度最优。
+            </p>
+</div>
+</div>
+<!-- Literature Citations Preview Card -->
+<div class="mt-space-md p-space-sm rounded bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">menu_book</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Ref: Ind. Eng. Chem. Res. 2023, 62(14)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary underline cursor-pointer shrink-0">查看源引</span>
+</div>
+</section>
+<!-- Senior Process Engineer Sign-off & Audit Console -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">ENGINEERING GOVERNANCE</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary/10 text-secondary">AUDIT READY</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">工艺主管专家签署确认</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            根据工程设计质量管理流程（QA-EPC-03），进入路线筛选前需对物性与动力学校核结果进行责任工程师签署核准。
+          </p>
+<!-- Interactive Approval Toggle Card -->
+<div class="mt-space-md p-space-md rounded bg-surface-container flex flex-col gap-space-sm">
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-highest text-primary-container focus:ring-0 cursor-pointer accent-primary-container" id="approval-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary transition-colors">
+                  工艺专家确认：认可 NRTL-HOC 及 LHHW 参数方案
+                </span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+</label>
+<div class="text-[11px] font-label-sm text-outline pl-6">
+              已对沸点预测、相对挥发度 α 及 LHHW 活化能完成交叉验证 (Validation Parity PASS)
+            </div>
+</div>
+<!-- Digital Signature Stamp Display -->
+<div class="mt-space-sm p-space-md rounded bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-primary-container/20 text-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">DIGITAL SIGN-OFF</span>
+<span class="font-body-md text-body-md text-on-surface font-bold">张华林 教授级高工</span>
+<span class="font-label-sm text-label-sm text-secondary">工艺系统主管 · 审核通过</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">TIMESTAMP</span>
+<span class="font-label-sm text-label-sm font-mono text-on-surface-variant">2025-05-18 14:32</span>
+<span class="font-label-sm text-label-sm font-mono text-primary">SHA-256 VALID</span>
+</div>
+</div>
+</div>
+<!-- Stage Action Guidance Tip -->
+<div class="mt-space-lg p-space-sm rounded bg-surface-container-high/40 flex items-center gap-space-sm text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary-container">info</span>
+<span>确认后，所选热力学与反应包将自动挂接至 Aspen / PRO II 核心计算内核。</span>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Interactive Stepper Navigation Bar -->
+<div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-low/70 p-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors flex items-center gap-1.5 font-body-sm text-body-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>返回上一步 (Step 02: 物性与数据校核)</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline hidden md:inline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">阶段就绪度: 100% · 所有模型参数已锁定</span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="px-space-sm py-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>导出模型评估报告 (.PDF)</span>
+</button>
+<button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" id="btn-confirm-next" type="button">
+<span>确认模型，进入路线与分离筛选 (Step 04)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    (function initModelStepInteractions() {
+      const checkbox = document.getElementById('approval-checkbox');
+      const nextBtn = document.getElementById('btn-confirm-next');
+
+      if (checkbox && nextBtn) {
+        checkbox.addEventListener('change', function () {
+          if (!this.checked) {
+            nextBtn.classList.add('opacity-50', 'pointer-events-none');
+            nextBtn.setAttribute('disabled', 'true');
+          } else {
+            nextBtn.classList.remove('opacity-50', 'pointer-events-none');
+            nextBtn.removeAttribute('disabled');
+          }
+        });
+
+        nextBtn.addEventListener('click', function () {
+          // Visual confirmation animation
+          const originalText = nextBtn.innerHTML;
+          nextBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>正在将参数注入求解器...</span>';
+          setTimeout(() => {
+            nextBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>模型已锁定！进入 Step 04</span>';
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

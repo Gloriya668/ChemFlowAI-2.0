@@ -1,0 +1,24 @@
+{
+  "format_version": 1,
+  "algorithm": "pairwise_logistic_linear_ranker",
+  "features": [
+    "bm25",
+    "coverage",
+    "title_coverage",
+    "word_coverage"
+  ],
+  "weights": [
+    0.6912289346553384,
+    0.6394822201930215,
+    0.6917385837404667,
+    0.7796834976586036
+  ],
+  "selected_epoch": 25,
+  "enabled": true,
+  "fallback": "BM25 if dev MRR is lower or corpus hash changes",
+  "corpus_sha256": "62d9038740fcca99cf41e59f866bbaf22f930250673933c6f1882534356a2a55",
+  "seed": 20261010,
+  "training_pairs": 736,
+  "epochs_run": 300,
+  "training_data_sha256": "e62eff6ec7cfb476610ea5b20203597fdc1405f4dcc31aa76b9044efba50e24d"
+}

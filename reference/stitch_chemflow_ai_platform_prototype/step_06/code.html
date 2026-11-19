@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full">
+<!-- Status & Header Meta Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="text-primary-container font-semibold">STAGE 06 // SYSTEM INTEGRATION</span>
+<span>•</span>
+<span>EXERGY AUDIT &amp; PINCH VALIDATED</span>
+</div>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Step 06: 能量与设备分析 (Thermal Pinch &amp; Equipment Rating)</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 font-label-sm text-label-sm font-medium flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          Pinch Analysis Complete | Pinch ΔTmin = 10°C
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-outline">ENGINE ALGORITHM:</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">GCC_HEN_SYNTHESIS_V4.2</span>
+<span class="text-outline-variant">|</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">RESIDUAL &lt; 10⁻⁵</span>
+</div>
+</div>
+<!-- Top 6 KPI Energy Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-sm mb-space-xl">
+<!-- Card 1: Total Heat Duty -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">总热负荷 (Heat Duty)</span>
+<span class="material-symbols-outlined text-[18px] text-primary">local_fire_department</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-on-surface font-bold tracking-tight">42.8 <span class="font-label-md text-label-md text-on-surface-variant font-normal">MW</span></div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_down</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">-34% vs 传统工况</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 66%;"></div>
+</div>
+</div>
+<!-- Card 2: Cooling Duty -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">冷负荷 (Cooling Duty)</span>
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">ac_unit</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-on-surface font-bold tracking-tight">38.6 <span class="font-label-md text-label-md text-on-surface-variant font-normal">MW</span></div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_down</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">-37% 冷源削减</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-dim h-full rounded-full" style="width: 63%;"></div>
+</div>
+</div>
+<!-- Card 3: Power Consumption -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">综合电耗 (Power)</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">bolt</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-on-surface font-bold tracking-tight">1,840 <span class="font-label-md text-label-md text-on-surface-variant font-normal">kW</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 truncate">含 MVR 增压轴功</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<!-- Card 4: MP Steam -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">中压蒸汽 (MP Steam)</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">energy_savings_leaf</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-secondary font-bold tracking-tight">0.0 <span class="font-label-md text-label-md text-on-surface-variant font-normal">t/h</span></div>
+<div class="font-label-sm text-label-sm text-secondary font-medium mt-0.5 truncate">零高质外供依赖</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed h-full rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+<!-- Card 5: LP Steam -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">低压蒸汽 (LP Steam)</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">heat_pump</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-on-surface font-bold tracking-tight">18.2 <span class="font-label-md text-label-md text-on-surface-variant font-normal">t/h</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 truncate">内部余热梯级再沸</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+<!-- Card 6: Cooling Water -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">循环水消耗 (CW)</span>
+<span class="material-symbols-outlined text-[18px] text-primary">water_drop</span>
+</div>
+<div class="my-space-xs">
+<div class="font-data-metric text-data-metric text-on-surface font-bold tracking-tight">820 <span class="font-label-md text-label-md text-on-surface-variant font-normal">m³/h</span></div>
+<div class="font-label-sm text-label-sm text-secondary font-medium mt-0.5 truncate">ΔT = 9.8 °C (合格)</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 55%;"></div>
+</div>
+</div>
+</div>
+<!-- Main Grid (Split 2-Column layout) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Left Column: Thermal Pinch & Grand Composite Curve Visualization -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-lg rounded shadow-md flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-lowest/40 -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">ssid_chart</span>
+<span class="font-headline-md text-headline-md text-on-surface font-medium">能量流与温焓组合曲线 (Composite Curves &amp; GCC)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">ΔTmin = 10.0 K</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm">OPTIMAL PINCH</span>
+</div>
+</div>
+<!-- Composite Curve Interactive Graph (SVG) -->
+<div class="relative w-full h-80 bg-surface-container-lowest/80 rounded p-space-md flex flex-col justify-between overflow-hidden shadow-inner">
+<div class="absolute top-2 right-4 flex items-center gap-space-md bg-surface-container-high/90 px-space-sm py-1 rounded text-label-sm font-label-sm backdrop-blur">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-error"></span>
+<span class="text-on-surface-variant">热流股 (Hot Composite)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-primary-container"></span>
+<span class="text-on-surface-variant">冷流股 (Cold Composite)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-secondary">Pinch Point (118.5°C)</span>
+</div>
+</div>
+<!-- Vector Chart -->
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 640 260">
+<!-- Grid Lines & Isobars -->
+<defs>
+<lineargradient id="pinchGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#00e5ff" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<line stroke="#31353f" stroke-dasharray="3,3" stroke-width="1" x1="60" x2="620" y1="20" y2="20"></line>
+<line stroke="#31353f" stroke-dasharray="3,3" stroke-width="1" x1="60" x2="620" y1="75" y2="75"></line>
+<line stroke="#31353f" stroke-dasharray="3,3" stroke-width="1" x1="60" x2="620" y1="130" y2="130"></line>
+<line stroke="#31353f" stroke-dasharray="3,3" stroke-width="1" x1="60" x2="620" y1="185" y2="185"></line>
+<line stroke="#3b494c" stroke-width="1.5" x1="60" x2="620" y1="240" y2="240"></line>
+<line stroke="#3b494c" stroke-width="1.5" x1="60" x2="60" y1="10" y2="240"></line>
+<!-- Temperature Axis Markers -->
+<text class="fill-outline font-mono text-[10px]" text-anchor="end" x="50" y="24">220°C</text>
+<text class="fill-outline font-mono text-[10px]" text-anchor="end" x="50" y="79">170°C</text>
+<text class="fill-outline font-mono text-[10px]" text-anchor="end" x="50" y="134">120°C</text>
+<text class="fill-outline font-mono text-[10px]" text-anchor="end" x="50" y="189">70°C</text>
+<text class="fill-outline font-mono text-[10px]" text-anchor="end" x="50" y="244">20°C</text>
+<!-- Pinch Vertical Guide -->
+<line stroke="#7dffa2" stroke-dasharray="2,2" stroke-width="1" x1="335" x2="335" y1="20" y2="240"></line>
+<rect fill="#171c25" height="22" opacity="0.95" rx="3" width="90" x="290" y="28"></rect>
+<text class="fill-secondary font-mono text-[11px] font-bold" text-anchor="middle" x="335" y="43">PINCH: 118.5°C</text>
+<!-- External Utilities Region Shading -->
+<!-- Hot Utility QH = 14.2 MW (Top Left) -->
+<polygon fill="#ffb4ab" fill-opacity="0.12" points="60,20 180,20 180,72 60,72"></polygon>
+<text class="fill-error font-mono text-[10px] font-semibold" text-anchor="middle" x="120" y="48">QH = 14.2 MW (LP 蒸汽)</text>
+<!-- Cold Utility QC = 10.1 MW (Bottom Right) -->
+<polygon fill="#00e5ff" fill-opacity="0.12" points="500,185 615,185 615,240 500,240"></polygon>
+<text class="fill-primary-container font-mono text-[10px] font-semibold" text-anchor="middle" x="558" y="215">QC = 10.1 MW (循环水)</text>
+<!-- Hot Stream Composite Curve (Red/Coral) -->
+<path d="M 60,30 L 160,55 L 260,95 L 335,128 L 440,170 L 520,200 L 610,225" fill="none" stroke="#ffb4ab" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Cold Stream Composite Curve (Cyan) -->
+<path d="M 70,68 L 180,92 L 275,120 L 335,138 L 410,165 L 500,208 L 610,240" fill="none" stroke="#00e5ff" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Pinch Point Anchors & ΔTmin Bracket -->
+<circle cx="335" cy="128" fill="#ffb4ab" r="4"></circle>
+<circle cx="335" cy="138" fill="#00e5ff" r="4"></circle>
+<line stroke="#7dffa2" stroke-width="2" x1="335" x2="335" y1="128" y2="138"></line>
+<text class="fill-secondary font-mono text-[10px]" x="345" y="136">ΔT=10K</text>
+</svg>
+<!-- Graph X Axis Labeling -->
+<div class="flex justify-between items-center px-12 text-outline font-label-sm text-label-sm border-t border-outline-variant/30 pt-1">
+<span>0 MW (基准)</span>
+<span>10 MW</span>
+<span>20 MW</span>
+<span class="text-secondary font-semibold font-mono">34.2 MW (Net Recovery)</span>
+<span>45 MW</span>
+<span>60 MW (累积焓变 ΔH)</span>
+</div>
+</div>
+<!-- Pinch Analytics Sub-metrics Matrix -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-md">
+<div class="bg-surface-container p-space-sm rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">夹点温度 (Pinch Temp)</div>
+<div class="font-data-metric text-data-metric text-primary font-bold mt-1">118.5 <span class="text-label-sm font-normal text-on-surface-variant">°C</span></div>
+<div class="text-[10px] text-outline font-mono">Th,pinch: 123.5 / Tc: 113.5</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">最小外供热 (QH,min)</div>
+<div class="font-data-metric text-data-metric text-error font-bold mt-1">14.2 <span class="text-label-sm font-normal text-on-surface-variant">MW</span></div>
+<div class="text-[10px] text-secondary font-mono">节约 42.6% 原需热量</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">最小外供冷 (QC,min)</div>
+<div class="font-data-metric text-data-metric text-primary-fixed-dim font-bold mt-1">10.1 <span class="text-label-sm font-normal text-on-surface-variant">MW</span></div>
+<div class="text-[10px] text-secondary font-mono">空冷/水冷协同负荷</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">换热网络热回收率</div>
+<div class="font-data-metric text-data-metric text-secondary font-bold mt-1">76.4 <span class="text-label-sm font-normal text-on-surface-variant">%</span></div>
+<div class="text-[10px] text-outline font-mono">接近拓扑理论极值</div>
+</div>
+</div>
+<!-- Integrated Heat Recovery Advice Box -->
+<div class="mt-space-md p-space-md rounded bg-surface-container-high/60 flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="flex-1 text-on-surface">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-semibold text-primary">热集成优化建议 (HEN Advisory):</span>
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-bold">REC_SAVING: +4.6 MW</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              模拟检测到隔壁塔 <span class="text-primary font-mono font-medium">T-201</span> 塔顶二次蒸汽（134.2 °C）处于夹点之上，具有高品位热能。推荐将其直接引入粗产品进料预热器 <span class="text-primary font-mono font-medium">E-101</span> 壳程进行换热冷凝，可直接回收潜热 <strong class="text-secondary font-mono">4.6 MW</strong>，降低低压蒸汽负荷 6.8 t/h，年化节约燃料折标煤约 3,200 吨。
+            </p>
+</div>
+</div>
+</div>
+<!-- Exergy Destruction Flow Breakdown -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">insights</span>
+            系统 (火用) 损分布与不可逆损失分析 (Exergy Destruction Distribution)
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">TOTAL DESTROYED: 4.82 MW</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface">隔壁精馏塔 T-201 (传质驱动力与回流混合)</span>
+<span class="font-mono text-outline">1.94 MW (40.2%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 40.2%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface">MVR 离心蒸汽压缩机 C-201 (绝热温升与内摩擦)</span>
+<span class="font-mono text-outline">1.12 MW (23.2%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 23.2%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface">闪蒸闪急减压过程 V-101 (节流膨胀自由发泡)</span>
+<span class="font-mono text-outline">0.96 MW (19.9%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 19.9%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface">换热网络传热温差损失 (ΔT 引起的热阻熵增)</span>
+<span class="font-mono text-outline">0.80 MW (16.7%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 16.7%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Key Equipment Sizing & Rating Cards -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex items-center justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">关键设备负荷与尺寸核算</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Equipment Rating &amp; Mechanical Sizing</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> 4/4 校验合规
+        </span>
+</div>
+<!-- Equipment 1: DWC Dividing Wall Column T-201 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-headline-md">T1</span>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">隔壁精馏塔 (DWC) T-201</div>
+<div class="font-label-sm text-label-sm text-outline">三元乙二醇异构体高保真集成共沸分离</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary font-label-sm text-label-sm">82.4% 负荷率</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm bg-surface-container p-space-sm rounded">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">塔内径 / 塔截面:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">Φ 3,200 mm <span class="text-outline text-label-sm font-normal">(8.04 m²)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">有效总塔高:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">38.5 m <span class="text-outline text-label-sm font-normal">(隔壁段 16.2m)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">规整填料型号:</span>
+<div class="font-mono text-secondary font-medium text-body-md">Sulzer Mellapak 250Y</div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">结构材质 (MOC):</span>
+<div class="font-mono text-on-surface font-medium text-body-md">06Cr19Ni10 (SS 316L)</div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>泛点率裕量 (Flooding Factor): <strong class="text-on-surface font-mono">71.8%</strong></span>
+<span class="text-secondary flex items-center gap-1 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 水力学计算通过
+          </span>
+</div>
+</div>
+<!-- Equipment 2: Flash Evaporator V-101 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded bg-primary-fixed-dim/10 text-primary-fixed-dim flex items-center justify-center font-mono font-bold text-headline-md">V1</span>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">脱轻闪蒸罐 (Flash Vessel) V-101</div>
+<div class="font-label-sm text-label-sm text-outline">粗合成液初级低沸点轻组分急冷减压闪蒸</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">安全裕量 35%</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm bg-surface-container p-space-sm rounded">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">几何有效容积:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">15.0 m³ <span class="text-outline text-label-sm font-normal">(卧式双鞍座)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">气相分离空塔流速:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">1.8 m/s <span class="text-secondary text-label-sm font-normal">(&lt; Souders 2.2)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">液相停留时间 (Res. Time):</span>
+<div class="font-mono text-on-surface font-medium text-body-md">6.8 min <span class="text-outline text-label-sm font-normal">(工艺裕量 &gt; 5)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">除沫除雾内件:</span>
+<div class="font-mono text-primary font-medium text-body-md">316L 丝网破沫器 (99.8%)</div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>防雾沫夹带裕量: <strong class="text-secondary font-mono">合格 (无二次气蚀)</strong></span>
+<span class="text-outline font-label-sm text-label-sm font-mono">P: 0.18 MPaG / 85°C</span>
+</div>
+</div>
+<!-- Equipment 3: MVR Centrifugal Compressor C-201 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded bg-secondary/10 text-secondary flex items-center justify-center font-mono font-bold text-headline-md">C1</span>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">MVR 离心蒸汽压缩机 C-201</div>
+<div class="font-label-sm text-label-sm text-outline">塔顶水蒸汽二次升温增压闭环热泵</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm">COP = 4.85</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm bg-surface-container p-space-sm rounded">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">电机/轴额定功率:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">1,420 kW <span class="text-outline text-label-sm font-normal">(变频直驱)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">压缩压比 (Compression Ratio):</span>
+<div class="font-mono text-on-surface font-bold text-body-md">2.40 <span class="text-outline text-label-sm font-normal">(0.10 → 0.24 MPa)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">等熵效率 (Isentropic Eff.):</span>
+<div class="font-mono text-secondary font-bold text-body-md">82.0% <span class="text-outline text-label-sm font-normal">(多变效率 85%)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">出口过热度消除:</span>
+<div class="font-mono text-on-surface font-medium text-body-md">注入软化水减温器 (105°C)</div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>喘振安全裕度 (Surge Margin): <strong class="text-secondary font-mono">+28%</strong></span>
+<span class="text-secondary flex items-center gap-1 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> 轴承动平衡校验通过
+          </span>
+</div>
+</div>
+<!-- Equipment 4: Heat Exchanger Network E-101 / E-201 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded bg-primary-container/10 text-primary-container flex items-center justify-center font-mono font-bold text-headline-md">EX</span>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">热集成换热器组 (E-101 / E-201)</div>
+<div class="font-label-sm text-label-sm text-outline">螺纹管强化螺旋折流板节能换热器</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm">热阻核算合格</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm bg-surface-container p-space-sm rounded">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">E-101 换热面积 / 选型:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">320 m² <span class="text-outline text-label-sm font-normal">(BES 固定管板)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">E-201 换热面积 / 选型:</span>
+<div class="font-mono text-on-surface font-bold text-body-md">480 m² <span class="text-outline text-label-sm font-normal">(AES 浮头式)</span></div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">总传热系数 (U calc):</span>
+<div class="font-mono text-on-surface font-medium text-body-md">850 ~ 1,120 W/(m²·K)</div>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">设计结垢阻力 (Rf):</span>
+<div class="font-mono text-secondary font-medium text-body-md">0.0003 m²·K/W (留裕量)</div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>压降校核: <strong class="text-on-surface font-mono">壳程 28 kPa / 管程 42 kPa</strong></span>
+<span class="text-secondary font-label-sm text-label-sm font-medium">振动模态核算通过</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: 资源循环与余热梯级利用收益明细卡 -->
+<div class="bg-surface-container-low p-space-lg rounded shadow-md mb-space-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm mb-space-md border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">recycling</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">余热梯级利用与全厂减碳效益核算 (Eco-Energy Ledger)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">基于严格国家能源审计标准与碳核查方法学 (GHG Protocol Scope 1 &amp; 2)</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<div class="text-label-sm font-label-sm text-on-surface-variant">全生命周期年化节能节支估算</div>
+<div class="font-headline-md text-headline-md text-secondary font-bold font-mono">¥ 12,480,000 / 年</div>
+</div>
+<div class="w-px h-8 bg-outline-variant/40"></div>
+<div class="text-right">
+<div class="text-label-sm font-label-sm text-on-surface-variant">综合二氧化碳当量直接减排</div>
+<div class="font-headline-md text-headline-md text-primary font-bold font-mono">24,300 吨 CO₂e / 年</div>
+</div>
+</div>
+</div>
+<!-- Comparative High-Density Flow Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-2.5 px-space-md rounded-l">节能集成子系统 / 工段</th>
+<th class="py-2.5 px-space-md">技术拓扑策略</th>
+<th class="py-2.5 px-space-md">传统基准消耗</th>
+<th class="py-2.5 px-space-md">热集成后消耗</th>
+<th class="py-2.5 px-space-md">节约率 (Efficiency)</th>
+<th class="py-2.5 px-space-md">折标煤 (tce/a)</th>
+<th class="py-2.5 px-space-md rounded-r text-right">投资回收期 (PBP)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-on-surface">
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-2.5 px-space-md font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              精馏塔 T-201 侧线抽提与顶蒸
+            </td>
+<td class="py-2.5 px-space-md text-on-surface-variant font-mono">隔壁塔技术集成取代双塔双效</td>
+<td class="py-2.5 px-space-md font-mono">28.4 MW (蒸汽)</td>
+<td class="py-2.5 px-space-md font-mono text-primary font-bold">18.2 MW (热集成)</td>
+<td class="py-2.5 px-space-md font-mono text-secondary">-35.9%</td>
+<td class="py-2.5 px-space-md font-mono">6,420</td>
+<td class="py-2.5 px-space-md font-mono text-right text-secondary">0.9 年</td>
+</tr>
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-2.5 px-space-md font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              轻组分气相闭式回热热泵
+            </td>
+<td class="py-2.5 px-space-md text-on-surface-variant font-mono">MVR 压缩机升温潜热自循环</td>
+<td class="py-2.5 px-space-md font-mono">14.0 t/h (生蒸汽)</td>
+<td class="py-2.5 px-space-md font-mono text-primary font-bold">0.0 t/h (完全替代)</td>
+<td class="py-2.5 px-space-md font-mono text-secondary">-100%</td>
+<td class="py-2.5 px-space-md font-mono">8,910</td>
+<td class="py-2.5 px-space-md font-mono text-right text-secondary">1.4 年</td>
+</tr>
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-2.5 px-space-md font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              进料预热网络 E-101 / E-201
+            </td>
+<td class="py-2.5 px-space-md text-on-surface-variant font-mono">夹点温跨交叉对流传热拓扑</td>
+<td class="py-2.5 px-space-md font-mono">1,350 m³/h 冷却水</td>
+<td class="py-2.5 px-space-md font-mono text-primary font-bold">820 m³/h</td>
+<td class="py-2.5 px-space-md font-mono text-secondary">-39.3%</td>
+<td class="py-2.5 px-space-md font-mono">1,850</td>
+<td class="py-2.5 px-space-md font-mono text-right text-secondary">0.6 年</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- AI Validation Callout Badge -->
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">所有能量核算已通过稳态全流程联立收敛校验，无跨夹点传热热力学违规现象 (Zero Pinch Violation)。</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline font-mono">AUDIT TIMESTAMP: 2025-10-24 16:42:08 UTC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-mono">P_DIFF: &lt; 0.2%</span>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md pb-space-lg">
+<button class="px-space-lg py-2.5 rounded bg-surface-container-low border border-outline-variant/40 font-headline-md text-headline-md text-on-surface hover:bg-surface-container transition-colors flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>返回上一步 (Step 05 流程搭建与收敛)</span>
+</button>
+<div class="flex items-center gap-space-md">
+<button class="px-space-md py-2.5 rounded bg-surface-container border border-outline-variant/30 font-headline-md text-headline-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>导出夹点分析与设备报表 (.PDF / .XLSX)</span>
+</button>
+<button class="px-space-xl py-2.5 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_18px_rgba(0,229,255,0.5)] transition-all flex items-center gap-2 cursor-pointer shadow-md" type="button">
+<span>确认分析结果，进入参数与方案优化 (Step 07)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for equipment rating inspection
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.hover\\:shadow-md');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-2px)';
+        card.style.transition = 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0px)';
+      });
+    });
+  });
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

@@ -1,0 +1,13 @@
+{
+  "version": "2",
+  "record_format": "JSONL UTF-8",
+  "base_model": "",
+  "api_key": "",
+  "base_url": "",
+  "model_training_status": "LLM_NOT_FINETUNED",
+  "training_entry": "training/ready/train.jsonl",
+  "development_entry": "training/ready/dev.jsonl",
+  "heldout_entry": "training/ready/test.jsonl",
+  "warning": "Do not merge dev/test into training; prompts_test excludes reference answers. Model-generated outputs are not simulator evidence.",
+  "mix": "grounded_reference_answer + agent_next_action; synthetic labels; chemical expert review pending"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "guide-cashflow",
+  "title": "现金流 NPV IRR 回收期前置条件",
+  "skill": "chemflow-optimization-tea",
+  "split": "test",
+  "queries": [
+    "只有营业收入可以计算净现值吗",
+    "没有投资现金流能给内部收益率吗"
+  ],
+  "text": "净现值、内部收益率和回收期需要明确投资与各期净现金流边界；净现值还需折现率和时间基准。收入不能直接当净现金流。现金流缺失时保持未计算；异常现金流模式可能导致 IRR 不存在或不唯一，不能默认给出单个可信值。",
+  "required_inputs": "投资；期间；净现金流；折现率；税费及残值边界",
+  "expected_output": "NOT_CALCULATED 或确定性现金流计算记录",
+  "local_reference": "skills/chemflow-optimization-tea/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

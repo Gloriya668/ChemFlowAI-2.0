@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Operational Breadcrumb & Telemetry Beacon Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest/80 p-space-md rounded-xl shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">MISSION TELEMETRY ACTIVE</span>
+<span class="text-outline">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WORKBENCH OVERVIEW MATRIX</span>
+<span class="text-outline">/</span>
+<span class="font-label-sm text-label-sm text-secondary">SYS_EQUILIBRIUM: OPTIMAL</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">schedule</span>
+<span>LAST SNAPSHOT: 10 MINS AGO</span>
+</div>
+<div class="px-space-sm py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm">
+        REV_1.4.9-PROD
+      </div>
+</div>
+</div>
+<!-- Hero Bento Grid: Primary Active Process Card + Circular Progress Gauge + Quick Actions -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Main Focus: Process Metadata & Facility Banner (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between relative overflow-hidden shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary-container/10 via-secondary/5 to-transparent blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-primary-container/15 text-primary font-label-sm text-label-sm font-semibold tracking-wider">PROJECT CHEM-2025-EG-04B</span>
+<span class="px-space-sm py-0.5 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm">LEVEL-4 CRITICALITY</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">ENGINEERING CORE: FLUID-SIM-AI</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1 mb-space-xs">
+          年产30万吨生物质基乙二醇绿色合成示范工程
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+          采用两步法生物质糖催化加氢裂解工艺，结合闭环蒸汽再压缩（MVR）与差压共沸精馏体系，旨在实现吨产品碳减排72.4%的绿色碳中和标杆化工装置。
+        </p>
+</div>
+<!-- Process Visual Snapshot Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm my-space-md">
+<div class="relative rounded-lg overflow-hidden h-24 bg-surface-container-high group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" data-alt="Photorealistic dark ultra-high-definition industrial chemical synthesis plant at twilight with gleaming stainless steel distillation columns, glowing cyan instrument pipelines, steam vents, and control instrumentation lights, cinematic depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkPu8B7R0fzecrKUky8dUz7Ghe5dvdb58D7NiLw_6W8Rq4ChGIj0XitePw6L1xI9f7UooxDCLFX4CJ5NsPPwgG6jGqEexSTehsDrt05UxMXiWlBCDo6Adk1u5GQYgNTtSqslAPiY-zwOasm-_jGtVLf069plTHC9Q1HP9rotbt5u5_DxZISNK9yALXBV9PoBwkW1dO7QaAgw7Rj5tbfhJz32Ojm9VU3cvSWMmlDfQgAgPpzblarUAqWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 flex justify-between items-end">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">示范反应堆单元</span>
+<span class="font-label-sm text-label-sm text-secondary">R-101A</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-24 bg-surface-container-high group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" data-alt="Technical close-up photo of modern green chemical processing pipelines wrapped in heat exchangers, illuminated by atmospheric cyan and neon emerald indicator LEDs in dark laboratory pilot plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzlbtQTD7N8xNSyqCIVvfhGI7vxiz1vBLb1TydKIPV36t3iJWF2y88b5cHcvAn_mXAPKhwoBgBsXGkp49qOreQLYSOvrE4tAclolXifzj8o4uaC_JWq4lavpamlnMErcJMEx1o00j3q0xHYHuDFrszTgcI_U883EvG0kDGXpQARMn97byiimngrpQH8cELF4ban_Lk1TvFFq6-dbkIYjotJ33fiPsjjURuTbs3dPBZmhvVYhDJa14Fmg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 flex justify-between items-end">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">共沸精馏塔系</span>
+<span class="font-label-sm text-label-sm text-primary">T-204B</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-24 bg-surface-container-high group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" data-alt="Clean futuristic digital twin control room displaying dynamic holographic process flow schematics and molecular dynamics charts on translucent cyan dark mode curved monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhsJQ4NFWuvo4QlZn9mhk3yKE8ahlXwD3LbNqN-fY4_uuijPhfI96E-BFgRry1s24JG5NeL3VQAVKfXOjg9oyjWBE1Hn4s2JEWEEbI7apRJfrtEAA1LFo2c-T_coKYp8C6BQvK9FfTXuPkjxBcMWxXw5YgJvvBxu8DZbaOhPUzVvjdlpa-OC9WamfvZvGrQ2q0NKe-pSDvJimI75D6cJuCsIpCO7WTutitBwvHNQJmrIB743gWhqzEvA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 flex justify-between items-end">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">DCS双控机房</span>
+<span class="font-label-sm text-label-sm text-primary-container">NODE-09</span>
+</div>
+</div>
+</div>
+<!-- Process Lead & Telemetry Metrics Meta Bar -->
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CHIEF PROCESS ARCHITECT</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">陈立敏 博士 / 首席工艺工程师</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">TARGET ANNUAL CAPACITY</span>
+<span class="font-data-metric text-data-metric text-primary">300,000 <span class="font-label-sm text-label-sm text-on-surface-variant">t/a</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SOLVER STATUS</span>
+<span class="font-data-metric text-data-metric text-secondary">ACTIVE <span class="font-label-sm text-label-sm text-secondary-fixed-dim">#C-03</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gauge Metric & Live Verification Matrix (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- High Density Completion Gauge -->
+<div class="bg-surface-container rounded-xl p-space-lg flex-1 shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">donut_large</span>
+<span class="font-headline-md text-headline-md text-on-surface">工程阶段验证收敛度</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium">4 OF 9 MILESTONES</span>
+</div>
+<div class="flex items-center justify-between gap-space-md py-space-sm">
+<!-- Circular Progress Ring SVG -->
+<div class="relative w-36 h-36 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<circle class="stroke-surface-container-highest" cx="60" cy="60" fill="transparent" r="50" stroke-width="10"></circle>
+<circle class="stroke-primary-container" cx="60" cy="60" fill="transparent" r="50" stroke-dasharray="314.159" stroke-dashoffset="174.35" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">44.5<span class="text-sm font-normal text-on-surface-variant">%</span></span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider">PHASE COMPL</span>
+</div>
+</div>
+<!-- Micro Spec breakdown -->
+<div class="flex-1 space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm">设计基准校核</span>
+<span class="font-label-md text-label-md text-secondary">100.0% CONV</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-1">
+<span class="text-on-surface-variant font-body-sm">物性热力学相平衡</span>
+<span class="font-label-md text-label-md text-secondary">100.0% CONV</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-1">
+<span class="text-on-surface-variant font-body-sm">路线分离候选评估</span>
+<span class="font-label-md text-label-md text-primary animate-pulse">RUNNING (4A)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-2/3"></div>
+</div>
+</div>
+</div>
+<!-- Quick Operation Launcher -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<a class="flex items-center justify-center gap-1.5 p-space-sm rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_12px_rgba(0,229,255,0.45)] transition-all" data-path="step-04-route-screening" href="#">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>继续当前工步 (04)</span>
+</a>
+<button class="flex items-center justify-center gap-1.5 p-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-body-md text-body-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">assessment</span>
+<span>导出阶段检查报告</span>
+</button>
+</div>
+</div>
+<!-- Quick Action Secondary Row -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all shadow-md" type="button">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-primary-container/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[18px]">library_add</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-body-md text-body-md font-medium text-on-surface">新建对比工况</span>
+<span class="font-label-sm text-label-sm text-outline">Scenario Fork #03</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all shadow-md" type="button">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-body-md text-body-md font-medium text-on-surface">版本溯源历史</span>
+<span class="font-label-sm text-label-sm text-outline">v1.4 Snapshot Hub</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-secondary transition-colors">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- AI Engineering Diagnostics & Insights Stream -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-lg flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">CHEMFLOW CO-PILOT DIAGNOSTIC RADAR</span>
+<span class="font-label-sm text-label-sm text-outline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 ACTIONABLE ALERTS FLAGGED</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-outline hover:text-on-surface text-label-sm font-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>DISMISS ALL TRIVIAL</span>
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Critical Warning Alert Card -->
+<div class="bg-surface-container-high rounded-lg p-space-md flex items-start gap-space-sm group hover:bg-surface-bright transition-all">
+<div class="p-2 rounded bg-error-container/40 text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-semibold">STAGE 04 SEPARATION WARNING</span>
+<span class="font-label-sm text-label-sm text-outline">DIAG-ID #4402</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+              方案B中第二精馏塔进料浓度存在微量甲酸杂质（0.18 wt%），需检查气液共沸分离边界条件与塔顶催化腐蚀容限。
+            </p>
+</div>
+<div class="mt-2 flex items-center gap-space-sm">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" data-path="step-04-a-candidate-detail" href="#">
+<span>立即调取方案B二元相图</span>
+<span class="material-symbols-outlined text-[12px]">north_east</span>
+</a>
+<span class="text-outline">·</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">添加抗腐补偿因子</button>
+</div>
+</div>
+</div>
+<!-- Verified Source Sync Info Card -->
+<div class="bg-surface-container-high rounded-lg p-space-md flex items-start gap-space-sm group hover:bg-surface-bright transition-all">
+<div class="p-2 rounded bg-secondary-container/20 text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">THERMODYNAMICS RE-CALIBRATED</span>
+<span class="font-label-sm text-label-sm text-outline">DIPPR 2024 / NIST REF</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+              已从 DIPPR 2024 与 NIST 数据库同步乙二醇-水气液平衡（VLE）实验回归数据，平均残差偏差 &lt;0.42%，活度系数模型 (NRTL) 拟合度达到R²=0.9998。
+            </p>
+</div>
+<div class="mt-2 flex items-center gap-space-sm">
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-0.5" data-path="step-02-data-properties" href="#">
+<span>查看物性回归残差报告</span>
+<span class="material-symbols-outlined text-[12px]">north_east</span>
+</a>
+<span class="text-outline">·</span>
+<span class="font-label-sm text-label-sm text-outline">校验hash: #80cf2a</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 9-Stage Pipeline Status Matrix (Interactive 3x3 Industrial Grid) -->
+<div class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<span class="font-headline-md text-headline-md text-on-surface">9阶段全周期工程状态推进矩阵</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>已固化收敛 (3)
+        </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>当前执行中 (1)
+        </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>等待/锁止阶段 (5)
+        </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- STEP 01 -->
+<a class="group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col justify-between transition-all duration-200 shadow-md" data-path="step-01-design-basis" href="#">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded bg-secondary/10 font-bold">STAGE 01</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>已完成 100%</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            需求与设计基准
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            定义30万吨级年运行8000小时基准，原料糖化液规格指标，公用工程界面界区条件确认。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/40 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">SPEC_REV: #A3</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span>查看基准包</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- STEP 02 -->
+<a class="group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col justify-between transition-all duration-200 shadow-md" data-path="step-02-data-properties" href="#">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded bg-secondary/10 font-bold">STAGE 02</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>校核完成 100%</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            物性与数据校核
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            含乙二醇、丙二醇、二甘醇等18组分热力学二元交互参数矩阵校核，残差在公差阈值内。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/40 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">COMPONENTS: 18</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span>物性校验表</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- STEP 03 -->
+<a class="group bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md flex flex-col justify-between transition-all duration-200 shadow-md" data-path="step-03-model-selection" href="#">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded bg-secondary/10 font-bold">STAGE 03</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[15px]">done</span>
+<span>推荐已确认</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+            模型选择与验证
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            采用增强型 NRTL-RK 热力学体系处理强极性多元醇，结合高压反应级动力学常数固化。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/40 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">MODEL: NRTL-RK</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span>模型参数谱</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- STEP 04 (CURRENT ACTIVE FOCUS) -->
+<a class="group bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between transition-all duration-200 shadow-2xl relative" data-path="step-04-route-screening" href="#">
+<div class="absolute -top-2.5 right-4 px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-md">
+          CURRENT_ACTIVE
+        </div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 rounded bg-primary-container/20 font-bold">STAGE 04</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary animate-pulse font-semibold">
+<span class="material-symbols-outlined text-[15px]">sync</span>
+<span>当前进行中 · 3方案</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-bold">
+            路线与分离筛选
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+            正在对比方案A（常规四塔精馏）、方案B（减压共沸热集成）、方案C（MVR膜分离联产），评估分离净纯度与投资。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-primary">CANDIDATES: 3 RUNNING</span>
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span>进入筛选工作台</span>
+<span class="material-symbols-outlined text-[14px]">play_circle</span>
+</span>
+</div>
+</a>
+<!-- STEP 05 -->
+<a class="group bg-surface-container-low/70 hover:bg-surface-container rounded-xl p-space-md flex flex-col justify-between transition-all duration-200" data-path="step-05-flowsheet-solver" href="#">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container font-bold">STAGE 05</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">hourglass_empty</span>
+<span>待启动</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface/80 group-hover:text-on-surface transition-colors">
+            流程搭建与收敛
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-1">
+            前置路线确认后，自动装配全装置闭环联立方程求解器，包含反应液脱水与大回流物流收敛。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/30 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">WAITING ON STEP 04</span>
+<span class="font-label-sm text-label-sm text-outline">SOLVER READY</span>
+</div>
+</a>
+<!-- STEP 06 -->
+<div class="bg-surface-container-low/40 rounded-xl p-space-md flex flex-col justify-between opacity-60">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container">STAGE 06</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>未解锁</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface-variant">
+            能量与设备分析
+          </div>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+            夹点能量匹配分析，热负荷温焓复合曲线（GCC），换热网络综合与关键设备粗选型水力学校核。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/20 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">PINCH ENGINE</span>
+<span class="font-label-sm text-label-sm text-outline">LOCKED</span>
+</div>
+</div>
+<!-- STEP 07 -->
+<div class="bg-surface-container-low/40 rounded-xl p-space-md flex flex-col justify-between opacity-60">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container">STAGE 07</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>未解锁</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface-variant">
+            参数与方案优化
+          </div>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+            基于Pareto多目标进化算法，寻优操作压强、塔板进料位置与回流比最佳折衷点。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/20 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">PARETO OPTIM</span>
+<span class="font-label-sm text-label-sm text-outline">LOCKED</span>
+</div>
+</div>
+<!-- STEP 08 -->
+<div class="bg-surface-container-low/40 rounded-xl p-space-md flex flex-col justify-between opacity-60">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container">STAGE 08</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>未解锁</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface-variant">
+            经济与环境评价
+          </div>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+            CAPEX/OPEX测算、动态投资回收期计算、全生命周期（LCA）碳足迹溯源核算。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/20 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">LCA &amp; CAPEX</span>
+<span class="font-label-sm text-label-sm text-outline">LOCKED</span>
+</div>
+</div>
+<!-- STEP 09 -->
+<div class="bg-surface-container-low/40 rounded-xl p-space-md flex flex-col justify-between opacity-60">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-outline px-2 py-0.5 rounded bg-surface-container">STAGE 09</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span>未解锁</span>
+</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface-variant">
+            复核与成果交付
+          </div>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+            工艺包PID草图导出、物料热量平衡表（HMB）编译、自动化设计说明书与审查报告。
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/20 -mx-space-md -mb-space-md px-space-md py-space-xs rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">DELIVERY CORE</span>
+<span class="font-label-sm text-label-sm text-outline">LOCKED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Lower Tactical Quick Jumper Dock -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md shadow-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">TACTICAL NAVIGATION CONTROLLER</span>
+<div class="font-body-md text-body-md text-on-surface font-medium">快速流转至工程基准或跃迁至执行节点</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-body-sm text-body-sm flex items-center gap-1.5" data-path="step-01-design-basis" href="#">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span>查看 Step 01 需求与设计基准</span>
+</a>
+<a class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" data-path="step-04-route-screening" href="#">
+<span>跳转至当前进行阶段 (Step 04)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive telemetry micro-interaction
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('[data-path]');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-2px)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+      });
+    });
+  });
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

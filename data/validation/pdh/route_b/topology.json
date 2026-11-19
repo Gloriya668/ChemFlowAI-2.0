@@ -1,0 +1,268 @@
+{
+  "route_id": "route_b",
+  "title": "热泵精馏",
+  "units": [
+    {
+      "id": "REACTOR",
+      "type": "REACTOR",
+      "label": "反应器",
+      "parameters": {}
+    },
+    {
+      "id": "COOLER1",
+      "type": "HX",
+      "label": "进料冷却器",
+      "parameters": {}
+    },
+    {
+      "id": "FLASH1",
+      "type": "FLASH",
+      "label": "闪蒸罐",
+      "parameters": {}
+    },
+    {
+      "id": "HEATER",
+      "type": "HX",
+      "label": "进料加热器",
+      "parameters": {}
+    },
+    {
+      "id": "HPD",
+      "type": "TOWER",
+      "label": "热泵精馏塔",
+      "parameters": {}
+    },
+    {
+      "id": "COMPR",
+      "type": "COMPRESSOR",
+      "label": "压缩机",
+      "parameters": {}
+    },
+    {
+      "id": "REBOILER",
+      "type": "HX",
+      "label": "再沸换热器",
+      "parameters": {}
+    },
+    {
+      "id": "ASSI-REB",
+      "type": "HX",
+      "label": "辅助再沸器",
+      "parameters": {}
+    },
+    {
+      "id": "FLASH2",
+      "type": "FLASH",
+      "label": "闪蒸罐",
+      "parameters": {}
+    },
+    {
+      "id": "VALVE",
+      "type": "VALVE",
+      "label": "减压阀",
+      "parameters": {}
+    },
+    {
+      "id": "COOLER2",
+      "type": "HX",
+      "label": "回流冷却器",
+      "parameters": {}
+    },
+    {
+      "id": "SPLITTER",
+      "type": "SPLIT",
+      "label": "分流器",
+      "parameters": {}
+    }
+  ],
+  "streams": [
+    {
+      "stream_id": "FEED",
+      "from_unit": null,
+      "to_unit": "REACTOR"
+    },
+    {
+      "stream_id": "REACT",
+      "from_unit": "REACTOR",
+      "to_unit": "COOLER1"
+    },
+    {
+      "stream_id": "COO-OUT",
+      "from_unit": "COOLER1",
+      "to_unit": "FLASH1"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "FLASH1",
+      "to_unit": null
+    },
+    {
+      "stream_id": "HEAT-IN",
+      "from_unit": "FLASH1",
+      "to_unit": "HEATER"
+    },
+    {
+      "stream_id": "HEAT-OUT",
+      "from_unit": "HEATER",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "COMP-IN",
+      "from_unit": "HPD",
+      "to_unit": "COMPR"
+    },
+    {
+      "stream_id": "COMP-OUT",
+      "from_unit": "COMPR",
+      "to_unit": "REBOILER"
+    },
+    {
+      "stream_id": "REB-IN",
+      "from_unit": "HPD",
+      "to_unit": "REBOILER"
+    },
+    {
+      "stream_id": "REB-OUT",
+      "from_unit": "REBOILER",
+      "to_unit": "ASSI-REB"
+    },
+    {
+      "stream_id": "FLA-IN",
+      "from_unit": "ASSI-REB",
+      "to_unit": "FLASH2"
+    },
+    {
+      "stream_id": "FLA-OUT",
+      "from_unit": "FLASH2",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "PRO-B",
+      "from_unit": "FLASH2",
+      "to_unit": null
+    },
+    {
+      "stream_id": "VALVE-IN",
+      "from_unit": "REBOILER",
+      "to_unit": "VALVE"
+    },
+    {
+      "stream_id": "COOL-IN",
+      "from_unit": "VALVE",
+      "to_unit": "COOLER2"
+    },
+    {
+      "stream_id": "COOL-OUT",
+      "from_unit": "COOLER2",
+      "to_unit": "SPLITTER"
+    },
+    {
+      "stream_id": "REFLUX",
+      "from_unit": "SPLITTER",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "PRO-D",
+      "from_unit": "SPLITTER",
+      "to_unit": null
+    }
+  ],
+  "connections": [
+    {
+      "stream_id": "FEED",
+      "from_unit": null,
+      "to_unit": "REACTOR"
+    },
+    {
+      "stream_id": "REACT",
+      "from_unit": "REACTOR",
+      "to_unit": "COOLER1"
+    },
+    {
+      "stream_id": "COO-OUT",
+      "from_unit": "COOLER1",
+      "to_unit": "FLASH1"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "FLASH1",
+      "to_unit": null
+    },
+    {
+      "stream_id": "HEAT-IN",
+      "from_unit": "FLASH1",
+      "to_unit": "HEATER"
+    },
+    {
+      "stream_id": "HEAT-OUT",
+      "from_unit": "HEATER",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "COMP-IN",
+      "from_unit": "HPD",
+      "to_unit": "COMPR"
+    },
+    {
+      "stream_id": "COMP-OUT",
+      "from_unit": "COMPR",
+      "to_unit": "REBOILER"
+    },
+    {
+      "stream_id": "REB-IN",
+      "from_unit": "HPD",
+      "to_unit": "REBOILER"
+    },
+    {
+      "stream_id": "REB-OUT",
+      "from_unit": "REBOILER",
+      "to_unit": "ASSI-REB"
+    },
+    {
+      "stream_id": "FLA-IN",
+      "from_unit": "ASSI-REB",
+      "to_unit": "FLASH2"
+    },
+    {
+      "stream_id": "FLA-OUT",
+      "from_unit": "FLASH2",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "PRO-B",
+      "from_unit": "FLASH2",
+      "to_unit": null
+    },
+    {
+      "stream_id": "VALVE-IN",
+      "from_unit": "REBOILER",
+      "to_unit": "VALVE"
+    },
+    {
+      "stream_id": "COOL-IN",
+      "from_unit": "VALVE",
+      "to_unit": "COOLER2"
+    },
+    {
+      "stream_id": "COOL-OUT",
+      "from_unit": "COOLER2",
+      "to_unit": "SPLITTER"
+    },
+    {
+      "stream_id": "REFLUX",
+      "from_unit": "SPLITTER",
+      "to_unit": "HPD"
+    },
+    {
+      "stream_id": "PRO-D",
+      "from_unit": "SPLITTER",
+      "to_unit": null
+    }
+  ],
+  "energy_streams": [],
+  "source": {
+    "source_type": "USER_INPUT",
+    "source_name": "既有已审核流程可视化资产",
+    "version": "2026-10-06"
+  }
+}

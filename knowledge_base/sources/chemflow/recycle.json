@@ -1,0 +1,18 @@
+{
+  "id": "guide-recycle",
+  "title": "回流流程初始化和失败定位",
+  "skill": "chemflow-simulation-review",
+  "split": "train",
+  "queries": [
+    "回流流程不收敛时应该收集哪些信息",
+    "如何逐步定位循环流程的失败单元"
+  ],
+  "text": "保留失败日志和原输入，从单元模型和分段流程检查连接、规格、初始估计及物性适用范围，再定位循环依赖。不得只提高迭代次数就宣布问题解决。修复应留版本记录并在多个工况复核；当前 Agent 不会自动修改参数重试。",
+  "required_inputs": "失败对象；日志；初值；流程连接；规格；版本",
+  "expected_output": "可复现失败记录和人工修复建议；不是已收敛报告",
+  "local_reference": "knowledge_base/sources/idaes/docs__explanations__model_diagnostics__index.rst",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

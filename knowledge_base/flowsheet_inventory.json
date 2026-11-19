@@ -1,0 +1,675 @@
+[
+  {
+    "id": "BiodieselProduction",
+    "compounds": [
+      "EtP",
+      "Ethanol_BD",
+      "Glycerol_BD",
+      "NaOH_BD",
+      "PPP",
+      "Water_BD"
+    ],
+    "unit_types": [
+      "AbsorptionColumn",
+      "Adjust",
+      "Cooler",
+      "EnergyStream",
+      "Heater",
+      "MaterialStream",
+      "Mixer",
+      "Pump",
+      "Reactor_Conversion",
+      "Recycle",
+      "ShortcutColumn",
+      "Valve",
+      "Vessel"
+    ],
+    "property_packages": [
+      "NRTL"
+    ],
+    "objects": 50,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "CavettProblem",
+    "compounds": [
+      "Agua",
+      "DioxidoDeCarbono",
+      "Etano",
+      "Metano",
+      "Nitrogenio",
+      "Propano",
+      "SulfetoDeHidrogenio",
+      "iButano",
+      "iPentano",
+      "nButano",
+      "nDecano",
+      "nHeptano",
+      "nHexano",
+      "nNonano",
+      "nOctano",
+      "nPentano"
+    ],
+    "unit_types": [
+      "Compressor",
+      "EnergyStream",
+      "MaterialStream",
+      "Mixer",
+      "Recycle",
+      "Valve",
+      "Vessel"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 42,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "ChemSepColumnSnapshot",
+    "compounds": [
+      "Argon",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Water"
+    ],
+    "unit_types": [
+      "CapeOpenUO",
+      "CustomUO",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 6,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "ColdNaphthaStabiliser",
+    "compounds": [
+      "1-butanol",
+      "1-butene",
+      "1-decanol",
+      "1-decene",
+      "1-dodecanol",
+      "1-dodecene",
+      "1-heptadecanol",
+      "1-heptanol",
+      "1-heptene",
+      "1-hexadecanol",
+      "1-hexadecene",
+      "1-hexanol",
+      "1-hexene",
+      "1-nonadecanol",
+      "1-nonanol",
+      "1-nonene",
+      "1-octadecanol",
+      "1-octadecene",
+      "1-octanol",
+      "1-octene",
+      "1-pentadecanol",
+      "1-pentanol",
+      "1-pentene",
+      "1-propanol",
+      "1-tetradecanol",
+      "1-tetradecene",
+      "1-tridecanol",
+      "1-undecanol",
+      "1-undecene",
+      "Argon",
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Ethane",
+      "Ethanol",
+      "Ethylene",
+      "Hydrogen",
+      "Isobutane",
+      "Methane",
+      "Methanol",
+      "N-butane",
+      "N-decane",
+      "N-docosane",
+      "N-dodecane",
+      "N-eicosane",
+      "N-heneicosane",
+      "N-heptacosane",
+      "N-heptadecane",
+      "N-heptane",
+      "N-hexacosane",
+      "N-hexadecane",
+      "N-hexane",
+      "N-nonacosane",
+      "N-nonadecane",
+      "N-nonane",
+      "N-octacosane",
+      "N-octadecane",
+      "N-octane",
+      "N-pentacosane",
+      "N-pentadecane",
+      "N-pentane",
+      "N-tetracosane",
+      "N-tetradecane",
+      "N-tricosane",
+      "N-tridecane",
+      "N-undecane",
+      "Nitrogen",
+      "Propane",
+      "Propylene",
+      "Water"
+    ],
+    "unit_types": [
+      "DistillationColumn",
+      "EnergyStream",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "ExtractiveDistillation",
+    "compounds": [
+      "Acetone",
+      "Methanol"
+    ],
+    "unit_types": [
+      "DistillationColumn",
+      "EnergyStream",
+      "MaterialStream",
+      "Pump",
+      "Recycle"
+    ],
+    "property_packages": [
+      "NRTL"
+    ],
+    "objects": 16,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "GasLiquidSeparatorSizing",
+    "compounds": [
+      "ParaHydrogen"
+    ],
+    "unit_types": [
+      "Cooler",
+      "EnergyStream",
+      "MaterialStream",
+      "Mixer",
+      "Pump",
+      "Recycle",
+      "Valve",
+      "Vessel"
+    ],
+    "property_packages": [
+      "Modified UNIFAC (NIST)"
+    ],
+    "objects": 21,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "GibbsAndEquilibriumReactors",
+    "compounds": [
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Hydrogen",
+      "Methane",
+      "Water"
+    ],
+    "unit_types": [
+      "EnergyStream",
+      "MaterialStream",
+      "Reactor_Equilibrium",
+      "Reactor_Gibbs"
+    ],
+    "property_packages": [
+      "DWSIM.Thermodynamics.PropertyPackages.PengRobinsonPropertyPackage"
+    ],
+    "objects": 10,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "HeatExchangerSizingAndDesign",
+    "compounds": [
+      "Agua",
+      "nDecano",
+      "nNonano",
+      "nOctano"
+    ],
+    "unit_types": [
+      "HeatExchanger",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "DWSIM.Thermodynamics.PropertyPackages.PengRobinsonLKPropertyPackage"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "HydrocycloneCustomUnitOperation",
+    "compounds": [
+      "Agua",
+      "nDecano",
+      "nHeptano",
+      "nNonano",
+      "nOctano"
+    ],
+    "unit_types": [
+      "CustomUO",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 4,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "HydrogenproductionthroughMethaneCatalyticSteamReforming",
+    "compounds": [
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Hydrogen",
+      "Methane",
+      "Water"
+    ],
+    "unit_types": [
+      "EnergyStream",
+      "MaterialStream",
+      "Reactor_PFR"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 4,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "LiquidLiquidExtraction",
+    "compounds": [
+      "Acetone",
+      "Methyl isobutyl ketone",
+      "Water"
+    ],
+    "unit_types": [
+      "AbsorptionColumn",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "NRTL"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "MembraneCustomUnitOperation",
+    "compounds": [
+      "Agua",
+      "DioxidoDeCarbono",
+      "Etano",
+      "Hidrogenio",
+      "Metano",
+      "Nitrogenio",
+      "Oxigenio",
+      "Propano",
+      "SulfetoDeHidrogenio",
+      "nButano"
+    ],
+    "unit_types": [
+      "CustomUO",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 4,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "NaturalGasProcessingUnit",
+    "compounds": [
+      "Agua",
+      "DioxidoDeCarbono",
+      "Etano",
+      "Metano",
+      "Nitrogenio",
+      "Propano",
+      "iButano",
+      "iPentano",
+      "nButano",
+      "nPentano"
+    ],
+    "unit_types": [
+      "Compressor",
+      "Cooler",
+      "DistillationColumn",
+      "EnergyStream",
+      "Expander",
+      "Heater",
+      "MaterialStream",
+      "Pump",
+      "Valve",
+      "Vessel"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 43,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "PetroleumDistillation",
+    "compounds": [
+      "PSE_3165_10",
+      "PSE_3165_11",
+      "PSE_3165_12",
+      "PSE_3165_13",
+      "PSE_3165_14",
+      "PSE_3165_15",
+      "PSE_3165_16",
+      "PSE_3165_17",
+      "PSE_3165_18",
+      "PSE_3165_19",
+      "PSE_3165_2",
+      "PSE_3165_20",
+      "PSE_3165_21",
+      "PSE_3165_22",
+      "PSE_3165_23",
+      "PSE_3165_24",
+      "PSE_3165_25",
+      "PSE_3165_26",
+      "PSE_3165_27",
+      "PSE_3165_28",
+      "PSE_3165_29",
+      "PSE_3165_3",
+      "PSE_3165_30",
+      "PSE_3165_31",
+      "PSE_3165_4",
+      "PSE_3165_5",
+      "PSE_3165_6",
+      "PSE_3165_7",
+      "PSE_3165_8",
+      "PSE_3165_9"
+    ],
+    "unit_types": [
+      "DistillationColumn",
+      "EnergyStream",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 8,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "SimpleAbsorberSample",
+    "compounds": [
+      "Etano",
+      "Metano",
+      "Propano",
+      "nDecano",
+      "nNonano",
+      "nOctano"
+    ],
+    "unit_types": [
+      "AbsorptionColumn",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "SimpleLNGExchangerCustomUnitOperation",
+    "compounds": [
+      "Carbon dioxide",
+      "Ethane",
+      "Isobutane",
+      "Isopentane",
+      "Methane",
+      "N-butane",
+      "N-hexane",
+      "N-pentane",
+      "Nitrogen",
+      "Propane"
+    ],
+    "unit_types": [
+      "CustomUO",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 7,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "SO2OxidationEquilibrium",
+    "compounds": [
+      "Oxygen",
+      "Sulfur dioxide",
+      "Sulfur trioxide"
+    ],
+    "unit_types": [
+      "DigitalGauge",
+      "EnergyStream",
+      "Heater",
+      "MaterialStream",
+      "Reactor_Equilibrium"
+    ],
+    "property_packages": [
+      "NRTL",
+      "Raoult's Law"
+    ],
+    "objects": 8,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "ThreePhaseSeparator",
+    "compounds": [
+      "Methane",
+      "N-decane",
+      "Water"
+    ],
+    "unit_types": [
+      "MaterialStream",
+      "Vessel"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "TraceMethaneStripper",
+    "compounds": [
+      "1-butanol",
+      "1-butene",
+      "1-decanol",
+      "1-decene",
+      "1-dodecanol",
+      "1-dodecene",
+      "1-heptadecanol",
+      "1-heptanol",
+      "1-heptene",
+      "1-hexadecanol",
+      "1-hexadecene",
+      "1-hexanol",
+      "1-hexene",
+      "1-nonadecanol",
+      "1-nonanol",
+      "1-nonene",
+      "1-octadecanol",
+      "1-octadecene",
+      "1-octanol",
+      "1-octene",
+      "1-pentadecanol",
+      "1-pentanol",
+      "1-pentene",
+      "1-propanol",
+      "1-tetradecanol",
+      "1-tetradecene",
+      "1-tridecanol",
+      "1-undecanol",
+      "1-undecene",
+      "Argon",
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Ethane",
+      "Ethanol",
+      "Ethylene",
+      "Hydrogen",
+      "Isobutane",
+      "Methane",
+      "Methanol",
+      "N-butane",
+      "N-decane",
+      "N-docosane",
+      "N-dodecane",
+      "N-eicosane",
+      "N-heneicosane",
+      "N-heptacosane",
+      "N-heptadecane",
+      "N-heptane",
+      "N-hexacosane",
+      "N-hexadecane",
+      "N-hexane",
+      "N-nonacosane",
+      "N-nonadecane",
+      "N-nonane",
+      "N-octacosane",
+      "N-octadecane",
+      "N-octane",
+      "N-pentacosane",
+      "N-pentadecane",
+      "N-pentane",
+      "N-tetracosane",
+      "N-tetradecane",
+      "N-tricosane",
+      "N-tridecane",
+      "N-undecane",
+      "Nitrogen",
+      "Propane",
+      "Propylene",
+      "Water"
+    ],
+    "unit_types": [
+      "DistillationColumn",
+      "EnergyStream",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "VesselDepressurization",
+    "compounds": [
+      "Carbon dioxide",
+      "Methane"
+    ],
+    "unit_types": [
+      "MaterialStream",
+      "Valve",
+      "Vessel"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 6,
+    "numerical_values_imported": false
+  },
+  {
+    "id": "WideBoilingStripper",
+    "compounds": [
+      "1-butanol",
+      "1-butene",
+      "1-decanol",
+      "1-decene",
+      "1-dodecanol",
+      "1-dodecene",
+      "1-heptadecanol",
+      "1-heptanol",
+      "1-heptene",
+      "1-hexadecanol",
+      "1-hexadecene",
+      "1-hexanol",
+      "1-hexene",
+      "1-nonadecanol",
+      "1-nonanol",
+      "1-nonene",
+      "1-octadecanol",
+      "1-octadecene",
+      "1-octanol",
+      "1-octene",
+      "1-pentadecanol",
+      "1-pentanol",
+      "1-pentene",
+      "1-propanol",
+      "1-tetradecanol",
+      "1-tetradecene",
+      "1-tridecanol",
+      "1-undecanol",
+      "1-undecene",
+      "Argon",
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Ethane",
+      "Ethanol",
+      "Ethylene",
+      "Hydrogen",
+      "Isobutane",
+      "Methane",
+      "Methanol",
+      "N-butane",
+      "N-decane",
+      "N-docosane",
+      "N-dodecane",
+      "N-eicosane",
+      "N-heneicosane",
+      "N-heptacosane",
+      "N-heptadecane",
+      "N-heptane",
+      "N-hexacosane",
+      "N-hexadecane",
+      "N-hexane",
+      "N-nonacosane",
+      "N-nonadecane",
+      "N-nonane",
+      "N-octacosane",
+      "N-octadecane",
+      "N-octane",
+      "N-pentacosane",
+      "N-pentadecane",
+      "N-pentane",
+      "N-tetracosane",
+      "N-tetradecane",
+      "N-tricosane",
+      "N-tridecane",
+      "N-undecane",
+      "Nitrogen",
+      "Propane",
+      "Propylene",
+      "Water"
+    ],
+    "unit_types": [
+      "DistillationColumn",
+      "EnergyStream",
+      "MaterialStream"
+    ],
+    "property_packages": [
+      "Peng-Robinson (PR)"
+    ],
+    "objects": 5,
+    "numerical_values_imported": false
+  }
+]

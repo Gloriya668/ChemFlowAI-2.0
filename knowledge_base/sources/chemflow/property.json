@@ -1,0 +1,18 @@
+{
+  "id": "guide-property",
+  "title": "物性方法适用性与参数证据",
+  "skill": "chemflow-property-modeling",
+  "split": "train",
+  "queries": [
+    "如何审核 NRTL 或 PR 物性方法的选择",
+    "没有二元参数是否能够声称物性验证通过"
+  ],
+  "text": "物性方法筛选须结合组分、温压范围、相态和相平衡目标。项目将 PR/SRK 等作为烃类候选、NRTL 作为极性非理想候选；这不是普遍适用性证明。二元参数和实验验证应标注来源与温度范围，超出范围需明确风险。",
+  "required_inputs": "体系；温压范围；相态；参数来源；验证数据",
+  "expected_output": "候选方法及依据、缺失参数和适用范围；不能只凭名称宣称精确",
+  "local_reference": "skills/chemflow-property-modeling/references/contract.md",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

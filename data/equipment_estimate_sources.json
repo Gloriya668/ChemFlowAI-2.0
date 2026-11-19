@@ -1,0 +1,52 @@
+[
+  {
+    "title": "08、第五篇（3）设备技术（1-4章）.doc",
+    "detail": "塔器：气液负荷决定直径、板间距与检修空间；用于方法参考，不直接移用其他装置尺寸。",
+    "sha256": "2c423822781e5561f0ff23a37e477cc8e9737e023d94a79ff800394281b723f5"
+  },
+  {
+    "title": "09、第五篇（4）设备技术（5章）.doc",
+    "detail": "加热炉章节：供热与效率；本模块85%效率为可说明的情景假设。",
+    "sha256": "39def1c83b93e5e471e3e0e20444a393a398fa1783595d72522c96767108e5d6"
+  },
+  {
+    "title": "09、第五篇（4）设备技术（5章）读.doc",
+    "detail": "与同名第五章文档提取正文一致，不重复作为独立证据。",
+    "sha256": "96e6424d9f6e17bd3c1d8913dd59cd83a0a49d7136a57eab5aa8293d5625b82a"
+  },
+  {
+    "title": "10、第五篇（5）设备技术（6 -7章）.doc",
+    "detail": "压缩机技术与选型：流量、压力及功率；实际机型和材料需要厂家确认。",
+    "sha256": "391c41a9bd68c1ad127d19659044d105bb2573b8c7814a00aafe139b9f958ede"
+  },
+  {
+    "title": "11、第五篇（6）设备技术（8 -10章）.doc",
+    "detail": "设备技术补充资料；未直接提取本项目尺寸或采购价格。",
+    "sha256": "338718249ccb5defc99ef1ebcc22ba80b06f34b392c21bc3f47afe6cef6d4c84"
+  },
+  {
+    "title": "3、第五篇（8）设备技术（设备表）.doc",
+    "detail": "其他装置的塔器、尺寸与材料清单，无本项目报价；不套用芳烃装置的设备质量。",
+    "sha256": "8b530c540bad3420a2669ae1eddf9be40a37d15355febdadd63c0ce7982fb4e1"
+  },
+  {
+    "title": "4-1 典型设备选型及设计说明书.pdf",
+    "detail": "丁二醇项目；印刷页10材料选型，47页（PDF第52页）终端温差，48页流速及压降；方法参考，不移用其设备数据。",
+    "sha256": "f6b62d2ae4397fe03fbb58bb442436b0409968f2d4e1ab1282a28c01e3c222e5"
+  },
+  {
+    "title": "IDAES SSLW equipment costing",
+    "url": "https://idaes-pse.readthedocs.io/en/stable/_modules/idaes/models/costing/SSLW.html",
+    "detail": "设备购置关联式，基准USD_CE500；按塔壳质量、板数、面积和轴功率估算。查阅2026-10-08。"
+  },
+  {
+    "title": "DOE: How to Calculate the True Cost of Steam",
+    "url": "https://www.energy.gov/sites/default/files/2014/05/f15/tech_brief_true_cost.pdf",
+    "detail": "蒸汽成本边界与焓差方法。公用工程价格是本地可编辑情景，不是文献报价。"
+  },
+  {
+    "title": "NETL: Capital Cost Scaling Methodology",
+    "url": "https://www.osti.gov/biblio/1893821",
+    "detail": "规模估算需要明确适用范围、成本基准和未计项。"
+  }
+]

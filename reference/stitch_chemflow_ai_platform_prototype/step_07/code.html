@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#171c25", "on-tertiary-container": "#622be5", "on-surface-variant": "#bac9cc", "outline-variant": "#3b494c", "outline": "#849396", "on-tertiary-fixed-variant": "#4f00d0", "error": "#ffb4ab", "surface-container-lowest": "#0a0e17", "surface": "#0f131d", "surface-container": "#1b2029", "secondary-fixed": "#62ff96", "tertiary-container": "#d6c9ff", "inverse-surface": "#dfe2f0", "surface-container-highest": "#31353f", "on-surface": "#dfe2f0", "on-tertiary-fixed": "#20005f", "on-error": "#690005", "background": "#0f131d", "inverse-on-surface": "#2c303b", "tertiary": "#f1e9ff", "primary-container": "#00e5ff", "surface-tint": "#00daf3", "surface-dim": "#0f131d", "secondary": "#7dffa2", "secondary-fixed-dim": "#00e475", "on-secondary": "#003918", "primary-fixed": "#9cf0ff", "surface-container-high": "#262a34", "on-tertiary": "#370096", "primary-fixed-dim": "#00daf3", "inverse-primary": "#006875", "error-container": "#93000a", "on-secondary-fixed": "#00210b", "surface-variant": "#31353f", "secondary-container": "#05e777", "on-error-container": "#ffdad6", "tertiary-fixed": "#e8deff", "on-primary-container": "#00626e", "primary": "#c3f5ff", "on-secondary-container": "#00622e", "on-background": "#dfe2f0", "surface-bright": "#353944", "on-primary-fixed": "#001f24", "on-secondary-fixed-variant": "#005226", "tertiary-fixed-dim": "#cdbdff", "on-primary-fixed-variant": "#004f58", "on-primary": "#00363d" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.25rem", "gutter-desktop": "1rem", "margin-desktop": "1.5rem", "space-md": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "1.75rem", "gutter": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-lg": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "body-sm": [ "Geist" ], "label-md": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Geist" ], "label-sm": [ "JetBrains Mono" ], "data-metric": [ "JetBrains Mono" ], "body-md": [ "Geist" ] }, "fontSize": { "headline-xl-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "label-md": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "data-metric": [ "20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/30 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="ChemFlow AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XASmyMpS0uw-JjrbpXgFdc-by7Et0gFv-xTthWjlB717ueyb9daxQFAdDWW7WNkw5sJGo2iMAcuGNhB1IqJnxmiexhYbOHvHoNysbyFF2BfP2-qGVq4plF3lQ_X7p7FeJlJiw2ibm6Miy85onGhdxCyaS5BS-LyW0KzzDrTjuv-1ZIPmAaLBx5AWckAI3hw9VkaF0MQM3YwVnmtjptQ45E8bwVVnGkhVBzC7lzVom56ZO5ot_NosDUnppD"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">ChemFlow AI｜智模拟·绿化工</span><span class="font-label-sm text-label-sm text-on-surface-variant">Project: Ethylene Glycol Green Synth #2025-P4</span></div></div><div class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container/60 rounded-full border border-outline-variant/40"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">01</span><span>基准</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">02</span><span>物性</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center font-bold">03</span><span>模型</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-primary-container/20 flex items-center justify-center font-bold">04</span><span>路线</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">05</span><span>搭建</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">06</span><span>能量</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">07</span><span>优化</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">08</span><span>评价</span></div><div class="w-3 h-px bg-outline-variant/60"></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-bold">09</span><span>交付</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">AGENT: ACTIVE</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/10 border border-secondary/30"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span><span class="font-label-sm text-label-sm text-secondary">DATA VERIFIED</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-on-surface-variant">SOLVER: READY</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm text-secondary">TRACEABILITY: ON</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest/95 backdrop-blur-xl border-r border-outline-variant/30 flex flex-col justify-between z-40"><div class="flex flex-col h-full overflow-hidden"><div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">工程导航矩阵 / NAV</span><span class="font-label-sm text-label-sm text-primary">V3.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="landing-page" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">home</span><span>首页 (Landing Page)</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="project-dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-2 shrink-0">dashboard</span><span>项目总览 (Project Dashboard)</span></a><div class="pt-2 pb-1 px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">工程设计阶段 / STEPS</div><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-01-design-basis" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">01</span><span class="truncate">需求与设计基准</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-02-data-properties" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">02</span><span class="truncate">物性与数据校核</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-03-model-selection" href="#"><span class="font-label-sm text-label-sm text-secondary mr-2 shrink-0">03</span><span class="truncate">模型选择与验证</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-route-screening" href="#"><span class="font-label-sm text-label-sm text-primary mr-2 shrink-0">04</span><span class="truncate">路线与分离筛选</span></a><a class="flex items-center pl-6 pr-space-sm py-1 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-04-a-candidate-detail" href="#"><span class="font-label-sm text-label-sm text-primary-fixed-dim mr-2 shrink-0">4A</span><span class="truncate">方案详情对比</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-05-flowsheet-solver" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">05</span><span class="truncate">流程搭建与收敛</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-06-energy-equipment" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">06</span><span class="truncate">能量与设备分析</span></a><a aria-current="page" class="flex items-center px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="step-07-optimization-pareto" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">07</span><span class="truncate">参数与方案优化</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-08-eco-life-cycle" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">08</span><span class="truncate">经济与环境评价</span></a><a class="flex items-center px-space-sm py-1.5 rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="step-09-review-delivery" href="#"><span class="font-label-sm text-label-sm text-outline mr-2 shrink-0">09</span><span class="truncate">复核与成果交付</span></a></nav><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low/50"><div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Engine V3.4.2 Pro</span><span>LAT: 14ms</span></div><div class="mt-1 text-label-sm font-label-sm text-outline flex items-center justify-between"><span>MEM ALLOC</span><span>24GB / 64GB</span></div></div></div></aside><div class="pl-72"><main class="relative w-full pt-16 pb-20 bg-background min-h-screen px-margin-desktop"><div class="flex flex-col w-full space-y-space-lg text-on-surface">
+<!-- Top Ambient Glow Anchor -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-low shadow-xl">
+<div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-16 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase">Stage 07 · Core Engine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ NSGA-III &amp; RL-SQP Hybrid Engine</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/10 text-secondary font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+            PARETO CONVERGED // 128 Optimal Points Found
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+          Step 07: 参数与方案多目标优化 (AI-Driven Multi-Objective Optimization)
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          高维超曲面非劣前沿寻优：解耦精馏-隔壁塔热力学强耦合约束，自适应收敛 CAPEX、OPEX 与碳排放综合帕累托阵列。
+        </p>
+</div>
+<!-- Quick Telemetry Readout -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-lowest/80 p-space-sm rounded-lg backdrop-blur-md">
+<div class="flex flex-col px-3 py-1">
+<span class="font-label-sm text-label-sm text-outline">GENERATION</span>
+<span class="font-data-metric text-data-metric text-primary">#420/500</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col px-3 py-1">
+<span class="font-label-sm text-label-sm text-outline">HYPERVOLUME</span>
+<span class="font-data-metric text-data-metric text-secondary">0.9418</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col px-3 py-1">
+<span class="font-label-sm text-label-sm text-outline">FEASIBILITY</span>
+<span class="font-data-metric text-data-metric text-primary-container">100%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Engineering Principle Notice Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start gap-space-md pl-2">
+<div class="p-2 rounded bg-primary-container/10 text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-primary">重要工程准则说明 / THERMODYNAMIC TRADE-OFF NOTICE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO 14040 / HG/T 20570</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          化工流程中能耗、经济投资(CAPEX)、产品收率与碳排放之间存在本质热力学权衡(Trade-offs)。系统不保证各单项目标同时达到理论极值，而是输出高维非劣最优解集（Non-Dominated Pareto Set）供工程专家根据投资周期与国家双碳关税政策进行综合柔性决策。
+        </p>
+</div>
+</div>
+</div>
+<!-- Main Multi-Pane Workbench -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Column: Variable Control Space (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col space-y-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-lg flex flex-col space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<span class="font-headline-md text-headline-md font-semibold text-primary">敏感度搜索空间</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">5 D.O.F</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          调谐精馏隔壁塔(DWC)关键自由度变量，滑动条支持动态高维映射与灵敏度投影：
+        </p>
+<!-- Variable Sliders Container -->
+<div class="space-y-space-md pt-space-xs">
+<!-- Slider 1 -->
+<div class="bg-surface-container-lowest/70 p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">塔顶操作压力 (Ptop)</span>
+<span class="font-label-lg text-label-lg text-primary-container" id="val-ptop">0.08 MPa</span>
+</div>
+<input class="w-full accent-primary-container bg-surface-container-highest h-1.5 rounded cursor-pointer appearance-none" id="slider-ptop" max="0.12" min="0.04" step="0.005" type="range" value="0.08"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>MIN: 0.04 MPa</span>
+<span>NOMINAL: 0.075</span>
+<span>MAX: 0.12 MPa</span>
+</div>
+</div>
+<!-- Slider 2 -->
+<div class="bg-surface-container-lowest/70 p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">回流比 (Reflux Ratio R)</span>
+<span class="font-label-lg text-label-lg text-primary-container" id="val-reflux">2.15</span>
+</div>
+<input class="w-full accent-primary-container bg-surface-container-highest h-1.5 rounded cursor-pointer appearance-none" id="slider-reflux" max="4.50" min="1.50" step="0.05" type="range" value="2.15"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>MIN: 1.50</span>
+<span>R_min x 1.25</span>
+<span>MAX: 4.50</span>
+</div>
+</div>
+<!-- Slider 3 -->
+<div class="bg-surface-container-lowest/70 p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">隔壁塔进料板位置 (Feed Stage)</span>
+<span class="font-label-lg text-label-lg text-secondary" id="val-feed">26 板</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-highest h-1.5 rounded cursor-pointer appearance-none" id="slider-feed" max="32" min="18" step="1" type="range" value="26"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>STAGE 18</span>
+<span>MID-SECTION</span>
+<span>STAGE 32</span>
+</div>
+</div>
+<!-- Slider 4 -->
+<div class="bg-surface-container-lowest/70 p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">侧线采出板位置 (Side Draw Stage)</span>
+<span class="font-label-lg text-label-lg text-secondary" id="val-draw">42 板</span>
+</div>
+<input class="w-full accent-secondary bg-surface-container-highest h-1.5 rounded cursor-pointer appearance-none" id="slider-draw" max="48" min="34" step="1" type="range" value="42"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>STAGE 34</span>
+<span>HEAVY-SPLIT</span>
+<span>STAGE 48</span>
+</div>
+</div>
+<!-- Slider 5 -->
+<div class="bg-surface-container-lowest/70 p-space-sm rounded-lg flex flex-col space-y-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">液体分配比 (Liquid Split α_L)</span>
+<span class="font-label-lg text-label-lg text-primary-container" id="val-split">0.42</span>
+</div>
+<input class="w-full accent-primary-container bg-surface-container-highest h-1.5 rounded cursor-pointer appearance-none" id="slider-split" max="0.80" min="0.20" step="0.01" type="range" value="0.42"/>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>0.20 (PRE)</span>
+<span>ISOKINETIC 0.40</span>
+<span>0.80 (POST)</span>
+</div>
+</div>
+</div>
+<!-- Engine Spec Chip Card -->
+<div class="mt-space-sm p-space-sm bg-surface-container rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+              ALGO CONFIGURATION
+            </span>
+<span class="font-label-sm text-label-sm text-secondary">ACTIVE // HYBRID</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            NSGA-III 协同强化学习 Agent + 序列二次规划 (SQP) 局部流形约束快速投影，平均梯步收敛加速比提升 3.8x。
+          </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface">Pop: 200</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface">Crossover: 0.90</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface">Mut: 0.05</span>
+</div>
+</div>
+</div>
+<!-- Real-time Agent Health Card -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">troubleshoot</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">代理决策置信度</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Monte Carlo 验证方差 &lt; 0.024</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-data-metric text-data-metric text-secondary font-bold">98.7%</div>
+<div class="font-label-sm text-label-sm text-outline">STABILITY</div>
+</div>
+</div>
+</div>
+<!-- Center/Right Column: 3D/2D Pareto Front Visualization & Decision Board (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col space-y-space-md">
+<!-- Interactive Pareto Chart Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-xl flex flex-col space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-semibold text-primary">Pareto 多维前沿非劣解空间</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm">3D PROJECTION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              横轴: 单位能耗 (GJ/t) · 纵轴: 投资回收期 (PBP 年) · 颜色映射: 吨产品碳足迹 (kgCO₂/t)
+            </p>
+</div>
+<!-- Controls/Toggles -->
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high transition-colors" id="view-mode-pareto" type="button">
+<span class="material-symbols-outlined text-[16px]">view_in_ar</span>
+<span>3D视角</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_alt</span>
+<span>筛选前沿</span>
+</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Pareto Canvas Container with Custom SVG Graphics -->
+<div class="relative w-full h-80 sm:h-96 rounded-xl bg-surface-container-lowest p-4 flex flex-col justify-between overflow-hidden shadow-inner">
+<!-- Background Grid Overlay -->
+<div class="absolute inset-0 bg-[radial-gradient(#3b494c_1px,transparent_1px)] [background-size:20px_20px] opacity-20 pointer-events-none"></div>
+<!-- Axis Top Labels -->
+<div class="relative z-10 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Y轴: 投资回收期 PBP (年, Payback Period)
+            </span>
+<div class="flex items-center gap-3">
+<span class="text-error font-medium">高碳排放: 640 kg</span>
+<div class="w-16 h-2 rounded bg-gradient-to-r from-secondary via-primary-container to-error"></div>
+<span class="text-secondary font-medium">极低碳: 380 kg</span>
+</div>
+</div>
+<!-- SVG Pareto Frontier Curve & Scatter Nodes -->
+<div class="relative z-10 w-full h-full my-auto flex items-center justify-center">
+<svg class="w-full h-full overflow-visible" viewbox="0 0 760 300">
+<defs>
+<!-- Gradients for Pareto Horizon & Trade-off area -->
+<lineargradient id="paretoGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"></stop>
+<stop offset="60%" stop-color="#7dffa2" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#3b494c" stop-opacity="0.0"></stop>
+</lineargradient>
+<filter height="140%" id="glow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<!-- Grid reference lines -->
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="60" x2="720" y1="40" y2="40"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="60" x2="720" y1="100" y2="100"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="60" x2="720" y1="160" y2="160"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="60" x2="720" y1="220" y2="220"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="160" x2="160" y1="20" y2="250"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="320" x2="320" y1="20" y2="250"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="480" x2="480" y1="20" y2="250"></line>
+<line opacity="0.4" stroke="#3b494c" stroke-dasharray="4,4" stroke-width="0.75" x1="640" x2="640" y1="20" y2="250"></line>
+<!-- Infeasible Region Shading -->
+<path d="M 120 40 Q 220 180 680 230 L 680 260 L 120 260 Z" fill="url(#paretoGrad)"></path>
+<!-- Sub-optimal cloud cluster (Dominated Solutions) -->
+<g opacity="0.35">
+<circle cx="210" cy="90" fill="#849396" r="3"></circle>
+<circle cx="240" cy="115" fill="#849396" r="2.5"></circle>
+<circle cx="290" cy="130" fill="#ffb4ab" r="3.5"></circle>
+<circle cx="340" cy="110" fill="#849396" r="3"></circle>
+<circle cx="380" cy="140" fill="#849396" r="2.5"></circle>
+<circle cx="430" cy="165" fill="#849396" r="3"></circle>
+<circle cx="490" cy="175" fill="#ffb4ab" r="3.5"></circle>
+<circle cx="530" cy="195" fill="#849396" r="2"></circle>
+<circle cx="580" cy="205" fill="#849396" r="3"></circle>
+<circle cx="610" cy="215" fill="#849396" r="3"></circle>
+<circle cx="260" cy="80" fill="#849396" r="2.5"></circle>
+<circle cx="370" cy="95" fill="#849396" r="3.5"></circle>
+<circle cx="460" cy="135" fill="#849396" r="2"></circle>
+<circle cx="520" cy="155" fill="#849396" r="3"></circle>
+<circle cx="640" cy="190" fill="#849396" r="3"></circle>
+<circle cx="310" cy="160" fill="#849396" r="2.5"></circle>
+<circle cx="410" cy="180" fill="#849396" r="3.5"></circle>
+</g>
+<!-- Pareto Front Optimal Spline (Hyperbolic Trade-off) -->
+<path d="M 120 45 Q 230 170 680 226" fill="none" filter="url(#glow)" stroke="#00e5ff" stroke-width="2.5"></path>
+<!-- Point Set on Pareto Frontier -->
+<g>
+<circle cx="150" cy="65" fill="#00e5ff" r="4"></circle>
+<circle cx="180" cy="90" fill="#00e5ff" r="4"></circle>
+<circle cx="280" cy="142" fill="#7dffa2" r="4.5"></circle>
+<circle cx="380" cy="175" fill="#7dffa2" r="4"></circle>
+<circle cx="500" cy="202" fill="#ffd6a5" r="4"></circle>
+<circle cx="590" cy="216" fill="#ffb4ab" r="4"></circle>
+<circle cx="650" cy="223" fill="#ffb4ab" r="4"></circle>
+</g>
+<!-- CANDIDATE 01: Low Energy Oriented (Node #1) -->
+<g class="cursor-pointer group" onclick="selectCandidate(1)">
+<circle class="animate-ping" cx="180" cy="90" fill="#00e5ff" fill-opacity="0.2" r="8"></circle>
+<circle cx="180" cy="90" fill="#00e5ff" r="6" stroke="#0a0e17" stroke-width="2"></circle>
+<line stroke="#00e5ff" stroke-dasharray="2,2" stroke-width="1.2" x1="180" x2="180" y1="90" y2="40"></line>
+<rect fill="#1b2029" height="26" rx="4" stroke="#00e5ff" stroke-width="1" width="120" x="120" y="15"></rect>
+<text fill="#00e5ff" font-family="JetBrains Mono" font-size="11" font-weight="600" text-anchor="middle" x="180" y="32">CAN-01: 2.68 GJ/t</text>
+</g>
+<!-- CANDIDATE 02: AI Recommended Balanced Ideal (Node #2 - HIGHLIGHTED) -->
+<g class="cursor-pointer group" onclick="selectCandidate(2)">
+<circle class="animate-pulse" cx="340" cy="162" fill="#7dffa2" fill-opacity="0.25" r="14"></circle>
+<circle cx="340" cy="162" fill="#7dffa2" r="8" stroke="#0a0e17" stroke-width="2"></circle>
+<!-- Callout Target -->
+<path d="M 340 162 L 390 100 L 510 100" fill="none" stroke="#7dffa2" stroke-width="1.5"></path>
+<rect fill="#0f131d" filter="url(#glow)" height="42" rx="4" stroke="#7dffa2" stroke-width="1.5" width="150" x="390" y="80"></rect>
+<text fill="#7dffa2" font-family="Space Grotesk" font-size="11" font-weight="700" x="400" y="98">★ CAN-02 综合优选</text>
+<text fill="#dfe2f0" font-family="JetBrains Mono" font-size="10" x="400" y="114">2.85 GJ/t | 2.8年PBP</text>
+</g>
+<!-- CANDIDATE 03: Low Capex Oriented (Node #3) -->
+<g class="cursor-pointer group" onclick="selectCandidate(3)">
+<circle cx="620" cy="220" fill="#ffb4ab" fill-opacity="0.2" r="8"></circle>
+<circle cx="620" cy="220" fill="#ffb4ab" r="6" stroke="#0a0e17" stroke-width="2"></circle>
+<line stroke="#ffb4ab" stroke-dasharray="2,2" stroke-width="1.2" x1="620" x2="620" y1="220" y2="265"></line>
+<rect fill="#1b2029" height="26" rx="4" stroke="#ffb4ab" stroke-width="1" width="140" x="550" y="260"></rect>
+<text fill="#ffb4ab" font-family="JetBrains Mono" font-size="11" font-weight="600" text-anchor="middle" x="620" y="277">CAN-03: ¥0.96亿</text>
+</g>
+<!-- Interactive crosshair coordinate cursor (Mock active pointer) -->
+<g opacity="0.6">
+<line stroke="#7dffa2" stroke-dasharray="2,2" stroke-width="0.8" x1="340" x2="340" y1="20" y2="250"></line>
+<line stroke="#7dffa2" stroke-dasharray="2,2" stroke-width="0.8" x1="60" x2="720" y1="162" y2="162"></line>
+</g>
+</svg>
+</div>
+<!-- Bottom Axis Scale Label -->
+<div class="relative z-10 flex justify-between items-center text-label-sm font-label-sm text-outline pt-2">
+<span>2.20 GJ/t (极限低耗)</span>
+<span class="text-primary font-medium tracking-wide">X轴: 单位综合能耗指标 (GJ/t MEG)</span>
+<span>4.20 GJ/t (常规基线)</span>
+</div>
+</div>
+<!-- 3 Group Pareto Optimal Representatives Cards -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-semibold text-primary">Pareto 代表性候选解对比 (3 Typical Configurations)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">点击卡片可实时锁定高维变量</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Candidate 01 -->
+<div class="candidate-card cursor-pointer rounded-xl p-space-md bg-surface-container transition-all hover:bg-surface-container-high shadow-md relative overflow-hidden" id="card-can-1" onclick="selectCandidate(1)">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm font-bold">Candidate 01</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[ 极低能耗导向 ]</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="font-label-sm text-label-sm text-outline">单位能耗 (GJ/t)</div>
+<div class="font-data-metric text-data-metric text-primary flex items-baseline gap-1.5">
+                    2.68 <span class="font-label-sm text-label-sm text-secondary font-normal">-44% 对比基线</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<div class="font-label-sm text-label-sm text-outline">总投资 CAPEX</div>
+<div class="font-headline-md text-headline-md text-on-surface">¥1.22 亿</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-outline">MEG 纯度</div>
+<div class="font-headline-md text-headline-md text-primary">99.91 %</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>回收期: 3.6 年</span>
+<span class="text-secondary">CO2: 395 kg/t</span>
+</div>
+</div>
+</div>
+<!-- Candidate 02: AI Recommended (Balanced) -->
+<div class="candidate-card active-card cursor-pointer rounded-xl p-space-md bg-surface-container-high shadow-xl relative overflow-hidden ring-2 ring-primary-container" id="card-can-2" onclick="selectCandidate(2)">
+<div class="absolute -right-7 top-3 rotate-45 bg-secondary text-on-secondary font-label-sm text-label-sm font-bold px-7 py-0.5 shadow">
+                AI 推荐
+              </div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded bg-secondary/20 text-secondary font-label-sm text-label-sm font-bold">Candidate 02</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">[ 综合平衡最优 ]</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="font-label-sm text-label-sm text-outline">单位能耗 (GJ/t)</div>
+<div class="font-data-metric text-data-metric text-secondary flex items-baseline gap-1.5">
+                    2.85 <span class="font-label-sm text-label-sm text-secondary font-normal">-41% 对比基线</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<div class="font-label-sm text-label-sm text-outline">总投资 CAPEX</div>
+<div class="font-headline-md text-headline-md text-on-surface">¥1.08 亿</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-outline">MEG 纯度</div>
+<div class="font-headline-md text-headline-md text-secondary">99.94 %</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold text-secondary">回收期: 2.8 年</span>
+<span class="text-primary-container">CO2: 412 kg/t</span>
+</div>
+</div>
+</div>
+<!-- Candidate 03 -->
+<div class="candidate-card cursor-pointer rounded-xl p-space-md bg-surface-container transition-all hover:bg-surface-container-high shadow-md relative overflow-hidden" id="card-can-3" onclick="selectCandidate(3)">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">Candidate 03</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">[ 最低投资导向 ]</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="font-label-sm text-label-sm text-outline">单位能耗 (GJ/t)</div>
+<div class="font-data-metric text-data-metric text-primary flex items-baseline gap-1.5">
+                    3.20 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">-33% 对比基线</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<div class="font-label-sm text-label-sm text-outline">总投资 CAPEX</div>
+<div class="font-headline-md text-headline-md text-on-surface">¥0.96 亿</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-outline">MEG 纯度</div>
+<div class="font-headline-md text-headline-md text-primary">99.90 %</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>回收期: 2.3 年</span>
+<span class="text-on-surface-variant">CO2: 498 kg/t</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decision Engine Recommendation Rationale -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="p-2.5 rounded-lg bg-secondary/15 text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-semibold text-secondary">决策引擎推荐逻辑 / RATIONALE</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">RL-Agent Confidence: 94.6%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              AI 推荐选定 <strong class="text-primary font-semibold">Candidate 02</strong>。相较于 Can-01 虽多消耗 0.17 GJ/t 能耗，但显著降低 CAPEX 达 1400 万元，避免了超高回流比引起的塔径剧烈突增与塔板结垢风险；在投资回报期 (2.8年) 与欧盟碳边境调节税 (CBAM) 合规阈值上取得工业界最稳健弹性平衡。
+            </p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 w-full md:w-auto">
+<div class="font-label-sm text-label-sm text-outline">EVALUATION METRIC</div>
+<div class="font-data-metric text-data-metric text-secondary">Robustness 9.4/10</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Defensible in 10-Yr LCC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<button class="px-space-md py-2.5 rounded bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors font-body-md text-body-md flex items-center gap-2" id="btn-rescan" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>重新运行多目标搜索 (NSGA-III)</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-md text-body-md flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>导出 Pareto 解集 (CSV/JSON)</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<div class="hidden lg:flex flex-col text-right font-label-sm text-label-sm text-on-surface-variant">
+<span>CURRENT SELECTION: <span class="text-primary font-bold" id="label-selected-can">Candidate 02 (Balanced)</span></span>
+<span>READY FOR STEP 08 TECHNO-ECONOMIC &amp; LCA ANALYSIS</span>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-3 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_20px_rgba(0,229,255,0.45)] transition-all flex items-center justify-center gap-2" id="btn-confirm-next" type="button">
+<span>确认优化方案 (选用Candidate 02)，进入经济与环境评价 (Step 08)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+  (function() {
+    // Slider Interactivity
+    const sliders = [
+      { id: 'slider-ptop', valId: 'val-ptop', unit: ' MPa' },
+      { id: 'slider-reflux', valId: 'val-reflux', unit: '' },
+      { id: 'slider-feed', valId: 'val-feed', unit: ' 板' },
+      { id: 'slider-draw', valId: 'val-draw', unit: ' 板' },
+      { id: 'slider-split', valId: 'val-split', unit: '' }
+    ];
+
+    sliders.forEach(item => {
+      const el = document.getElementById(item.id);
+      const display = document.getElementById(item.valId);
+      if (el && display) {
+        el.addEventListener('input', (e) => {
+          display.textContent = e.target.value + item.unit;
+        });
+      }
+    });
+
+    // Preset configurations for candidates
+    const candidates = {
+      1: {
+        name: 'Candidate 01 (Low Energy)',
+        ptop: '0.065',
+        reflux: '3.40',
+        feed: '28',
+        draw: '45',
+        split: '0.36'
+      },
+      2: {
+        name: 'Candidate 02 (Balanced Ideal)',
+        ptop: '0.080',
+        reflux: '2.15',
+        feed: '26',
+        draw: '42',
+        split: '0.42'
+      },
+      3: {
+        name: 'Candidate 03 (Low Capex)',
+        ptop: '0.095',
+        reflux: '1.75',
+        feed: '24',
+        draw: '39',
+        split: '0.52'
+      }
+    };
+
+    window.selectCandidate = function(id) {
+      // Update UI cards
+      [1, 2, 3].forEach(cid => {
+        const card = document.getElementById('card-can-' + cid);
+        if (card) {
+          if (cid === id) {
+            card.classList.add('ring-2', 'ring-primary-container', 'bg-surface-container-high');
+            card.classList.remove('bg-surface-container');
+          } else {
+            card.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container-high');
+            card.classList.add('bg-surface-container');
+          }
+        }
+      });
+
+      // Update Slider Positions
+      const data = candidates[id];
+      if (data) {
+        document.getElementById('slider-ptop').value = data.ptop;
+        document.getElementById('val-ptop').textContent = data.ptop + ' MPa';
+
+        document.getElementById('slider-reflux').value = data.reflux;
+        document.getElementById('val-reflux').textContent = data.reflux;
+
+        document.getElementById('slider-feed').value = data.feed;
+        document.getElementById('val-feed').textContent = data.feed + ' 板';
+
+        document.getElementById('slider-draw').value = data.draw;
+        document.getElementById('val-draw').textContent = data.draw + ' 板';
+
+        document.getElementById('slider-split').value = data.split;
+        document.getElementById('val-split').textContent = data.split;
+
+        // Label
+        const selLabel = document.getElementById('label-selected-can');
+        if (selLabel) selLabel.textContent = data.name;
+
+        const nextBtn = document.getElementById('btn-confirm-next');
+        if (nextBtn) {
+          nextBtn.querySelector('span:first-child').textContent = `确认优化方案 (选用Candidate 0${id})，进入经济与环境评价 (Step 08)`;
+        }
+      }
+    };
+
+    // Rescan button simulated action
+    const btnRescan = document.getElementById('btn-rescan');
+    if (btnRescan) {
+      btnRescan.addEventListener('click', () => {
+        btnRescan.disabled = true;
+        const origText = btnRescan.innerHTML;
+        btnRescan.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>NSGA-III 迭代重算中...</span>';
+        setTimeout(() => {
+          btnRescan.disabled = false;
+          btnRescan.innerHTML = origText;
+        }, 1200);
+      });
+    }
+  })();
+</script></main><footer class="fixed bottom-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-t border-outline-variant/30 flex items-center justify-between px-margin-desktop z-40"><div class="flex items-center gap-space-md"><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>返回上一步</span></button><button class="px-space-md py-1.5 rounded bg-surface-container border border-outline-variant/40 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">save</span><span>保存当前阶段草稿</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>当前阶段已收敛 (04 -&gt; 05)</span></div><button class="px-space-lg py-2 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md font-semibold hover:shadow-[0_0_16px_rgba(0,229,255,0.45)] transition-all flex items-center gap-2" type="button"><span>确认并进入下一阶段</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></footer></div></body></html>

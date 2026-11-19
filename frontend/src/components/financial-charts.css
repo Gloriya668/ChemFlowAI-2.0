@@ -1,0 +1,4 @@
+.finance-animated-plot{margin:12px 0 20px}.finance-animation-controls{display:flex;justify-content:flex-end;margin:0 0 7px}.finance-animation-controls button{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;font-size:11px;background:transparent;border-color:#456574;color:#abc9d5}
+.finance-reveal-window{width:0}.finance-reveal-started .finance-reveal-window{animation:finance-reveal-left-to-right 1.8s cubic-bezier(.25,.6,.3,1) both}.finance-reveal-offscreen .finance-reveal-window{animation-play-state:paused}
+@keyframes finance-reveal-left-to-right{from{width:0}to{width:762px}}
+@media(prefers-reduced-motion:reduce){.finance-reveal-window{width:762px}.finance-reveal-started .finance-reveal-window{animation:none}}

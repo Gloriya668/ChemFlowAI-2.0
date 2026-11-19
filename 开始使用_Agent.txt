@@ -1,0 +1,13 @@
+ChemFlowAI Agent + DWSIM 接入版
+
+1. API Key、base_url、model 都留在 config/llm.json，空着等你填写。
+2. 按原方法运行 Setup-Offline.ps1 和 Start-ChemFlow.cmd。
+3. DWSIM 使用官方运行 ZIP：dwsim-10.2.11-win-x64.zip。执行：
+   .\Setup-DWSIM.ps1 -RuntimeZip "C:\你的路径\dwsim-10.2.11-win-x64.zip"
+   你提供的 dwsim-windows.zip 是源码，不是运行包。
+4. 打开项目，使用“工程 Agent 任务”，可检查需求、检索依据、查看工具轨迹。
+5. 真实求解需要登记你自己的 DWSIM 模型、标签和输入指纹。说明见 docs/Agent与DWSIM接入说明.md。
+
+当前验收：104 项后端测试和浏览器流程测试通过；真实 DWSIM 启动被当前机器 Windows 应用程序控制拦截（4551 / 0x800711C7）。尚未完成真实工艺求解，也没有用回放冒充成功。请由管理员按策略核对可信运行文件。
+
+自动优化、完整 TEA 和任意自定义工艺自动建模未被声称完成。详细能力边界及所需工程数据在说明中逐项列明。

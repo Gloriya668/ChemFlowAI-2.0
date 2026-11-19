@@ -1,0 +1,11 @@
+.venv/
+frontend/node_modules/
+runtime/
+__pycache__/
+.pytest_cache/
+
+config/llm.json
+
+vendor/
+tools/dwsim-mcp-src/bin/
+tools/dwsim-mcp-src/obj/

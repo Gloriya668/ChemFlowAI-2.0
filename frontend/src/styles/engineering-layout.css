@@ -1,0 +1,53 @@
+/* Enterprise workspace composition matched to the supplied walkthrough. */
+.engineering-shell{--engineering-rail:238px;--engineering-header:72px;--engineering-footer:76px}
+.engineering-shell .topbar{height:var(--engineering-header);padding-inline:22px;background:linear-gradient(105deg,#182c35fa,#15272ffa)}
+.engineering-shell .sidebar{display:flex;flex-direction:column;position:fixed;left:0;top:var(--engineering-header);bottom:var(--engineering-footer);width:var(--engineering-rail);padding:19px 12px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#41636c transparent;background:linear-gradient(180deg,#1a2b33,#15232c);border-right:1px solid #5b89966b;gap:7px}
+.engineering-shell .sidebar>.eyebrow{font-size:9px;letter-spacing:1.1px;padding:0 7px 6px!important}
+.engineering-shell .sidebar>a{display:flex;align-items:center;gap:12px;min-height:46px;border:1px solid #557783;border-radius:10px;padding:10px 13px;color:#bed3dd;font-size:13px;background:#20333d;box-shadow:inset 0 1px #b4e0e412}
+.engineering-shell .sidebar>a:hover{background:#29434d;border-color:#8dbac2}
+.engineering-shell .nav-section{font-size:9px;letter-spacing:1px;color:#8ca9b4;margin:16px 6px 4px;padding:0}
+.engineering-shell .sidebar .nav-step{display:flex;align-items:center;text-align:left;gap:9px;min-height:49px;margin:0;padding:10px 12px;border:1px solid #426270;border-radius:10px;background:#1b2d37;color:#a9bfca;font-size:12px;line-height:1.5;flex-shrink:0;white-space:normal;box-shadow:inset 0 1px #c2e8ee08}
+.engineering-shell .sidebar .nav-step .num{width:22px;flex:none;color:#96bbc5;font:11px var(--mono)}
+.engineering-shell .sidebar .nav-step>svg:last-child{margin-left:auto;flex-shrink:0}
+.engineering-shell .sidebar .nav-step.done{background:linear-gradient(110deg,#20413c,#223a3a);border-color:#527d6e;color:#c3e5d7}
+.engineering-shell .sidebar .nav-step.active{background:linear-gradient(100deg,#32534b,#2a4748);border:1px solid #a8dacf;box-shadow:inset 4px 0 #a0dccb,0 0 0 1px #a4d9d52b;color:#edfff8}
+.engineering-shell .sidebar .nav-step:disabled{opacity:.45}
+.engineering-shell .sidebar-footer{position:static;margin-top:auto;padding:20px 7px 4px;border-top:1px solid #4a6e7960;flex-shrink:0}
+.engineering-shell .sidebar-footer p{line-height:1.8;color:#829da9}
+.engineering-shell .work{margin-top:var(--engineering-header);margin-left:var(--engineering-rail);padding:24px 26px calc(var(--engineering-footer) + 42px);max-width:none;min-width:0}
+.engineering-shell .step-heading{padding-top:14px;margin-bottom:22px}.engineering-shell .step-heading h1{font-size:28px}
+.engineering-shell .workspace-grid{grid-template-columns:minmax(0,1fr) 220px;gap:18px;align-items:start}
+.engineering-shell .workspace-grid.property-wide,.engineering-shell .workspace-grid:has(.decision-hero),.engineering-shell .workspace-grid:has(.route-grid){grid-template-columns:minmax(0,1fr)}
+.engineering-shell .main-stack,.engineering-shell .workspace-grid>*{min-width:0}
+.engineering-shell .panel{background:linear-gradient(130deg,#203640,#1a2b36);border:1px solid #6a8c98;border-radius:14px;box-shadow:inset 0 1px #c9e6ec22,0 5px 18px #0002;padding:22px;margin-bottom:18px}
+.engineering-shell .panel-head{margin-bottom:20px;padding-bottom:16px;border-color:#7895a13d}
+.engineering-shell .panel-head h2{font-size:17px}.engineering-shell .panel-head .eyebrow{font-size:10px;letter-spacing:1.6px}
+.engineering-shell .inspector{display:flex;flex-direction:column;gap:0;min-width:0}.engineering-shell .inspector .panel{padding:15px;background:linear-gradient(135deg,#1e323f,#192b35)}
+.engineering-shell .events{max-height:260px;font-size:11px;line-height:1.75;scrollbar-width:thin;scrollbar-color:#688793 #14242d}.engineering-shell .events div{padding:12px 0;border-color:#52747f40}
+.engineering-shell .scenario-workspace{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}.engineering-shell .scenario-workspace>.panel{min-width:0;margin-bottom:0}
+.engineering-shell .scenario-workspace .form-grid{gap:17px 14px}.engineering-shell .scenario-workspace label{font-size:12px;gap:8px}.engineering-shell .scenario-workspace input,.engineering-shell .scenario-workspace select{min-height:44px}
+.engineering-shell .scenario-workspace .notice{font-size:11px;margin-top:16px}.engineering-shell .scenario-workspace .scenario-data-table{margin-bottom:18px}
+.engineering-shell .bottom-bar{left:0;right:0;min-height:var(--engineering-footer);padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid #719aa4;background:#182f38f5;backdrop-filter:blur(14px);z-index:30}
+.workflow-footer-status{display:flex;align-items:center;gap:16px;min-width:0}.workflow-footer-status strong{font-size:12px;white-space:nowrap;color:#a8d2d3}.workflow-footer-status small{font-size:11px;overflow-wrap:anywhere}
+.workflow-footer-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:9px;flex-shrink:0}.workflow-footer-actions button{min-height:40px;padding:9px 13px;font-size:12px}
+@media(min-width:1700px){.engineering-shell{--engineering-rail:250px}.engineering-shell .work{padding-inline:28px}.engineering-shell .workspace-grid{grid-template-columns:minmax(0,1fr) 240px}}
+@media(max-width:1250px){.engineering-shell{--engineering-rail:214px}.engineering-shell .work{padding-inline:18px}.engineering-shell .workspace-grid{grid-template-columns:minmax(0,1fr)}.engineering-shell .inspector{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.workflow-footer-status{display:block}.workflow-footer-status small{display:block;max-width:340px}.engineering-shell .sidebar .nav-step{font-size:11px;padding-inline:9px}}
+@media(max-width:960px){.engineering-shell .scenario-workspace{grid-template-columns:minmax(0,1fr)}.engineering-shell .bottom-bar{padding:10px 14px}.workflow-footer-status small{max-width:230px}.workflow-footer-actions{gap:6px}.workflow-footer-actions button{font-size:11px;padding:8px 10px}}
+@media(max-width:760px){.engineering-shell{--engineering-rail:0px;--engineering-footer:110px}.engineering-shell .sidebar{position:relative;top:auto;bottom:auto;width:100%;margin-top:var(--engineering-header);display:flex;flex-direction:row;gap:7px;padding:9px 12px;overflow-x:auto;align-items:center;border-bottom:1px solid #527681}.engineering-shell .sidebar>.eyebrow,.engineering-shell .nav-section,.engineering-shell .sidebar-footer{display:none}.engineering-shell .sidebar>a{font-size:0;min-width:40px;min-height:40px;padding:9px;gap:0;flex:none}.engineering-shell .sidebar .nav-step{font-size:0;min-width:42px;min-height:40px;padding:8px;gap:0;justify-content:center}.engineering-shell .sidebar .nav-step .num{font-size:12px;width:auto}.engineering-shell .sidebar .nav-step>svg:last-child{display:none}.engineering-shell .work{margin:0;padding:16px 12px 150px}.engineering-shell .inspector{grid-template-columns:1fr}.engineering-shell .bottom-bar{flex-wrap:wrap;gap:8px}.workflow-footer-status{width:100%;display:flex;justify-content:space-between;gap:10px}.workflow-footer-status small{max-width:65%;font-size:10px}.workflow-footer-actions{width:100%;justify-content:flex-end}.engineering-shell .panel{padding:16px}.engineering-shell .step-heading h1{font-size:24px}}
+
+/* Restore sidebar gradients and motion within the video layout. */
+.engineering-shell .sidebar>a,.engineering-shell .sidebar .nav-step{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#203c4b 0%,#24424d 45%,#1c303d 100%);background-size:180% 100%;transition:background-position .55s ease,transform .22s ease,border-color .25s ease,box-shadow .25s ease,color .25s ease}
+.engineering-shell .sidebar .nav-step.done{background-image:linear-gradient(115deg,#122c29 0%,#193a32 48%,#142a34 100%);border-color:#375c53;color:#bfd9d1}
+.engineering-shell .sidebar .nav-step.active{background-image:linear-gradient(110deg,#15323d 0%,#1c413b 40%,#254b3d 72%,#192f39 100%);background-size:240% 100%;border-color:#59877e;color:#e1f2ec;box-shadow:inset 4px 0 #82bdae,inset 0 1px #c0e6da1c,0 0 12px #448e831c;animation:engineering-nav-gradient 7s ease-in-out infinite}
+.engineering-shell .sidebar .nav-step::after,.engineering-shell .sidebar>a::after{content:"";display:block;position:absolute;inset:0;width:auto;height:auto;pointer-events:none;border-radius:inherit;background:linear-gradient(105deg,transparent 28%,#c3e6dc20 48%,transparent 68%);background-size:100% 100%;transform:translateX(-125%);opacity:0;animation:none;transition:transform .65s ease,opacity .3s ease}
+.engineering-shell .sidebar .nav-step.active::after{opacity:.7;animation:engineering-nav-sheen 5.5s ease-in-out infinite;transition:none}
+.engineering-shell .sidebar>a:hover,.engineering-shell .sidebar .nav-step:hover:not(:disabled){background-position:100% 50%;border-color:#7baaa0;box-shadow:inset 0 1px #c3e6dc20,0 4px 14px #0003,0 0 10px #579b8c18;transform:translateX(3px)!important;color:#ecfff9}
+.engineering-shell .sidebar>a:hover::after,.engineering-shell .sidebar .nav-step:hover:not(:disabled):not(.active)::after{opacity:1;transform:translateX(125%)}
+.engineering-shell .sidebar>a:active,.engineering-shell .sidebar .nav-step:active:not(:disabled){transform:translateX(1px) scale(.98)!important}
+.engineering-shell .sidebar .nav-step:disabled{background:linear-gradient(110deg,#1c303a,#192a32);box-shadow:none;animation:none}
+.engineering-shell .sidebar .nav-step:disabled::after{display:none;animation:none}
+.engineering-shell .sidebar .nav-step.active .num{color:#b9ded2;filter:drop-shadow(0 0 4px #70b6a52b)}
+@keyframes engineering-nav-gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes engineering-nav-sheen{0%,20%{transform:translateX(-125%);opacity:0}34%{opacity:.7}62%{transform:translateX(125%);opacity:0}100%{transform:translateX(125%);opacity:0}}
+@media(prefers-reduced-motion:reduce){.engineering-shell .sidebar>a,.engineering-shell .sidebar .nav-step{animation:none!important;transition:none!important}.engineering-shell .sidebar .nav-step::after,.engineering-shell .sidebar>a::after{animation:none!important;display:none}.engineering-shell .sidebar>a:hover,.engineering-shell .sidebar .nav-step:hover:not(:disabled),.engineering-shell .sidebar>a:active,.engineering-shell .sidebar .nav-step:active:not(:disabled){transform:none!important}}
+@media(min-width:1251px){.engineering-shell .inspector .panel-head h2{font-size:15px;overflow-wrap:anywhere}.engineering-shell .inspector .keyvalue{gap:8px;flex-wrap:wrap}.engineering-shell .inspector .panel p{overflow-wrap:anywhere}}

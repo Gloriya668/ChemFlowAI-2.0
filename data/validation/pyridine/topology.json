@@ -1,0 +1,182 @@
+{
+  "route_id": "pyridine",
+  "title": "四氢糠醇转化制吡啶 · 全分离流程",
+  "units": [
+    {
+      "id": "PY-R",
+      "type": "REACTOR",
+      "label": "RYield 反应器",
+      "parameters": {}
+    },
+    {
+      "id": "2AP-SPR",
+      "type": "FLASH",
+      "label": "Flash2 气液分离器",
+      "parameters": {}
+    },
+    {
+      "id": "SPR",
+      "type": "TOWER",
+      "label": "第一精馏塔",
+      "parameters": {}
+    },
+    {
+      "id": "3-PY-SPR",
+      "type": "TOWER",
+      "label": "第二精馏塔",
+      "parameters": {}
+    },
+    {
+      "id": "B4",
+      "type": "MIXER",
+      "label": "Mixer 混合器",
+      "parameters": {}
+    },
+    {
+      "id": "B2",
+      "type": "TOWER",
+      "label": "第三精馏塔",
+      "parameters": {}
+    }
+  ],
+  "streams": [
+    {
+      "stream_id": "NH3",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "THFA",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "A-R",
+      "from_unit": "PY-R",
+      "to_unit": "2AP-SPR"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "2AP-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-S1",
+      "from_unit": "2AP-SPR",
+      "to_unit": "SPR"
+    },
+    {
+      "stream_id": "A-S2",
+      "from_unit": "SPR",
+      "to_unit": "3-PY-SPR"
+    },
+    {
+      "stream_id": "2AP",
+      "from_unit": "SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-S3",
+      "from_unit": "3-PY-SPR",
+      "to_unit": "B4"
+    },
+    {
+      "stream_id": "3-PY",
+      "from_unit": "3-PY-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "1",
+      "from_unit": null,
+      "to_unit": "B4"
+    },
+    {
+      "stream_id": "6",
+      "from_unit": "B4",
+      "to_unit": "B2"
+    },
+    {
+      "stream_id": "3",
+      "from_unit": "B2",
+      "to_unit": null
+    },
+    {
+      "stream_id": "4",
+      "from_unit": "B2",
+      "to_unit": null
+    }
+  ],
+  "connections": [
+    {
+      "stream_id": "NH3",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "THFA",
+      "from_unit": null,
+      "to_unit": "PY-R"
+    },
+    {
+      "stream_id": "A-R",
+      "from_unit": "PY-R",
+      "to_unit": "2AP-SPR"
+    },
+    {
+      "stream_id": "H2",
+      "from_unit": "2AP-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-S1",
+      "from_unit": "2AP-SPR",
+      "to_unit": "SPR"
+    },
+    {
+      "stream_id": "A-S2",
+      "from_unit": "SPR",
+      "to_unit": "3-PY-SPR"
+    },
+    {
+      "stream_id": "2AP",
+      "from_unit": "SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "A-S3",
+      "from_unit": "3-PY-SPR",
+      "to_unit": "B4"
+    },
+    {
+      "stream_id": "3-PY",
+      "from_unit": "3-PY-SPR",
+      "to_unit": null
+    },
+    {
+      "stream_id": "1",
+      "from_unit": null,
+      "to_unit": "B4"
+    },
+    {
+      "stream_id": "6",
+      "from_unit": "B4",
+      "to_unit": "B2"
+    },
+    {
+      "stream_id": "3",
+      "from_unit": "B2",
+      "to_unit": null
+    },
+    {
+      "stream_id": "4",
+      "from_unit": "B2",
+      "to_unit": null
+    }
+  ],
+  "energy_streams": [],
+  "source": {
+    "source_type": "USER_INPUT",
+    "source_name": "既有已审核流程可视化资产",
+    "version": "2026-10-06"
+  }
+}

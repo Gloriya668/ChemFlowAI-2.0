@@ -1,0 +1,18 @@
+{
+  "id": "guide-mass-boundary",
+  "title": "质量衡算边界与内部回流",
+  "skill": "chemflow-simulation-review",
+  "split": "test",
+  "queries": [
+    "质量衡算时是否把循环流也算作外部进料",
+    "外部进出口质量差应如何解释"
+  ],
+  "text": "先固定系统边界，仅汇总跨越外部边界的质量流量；内部回流不能重复算成外部输入输出。用统一单位计算出口合计与进口合计之差，并报告绝对差和相对差。进料为零或边界不完整时相对误差不可直接解释为验证通过。质量闭合不等于能量闭合或工艺正确。",
+  "required_inputs": "外部进料和出口列表；质量流量；单位；稳态或动态假设",
+  "expected_output": "边界与衡算残差；边界不足时不判通过",
+  "local_reference": "backend/evaluator.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

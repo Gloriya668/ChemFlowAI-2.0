@@ -1,0 +1,23 @@
+{
+  "project_id": "",
+  "dataset": "custom",
+  "components": [],
+  "feeds": [
+    {
+      "stream_id": "FEED-01",
+      "component_ids": [],
+      "temperature": {"value": null, "unit": "C", "source_type": "USER_INPUT", "source_name": "人工输入", "version": "1", "status": "UNVERIFIED"},
+      "pressure": {"value": null, "unit": "bar", "source_type": "USER_INPUT", "source_name": "人工输入", "version": "1", "status": "UNVERIFIED"},
+      "mass_flow": {"value": null, "unit": "kg/h", "source_type": "USER_INPUT", "source_name": "人工输入", "version": "1", "status": "UNVERIFIED"},
+      "molar_flow": {"value": null, "unit": "kmol/h", "source_type": "USER_INPUT", "source_name": "人工输入", "version": "1", "status": "UNVERIFIED"},
+      "composition": {}
+    }
+  ],
+  "reaction": {"equation": "", "source_type": "USER_INPUT", "source_name": "人工输入"},
+  "target_products": [],
+  "byproducts": [],
+  "capacity": null,
+  "constraints": {},
+  "utilities": {},
+  "source": {"source_type": "USER_INPUT", "source_name": "自定义工程基准", "version": "1", "input_path": "data/validation/custom/input.json", "request_text": ""}
+}

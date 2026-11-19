@@ -1,0 +1,18 @@
+{
+  "id": "guide-composition",
+  "title": "组成基准与二元混合物",
+  "skill": "chemflow-property-modeling",
+  "split": "train",
+  "queries": [
+    "质量分数和摩尔分数能否混用",
+    "进料组成之和不对该如何处理"
+  ],
+  "text": "质量分数与摩尔分数不是同一输入；转换必须使用已核对分子量。检查每项有限、非负及总和，容差由项目定义。不能默默归一化异常组成。当前 DWSIM 适配器核对模板多组分组成，不自动改写多组分组成。",
+  "required_inputs": "组分列表；分数；组成基准；分子量来源；模板组成",
+  "expected_output": "基准一致性报告；不一致需修改可信模板后重新登记",
+  "local_reference": "backend/dwsim_solver.py",
+  "status": "AUTHOR_CHECKLIST_NOT_EXPERT_VALIDATED",
+  "license": "Project-authored checklist; retain upstream attribution",
+  "kind": "RULE",
+  "version": "2026-10-10-v2"
+}

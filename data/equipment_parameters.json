@@ -1,0 +1,2288 @@
+{
+  "route_a": {
+    "file": "example1reat.apw",
+    "sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+    "units": [
+      {
+        "id": "COOLER",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "-100.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = -100. \n<22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "Archive.ZStg / Data · BLOCK HEATER COOLER · 第230行",
+        "label": "冷却器"
+      },
+      {
+        "id": "HEATER",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "50.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 50. <22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "Archive.ZStg / Data · BLOCK HEATER HEATER · 第231行",
+        "label": "加热器"
+      },
+      {
+        "id": "FLASH",
+        "model": "FLASH2",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DUTY",
+            "label": "热负荷设定",
+            "value": "0.",
+            "unit": "原单位待核验 (13/14)",
+            "context": "PARAM",
+            "raw": "DUTY = \n0. <13> <14>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PD",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = PD",
+            "note": ""
+          }
+        ],
+        "locator": "Archive.ZStg / Data · BLOCK FLASH2 FLASH · 第232行",
+        "label": "闪蒸罐"
+      },
+      {
+        "id": "COLUMN",
+        "model": "RADFRAC",
+        "rows": [
+          {
+            "key": "NSTAGE",
+            "label": "理论级数（含模型端级）",
+            "value": "184",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGE = 184",
+            "note": ""
+          },
+          {
+            "key": "NSTAGEMAX",
+            "label": "最大级数设置",
+            "value": "185",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGEMAX = 185",
+            "note": ""
+          },
+          {
+            "key": "CONDENSER",
+            "label": "冷凝器形式",
+            "value": "TOTAL",
+            "unit": "—",
+            "context": "COL-CONFIG",
+            "raw": "CONDENSER = TOTAL",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "HEAT-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \"HEAT-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "140",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE\n = 140",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "PRO-D",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"PRO-D\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "1",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 1",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "PRO-B",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"PRO-B\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "184",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 184",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PRES1",
+            "label": "压力规格 1",
+            "value": "1.15",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES1 = 1.15 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DP-STAGE",
+            "label": "每级压降",
+            "value": "0.0008",
+            "unit": "MPa/级",
+            "context": "COL-SPECS",
+            "raw": "DP-STAGE = 0.0008 <75> <18>",
+            "note": "与塔顶/塔底压力差及级数对照；原编码保留。"
+          },
+          {
+            "key": "BASIS-RDV",
+            "label": "馏出/进料规格基准",
+            "value": "0.0",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RDV = 0.0 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-B",
+            "label": "塔底采出量",
+            "value": "51.08",
+            "unit": "kmol/h",
+            "context": "COL-SPECS",
+            "raw": "BASIS-B = 51.08 <-89> <3>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-RR",
+            "label": "回流比",
+            "value": "14.975",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RR = 14.975 <-1> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "Archive.ZStg / Data · BLOCK RADFRAC COLUMN · 第234行",
+        "label": "精馏塔"
+      },
+      {
+        "id": "REACTOR",
+        "model": "RSTOIC",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "400.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 400. <22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "VFRAC",
+            "label": "气相分率设定",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "VFRAC = 0. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "TP",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = TP",
+            "note": ""
+          },
+          {
+            "key": "REACNO",
+            "label": "反应编号",
+            "value": "2",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "REACNO = 2",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID",
+            "label": "反应物",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "STOIC-CID = \"PROPA-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF",
+            "label": "反应物计量系数",
+            "value": "-1.",
+            "unit": "无量纲",
+            "context": "STOIC",
+            "raw": "COEF = -1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "PROPY-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \n\"PROPY-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "HYDRO-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \"HYDRO-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "EXT-REACNO",
+            "label": "转化率对应反应",
+            "value": "2",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "EXT-REACNO = 2",
+            "note": ""
+          },
+          {
+            "key": "KEY-CID",
+            "label": "转化率基准组分",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "KEY-CID = \"PROPA-01\"",
+            "note": ""
+          },
+          {
+            "key": "CONV",
+            "label": "反应转化率",
+            "value": "0.5",
+            "unit": "无量纲",
+            "context": "CONVEX",
+            "raw": "CONV = 0.5 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SID",
+            "label": "流股",
+            "value": "REACT",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "SID = REACT",
+            "note": ""
+          }
+        ],
+        "locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+        "label": "反应器"
+      },
+      {
+        "id": "COND",
+        "model": "HX",
+        "rows": [],
+        "locator": "流程图单元",
+        "note": "塔内冷凝/再沸示意单元，源文件未定义独立设备块；请查看对应塔的设置。",
+        "label": "冷凝器"
+      },
+      {
+        "id": "REB",
+        "model": "HX",
+        "rows": [],
+        "locator": "流程图单元",
+        "note": "塔内冷凝/再沸示意单元，源文件未定义独立设备块；请查看对应塔的设置。",
+        "label": "再沸器"
+      }
+    ],
+    "notice": "以下为文件中的设备输入设置，未重新求解；与原物流结果分开保存。空项不代表零值。理论级数不等于实际塔板数。"
+  },
+  "route_b": {
+    "file": "example2react.bkp",
+    "sha256": "62b8b9de7fe70fcab13aecce5796066f54f97c2b772039c8d441e79383aac65f",
+    "units": [
+      {
+        "id": "SPLITTER",
+        "model": "FSPLIT",
+        "rows": [
+          {
+            "key": "SID",
+            "label": "流股",
+            "value": "PRO-D",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SID = \"PRO-D\"",
+            "note": ""
+          },
+          {
+            "key": "BASIS-FLOW",
+            "label": "指定分流流量",
+            "value": "48.92",
+            "unit": "kmol/h",
+            "context": "PARAM",
+            "raw": "BASIS-FLOW = 48.92 <-89> <3>",
+            "note": ""
+          },
+          {
+            "key": "SID",
+            "label": "流股",
+            "value": "REFLUX",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SID = REFLUX",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK FSPLIT SPLITTER · 第212行",
+        "label": "分流器"
+      },
+      {
+        "id": "ASSI-REB",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "1.2964",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 1.2964 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "VFRAC",
+            "label": "气相分率设定",
+            "value": "0.9387",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "VFRAC = 0.9387 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PV",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT\r\n = PV",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER ASSI-REB · 第214行",
+        "label": "辅助再沸器"
+      },
+      {
+        "id": "COOLER1",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "-100.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP\r\n = -100. <22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER COOLER1 · 第216行",
+        "label": "进料冷却器"
+      },
+      {
+        "id": "COOLER2",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "1.15",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 1.15 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "VFRAC",
+            "label": "气相分率设定",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "VFRAC = 0. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PV",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = PV",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER COOLER2 · 第217行",
+        "label": "回流冷却器"
+      },
+      {
+        "id": "HEATER",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "50.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 50. <22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER HEATER · 第223行",
+        "label": "进料加热器"
+      },
+      {
+        "id": "FLASH1",
+        "model": "FLASH2",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DUTY",
+            "label": "热负荷设定",
+            "value": "0.",
+            "unit": "原单位待核验 (13/3)",
+            "context": "PARAM",
+            "raw": "DUTY = 0. <13> <3>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PD",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = PD",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK FLASH2 FLASH1 · 第225行",
+        "label": "闪蒸罐"
+      },
+      {
+        "id": "FLASH2",
+        "model": "FLASH2",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "1.2964",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 1.2964 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DUTY",
+            "label": "热负荷设定",
+            "value": "0.",
+            "unit": "原单位待核验 (13/14)",
+            "context": "PARAM",
+            "raw": "DUTY = 0. <13> <14>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PD",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = PD",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK FLASH2 FLASH2 · 第227行",
+        "label": "闪蒸罐"
+      },
+      {
+        "id": "REBOILER",
+        "model": "HEATX",
+        "rows": [
+          {
+            "key": "SPEC",
+            "label": "换热规格",
+            "value": "VFRAC-HOT",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC = \"VFRAC-HOT\"",
+            "note": ""
+          },
+          {
+            "key": "VALUE",
+            "label": "规格目标值",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "VALUE = 0. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "FHOT",
+            "label": "热侧入口",
+            "value": "COMP-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FHOT = \"COMP-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "FCOLD",
+            "label": "冷侧入口",
+            "value": "REB-IN",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FCOLD = \"REB-IN\"",
+            "note": ""
+          },
+          {
+            "key": "HOT-SID",
+            "label": "热侧出口",
+            "value": "VALVE-IN",
+            "unit": "—",
+            "context": "OUTLETS-HOT",
+            "raw": "HOT-SID = \"VALVE-IN\"",
+            "note": ""
+          },
+          {
+            "key": "COLD-SID",
+            "label": "冷侧出口",
+            "value": "REB-OUT",
+            "unit": "—",
+            "context": "OUTLETS-COLD",
+            "raw": "COLD-SID = \"REB-OUT\"",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK HEATX REBOILER · 第229行",
+        "label": "再沸换热器"
+      },
+      {
+        "id": "HPD",
+        "model": "RADFRAC",
+        "rows": [
+          {
+            "key": "NSTAGE",
+            "label": "理论级数（含模型端级）",
+            "value": "182",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGE = 182",
+            "note": ""
+          },
+          {
+            "key": "NSTAGEMAX",
+            "label": "最大级数设置",
+            "value": "183",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGEMAX = 183",
+            "note": ""
+          },
+          {
+            "key": "CONDENSER",
+            "label": "冷凝器形式",
+            "value": "NONE",
+            "unit": "—",
+            "context": "COL-CONFIG",
+            "raw": "CONDENSER = NONE",
+            "note": ""
+          },
+          {
+            "key": "REBOILER",
+            "label": "再沸器形式",
+            "value": "NONE",
+            "unit": "—",
+            "context": "COL-CONFIG",
+            "raw": "REBOILER = NONE",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "REFLUX",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = REFLUX",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "1",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE = 1",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "FLA-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \"FLA-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "182",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE = 182",
+            "note": ""
+          },
+          {
+            "key": "FEED-CONVE2",
+            "label": "进料位置约定",
+            "value": "ON-STAGE",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-CONVE2 = \"ON-STAGE\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "HEAT-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \"HEAT-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "139",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE = 139",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "COMP-IN",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"COMP-IN\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "1",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 1",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "V",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = V",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "REB-IN",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"REB-IN\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "182",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 182",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PRES1",
+            "label": "压力规格 1",
+            "value": "1.15",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES1 = 1.15 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DP-STAGE",
+            "label": "每级压降",
+            "value": "0.0008",
+            "unit": "MPa/级",
+            "context": "COL-SPECS",
+            "raw": "DP-STAGE = 0.0008 <75> <18>",
+            "note": "与塔顶/塔底压力差及级数对照；原编码保留。"
+          },
+          {
+            "key": "BASIS-RDV",
+            "label": "馏出/进料规格基准",
+            "value": "1.0",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RDV\r\n = 1.0 <-1> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK RADFRAC HPD · 第232行",
+        "label": "热泵精馏塔"
+      },
+      {
+        "id": "REACTOR",
+        "model": "RSTOIC",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "400.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 400. <22> <4>",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "REACNO",
+            "label": "反应编号",
+            "value": "1",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "REACNO = 1",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID",
+            "label": "反应物",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "STOIC-CID = \"PROPA-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF",
+            "label": "反应物计量系数",
+            "value": "-1.",
+            "unit": "无量纲",
+            "context": "STOIC",
+            "raw": "COEF = -1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "PROPY-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \"PROPY-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "HYDRO-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \r\n\"HYDRO-01\"",
+            "note": ""
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "EXT-REACNO",
+            "label": "转化率对应反应",
+            "value": "1",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "EXT-REACNO = 1",
+            "note": ""
+          },
+          {
+            "key": "KEY-CID",
+            "label": "转化率基准组分",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "KEY-CID = \"PROPA-01\"",
+            "note": ""
+          },
+          {
+            "key": "CONV",
+            "label": "反应转化率",
+            "value": "0.5",
+            "unit": "无量纲",
+            "context": "CONVEX",
+            "raw": "CONV = 0.5 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SID",
+            "label": "流股",
+            "value": "REACT",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "SID = \r\nREACT",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK RSTOIC REACTOR · 第240行",
+        "label": "反应器"
+      },
+      {
+        "id": "COMPR",
+        "model": "COMPR",
+        "rows": [
+          {
+            "key": "TYPE",
+            "label": "计算方法",
+            "value": "ASME-POLYTROP",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "TYPE = \"ASME-POLYTROP\"",
+            "note": ""
+          },
+          {
+            "key": "OPT-SPEC",
+            "label": "指定变量",
+            "value": "PRATIO",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "OPT-SPEC = PRATIO",
+            "note": ""
+          },
+          {
+            "key": "PRATIO",
+            "label": "压比",
+            "value": "1.675",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "PRATIO = 1.675 <0> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK COMPR COMPR · 第247行",
+        "label": "压缩机"
+      },
+      {
+        "id": "VALVE",
+        "model": "VALVE",
+        "rows": [
+          {
+            "key": "P-OUT",
+            "label": "出口压力",
+            "value": "1.15",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "P-OUT = 1.15 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "文本 · BLOCK VALVE VALVE · 第249行",
+        "label": "减压阀"
+      }
+    ],
+    "notice": "以下为文件中的设备输入设置，未重新求解；与原物流结果分开保存。空项不代表零值。理论级数不等于实际塔板数。"
+  },
+  "route_c": {
+    "file": "example3react.bkp",
+    "sha256": "3bb40211b85d4e8fb4989af8695caabf0152bc991f97b1fb3f7179f0bd2ec65d",
+    "units": [
+      {
+        "id": "COOLER",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "-100.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = -100. \n<22> <4>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK HEATER COOLER · 第230行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK HEATER COOLER · 第230行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER COOLER · 第209行",
+        "label": "冷却器",
+        "note": "缺项按用户要求参考 example1 / example2 补齐；example3 原有字段保持不变。逐项来源见表格。"
+      },
+      {
+        "id": "HEATER",
+        "model": "HEATER",
+        "rows": [
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "50.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 50. <22> <4>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK HEATER HEATER · 第231行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK HEATER HEATER · 第231行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          }
+        ],
+        "locator": "文本 · BLOCK HEATER HEATER · 第209行",
+        "label": "加热器",
+        "note": "缺项按用户要求参考 example1 / example2 补齐；example3 原有字段保持不变。逐项来源见表格。"
+      },
+      {
+        "id": "FLASH",
+        "model": "FLASH2",
+        "rows": [
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK FLASH2 FLASH · 第232行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "DUTY",
+            "label": "热负荷设定",
+            "value": "0.",
+            "unit": "原单位待核验 (13/14)",
+            "context": "PARAM",
+            "raw": "DUTY = \n0. <13> <14>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK FLASH2 FLASH · 第232行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；本字段采用 example1；example2 未显式提供相同字段值。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "PD",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = PD",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK FLASH2 FLASH · 第232行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          }
+        ],
+        "locator": "文本 · BLOCK FLASH2 FLASH · 第210行",
+        "label": "闪蒸罐",
+        "note": "缺项按用户要求参考 example1 / example2 补齐；example3 原有字段保持不变。逐项来源见表格。"
+      },
+      {
+        "id": "RECT",
+        "model": "RADFRAC",
+        "rows": [
+          {
+            "key": "NSTAGE",
+            "label": "理论级数（含模型端级）",
+            "value": "139",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGE = 139",
+            "note": ""
+          },
+          {
+            "key": "NSTAGEMAX",
+            "label": "最大级数设置",
+            "value": "140",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGEMAX = 140",
+            "note": ""
+          },
+          {
+            "key": "CONDENSER",
+            "label": "冷凝器形式",
+            "value": "TOTAL",
+            "unit": "—",
+            "context": "COL-CONFIG",
+            "raw": "CONDENSER = \r\nTOTAL",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "COMP-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \"COMP-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "139",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE = 139",
+            "note": ""
+          },
+          {
+            "key": "FEED-CONVE2",
+            "label": "进料位置约定",
+            "value": "ABOVE-STAGE",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-CONVE2 = \r\n\"ABOVE-STAGE\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "VALVE-IN",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"VALVE-IN\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "139",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 139",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "PRO-D",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"PRO-D\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "1",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 1",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PRES1",
+            "label": "压力规格 1",
+            "value": "1.81",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES1 = 1.81 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "PRES2",
+            "label": "压力规格 2",
+            "value": "1.81",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES2 = 1.81 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DP-STAGE",
+            "label": "每级压降",
+            "value": "0.0008",
+            "unit": "MPa/级",
+            "context": "COL-SPECS",
+            "raw": "DP-STAGE = 0.0008 <75> <18>",
+            "note": "与塔顶/塔底压力差及级数对照；原编码保留。"
+          },
+          {
+            "key": "BASIS-RDV",
+            "label": "馏出/进料规格基准",
+            "value": "0.0",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RDV = 0.0 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-RR",
+            "label": "回流比",
+            "value": "17.66",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RR = \r\n17.66 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-BR",
+            "label": "汽提比",
+            "value": "0.0001",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-BR = 0.0001 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-TYPE",
+            "label": "设计规定类型",
+            "value": "MOLE-FRAC",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-TYPE = \r\n\"MOLE-FRAC\"",
+            "note": ""
+          },
+          {
+            "key": "VALUE",
+            "label": "规格目标值",
+            "value": "0.996",
+            "unit": "无量纲",
+            "context": "SPEC",
+            "raw": "VALUE = 0.996 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-COMPS",
+            "label": "规定组分",
+            "value": "( \"PROPY-01\" )",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-COMPS = ( \"PROPY-01\" )",
+            "note": ""
+          },
+          {
+            "key": "SPEC-STREAMS",
+            "label": "规定产品",
+            "value": "( \"PRO-D\" )",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-STREAMS = \r\n( \"PRO-D\" )",
+            "note": ""
+          },
+          {
+            "key": "VARTYPE",
+            "label": "调节变量",
+            "value": "RR",
+            "unit": "—",
+            "context": "VARY",
+            "raw": "VARTYPE = RR",
+            "note": ""
+          },
+          {
+            "key": "LB",
+            "label": "变量下限",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "VARY",
+            "raw": "LB = 0. <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "UB",
+            "label": "变量上限",
+            "value": "30.",
+            "unit": "无量纲",
+            "context": "VARY",
+            "raw": "UB = 30. <0> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK RADFRAC RECT · 第211行",
+        "label": "精馏塔"
+      },
+      {
+        "id": "STRIP",
+        "model": "RADFRAC",
+        "rows": [
+          {
+            "key": "NSTAGE",
+            "label": "理论级数（含模型端级）",
+            "value": "45",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGE = 45",
+            "note": ""
+          },
+          {
+            "key": "NSTAGEMAX",
+            "label": "最大级数设置",
+            "value": "46",
+            "unit": "级",
+            "context": "PARAM",
+            "raw": "NSTAGEMAX = 46",
+            "note": ""
+          },
+          {
+            "key": "CONDENSER",
+            "label": "冷凝器形式",
+            "value": "PARTIAL-V",
+            "unit": "—",
+            "context": "COL-CONFIG",
+            "raw": "CONDENSER = \"PARTIAL-V\"",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "REFLUX",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \r\nREFLUX",
+            "note": ""
+          },
+          {
+            "key": "FEED-STAGE",
+            "label": "进料级",
+            "value": "2",
+            "unit": "级",
+            "context": "FEEDS",
+            "raw": "FEED-STAGE = 2",
+            "note": ""
+          },
+          {
+            "key": "FEED-SID",
+            "label": "进料流股",
+            "value": "HEAT-OUT",
+            "unit": "—",
+            "context": "FEEDS",
+            "raw": "FEED-SID = \"HEAT-OUT\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "COMP-IN",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \r\n\"COMP-IN\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "1",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 1",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "V",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = V",
+            "note": ""
+          },
+          {
+            "key": "PROD-STREAM",
+            "label": "产品流股",
+            "value": "PRO-B",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-STREAM = \"PRO-B\"",
+            "note": ""
+          },
+          {
+            "key": "PROD-STAGE",
+            "label": "产品采出级",
+            "value": "45",
+            "unit": "级",
+            "context": "PRODUCTS",
+            "raw": "PROD-STAGE = 45",
+            "note": ""
+          },
+          {
+            "key": "PROD-PHASE",
+            "label": "采出相态",
+            "value": "L",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "PROD-PHASE = L",
+            "note": ""
+          },
+          {
+            "key": "PRES1",
+            "label": "压力规格 1",
+            "value": "1.3",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES1 = 1.3 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "PRES2",
+            "label": "压力规格 2",
+            "value": "1.31",
+            "unit": "MPa",
+            "context": "P-SPEC2",
+            "raw": "PRES2 = 1.31 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "DP-STAGE",
+            "label": "每级压降",
+            "value": "0.0008",
+            "unit": "MPa/级",
+            "context": "COL-SPECS",
+            "raw": "DP-STAGE = 0.0008 <75> <18>",
+            "note": "与塔顶/塔底压力差及级数对照；原编码保留。"
+          },
+          {
+            "key": "BASIS-RDV",
+            "label": "馏出/进料规格基准",
+            "value": "1.0",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RDV\r\n = 1.0 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-RR",
+            "label": "回流比",
+            "value": "0.0001",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-RR = 0.0001 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "BASIS-BR",
+            "label": "汽提比",
+            "value": "14.73",
+            "unit": "无量纲",
+            "context": "COL-SPECS",
+            "raw": "BASIS-BR = 14.73 <-1> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-TYPE",
+            "label": "设计规定类型",
+            "value": "MOLE-FRAC",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-TYPE = \"MOLE-FRAC\"",
+            "note": ""
+          },
+          {
+            "key": "VALUE",
+            "label": "规格目标值",
+            "value": "0.975",
+            "unit": "无量纲",
+            "context": "SPEC",
+            "raw": "VALUE = 0.975 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "SPEC-COMPS",
+            "label": "规定组分",
+            "value": "( \r\n\"PROPA-01\" )",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-COMPS = ( \r\n\"PROPA-01\" )",
+            "note": ""
+          },
+          {
+            "key": "SPEC-STREAMS",
+            "label": "规定产品",
+            "value": "( \"PRO-B\" )",
+            "unit": "—",
+            "context": "SPEC",
+            "raw": "SPEC-STREAMS = ( \"PRO-B\" )",
+            "note": ""
+          },
+          {
+            "key": "VARTYPE",
+            "label": "调节变量",
+            "value": "BR",
+            "unit": "—",
+            "context": "VARY",
+            "raw": "VARTYPE = BR",
+            "note": ""
+          },
+          {
+            "key": "LB",
+            "label": "变量下限",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "VARY",
+            "raw": "LB = 0. <0> \r\n<0>",
+            "note": ""
+          },
+          {
+            "key": "UB",
+            "label": "变量上限",
+            "value": "20.",
+            "unit": "无量纲",
+            "context": "VARY",
+            "raw": "UB = 20. <0> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK RADFRAC STRIP · 第228行",
+        "label": "提馏塔"
+      },
+      {
+        "id": "REACTOR",
+        "model": "RSTOIC",
+        "rows": [
+          {
+            "key": "SID",
+            "label": "流股",
+            "value": "REACT",
+            "unit": "—",
+            "context": "PRODUCTS",
+            "raw": "SID = REACT",
+            "note": ""
+          },
+          {
+            "key": "TEMP",
+            "label": "温度设定",
+            "value": "400.",
+            "unit": "°C",
+            "context": "PARAM",
+            "raw": "TEMP = 400. <22> <4>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "2.",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 2. <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "VFRAC",
+            "label": "气相分率设定",
+            "value": "0.",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "VFRAC = 0. <0> <0>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；本字段采用 example1；example2 未显式提供相同字段值。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "SPEC-OPT",
+            "label": "指定变量组合",
+            "value": "TP",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "SPEC-OPT = TP",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；本字段采用 example1；example2 未显式提供相同字段值。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "REACNO",
+            "label": "反应编号",
+            "value": "2",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "REACNO = 2",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；本字段采用 example1；example2 未显式提供相同字段值。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "STOIC-CID",
+            "label": "反应物",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "STOIC",
+            "raw": "STOIC-CID = \"PROPA-01\"",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "COEF",
+            "label": "反应物计量系数",
+            "value": "-1.",
+            "unit": "无量纲",
+            "context": "STOIC",
+            "raw": "COEF = -1. <0> <0>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "PROPY-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \n\"PROPY-01\"",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "STOIC-CID1",
+            "label": "产物",
+            "value": "HYDRO-01",
+            "unit": "—",
+            "context": "STOIC1",
+            "raw": "STOIC-CID1 = \"HYDRO-01\"",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "COEF1",
+            "label": "产物计量系数",
+            "value": "1.",
+            "unit": "无量纲",
+            "context": "STOIC1",
+            "raw": "COEF1 = 1. <0> <0>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "EXT-REACNO",
+            "label": "转化率对应反应",
+            "value": "2",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "EXT-REACNO = 2",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；本字段采用 example1；example2 未显式提供相同字段值。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "KEY-CID",
+            "label": "转化率基准组分",
+            "value": "PROPA-01",
+            "unit": "—",
+            "context": "CONVEX",
+            "raw": "KEY-CID = \"PROPA-01\"",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          },
+          {
+            "key": "CONV",
+            "label": "反应转化率",
+            "value": "0.5",
+            "unit": "无量纲",
+            "context": "CONVEX",
+            "raw": "CONV = 0.5 <0> <0>",
+            "note": "",
+            "source_type": "USER_AUTHORIZED_REFERENCE",
+            "source_file": "example1reat.apw",
+            "source_locator": "Archive.ZStg / Data · BLOCK RSTOIC REACTOR · 第241行",
+            "source_sha256": "a2ea2a16631c9026da4bfff59c5dfd293a7704a07102524941d11a06cc115bae",
+            "reference_note": "按用户要求沿用 example1 的对应设备设置；example2 对应字段一致。这是补填设置，尚未重新求解。"
+          }
+        ],
+        "locator": "文本 · BLOCK RSTOIC REACTOR · 第239行",
+        "label": "反应器",
+        "note": "缺项按用户要求参考 example1 / example2 补齐；example3 原有字段保持不变。逐项来源见表格。"
+      },
+      {
+        "id": "COMP",
+        "model": "COMPR",
+        "rows": [
+          {
+            "key": "TYPE",
+            "label": "计算方法",
+            "value": "ASME-POLYTROP",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "TYPE = \"ASME-POLYTROP\"",
+            "note": ""
+          },
+          {
+            "key": "OPT-SPEC",
+            "label": "指定变量",
+            "value": "PRES",
+            "unit": "—",
+            "context": "PARAM",
+            "raw": "OPT-SPEC = PRES",
+            "note": ""
+          },
+          {
+            "key": "PRES",
+            "label": "压力设定",
+            "value": "1.92",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "PRES = 1.92 <20> \r\n<20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          },
+          {
+            "key": "PEFF",
+            "label": "多变效率",
+            "value": "0.8",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "PEFF = 0.8 <0> <0>",
+            "note": ""
+          },
+          {
+            "key": "MEFF",
+            "label": "机械效率",
+            "value": "0.95",
+            "unit": "无量纲",
+            "context": "PARAM",
+            "raw": "MEFF = 0.95 <0> <0>",
+            "note": ""
+          }
+        ],
+        "locator": "文本 · BLOCK COMPR COMP · 第240行",
+        "label": "压缩机"
+      },
+      {
+        "id": "VALVE",
+        "model": "VALVE",
+        "rows": [
+          {
+            "key": "P-OUT",
+            "label": "出口压力",
+            "value": "1.3",
+            "unit": "MPa",
+            "context": "PARAM",
+            "raw": "P-OUT = 1.3 <20> <20>",
+            "note": "压力单位按同文件/既有物流对照识别；1 MPa = 10 bar，原编码保留。"
+          }
+        ],
+        "locator": "文本 · BLOCK VALVE VALVE · 第242行",
+        "label": "减压阀"
+      },
+      {
+        "id": "REB",
+        "model": "HX",
+        "rows": [],
+        "locator": "流程图单元",
+        "note": "塔内冷凝/再沸示意单元，源文件未定义独立设备块；请查看对应塔的设置。",
+        "label": "再沸器"
+      },
+      {
+        "id": "COND",
+        "model": "HX",
+        "rows": [],
+        "locator": "流程图单元",
+        "note": "塔内冷凝/再沸示意单元，源文件未定义独立设备块；请查看对应塔的设置。",
+        "label": "冷凝器"
+      }
+    ],
+    "notice": "设备设置包括 example3 原始字段及按用户要求参考 example1 / example2 的补填项。补填来源逐项标明，尚未重新求解；不修改现有物流结果。理论级数不等于实际塔板数。"
+  },
+  "pyridine525": {
+    "file": "四氢糠醇闭循环工艺",
+    "sha256": "8eb3a6e674b8bcb3869a30f2aac512dac5d912c30d2b37098b580194dab172eb",
+    "notice": "7 个单元；MIXER 为精制塔，PY-SPR 为混合器。循环 RE 不计入外部进料。",
+    "units": [
+      {
+        "id": "PY-R",
+        "label": "产率反应器",
+        "model": "RYIELD",
+        "locator": "INPUT/BLOCK/PY-R",
+        "rows": [
+          {
+            "label": "温度",
+            "key": "TEMP",
+            "value": 550.0,
+            "unit": "C",
+            "context": "RYIELD",
+            "raw": "TEMP = 550. <22> <4>"
+          },
+          {
+            "label": "压力",
+            "key": "PRES",
+            "value": 1.0,
+            "unit": "bar",
+            "context": "RYIELD",
+            "raw": "PRES = 1. \r\n<20> <5>"
+          },
+          {
+            "label": "产率权重 HYDRO-01",
+            "key": "MOLE-YIELD",
+            "value": 44.0,
+            "unit": "相对权重",
+            "context": "RYIELD",
+            "raw": "HYDRO-01: 44.",
+            "note": "源模型归一化以维持质量平衡；不是百分比或实际产物流量。"
+          },
+          {
+            "label": "产率权重 PYRID-01",
+            "key": "MOLE-YIELD",
+            "value": 22.0,
+            "unit": "相对权重",
+            "context": "RYIELD",
+            "raw": "PYRID-01: 22.",
+            "note": "源模型归一化以维持质量平衡；不是百分比或实际产物流量。"
+          },
+          {
+            "label": "产率权重 WATER",
+            "key": "MOLE-YIELD",
+            "value": 44.0,
+            "unit": "相对权重",
+            "context": "RYIELD",
+            "raw": "WATER: 44.",
+            "note": "源模型归一化以维持质量平衡；不是百分比或实际产物流量。"
+          },
+          {
+            "label": "产率权重 3-MET-01",
+            "key": "MOLE-YIELD",
+            "value": 1.69,
+            "unit": "相对权重",
+            "context": "RYIELD",
+            "raw": "3-MET-01: 1.69",
+            "note": "源模型归一化以维持质量平衡；不是百分比或实际产物流量。"
+          },
+          {
+            "label": "产率权重 2-PYR-01",
+            "key": "MOLE-YIELD",
+            "value": 1.31,
+            "unit": "相对权重",
+            "context": "RYIELD",
+            "raw": "2-PYR-01: 1.31",
+            "note": "源模型归一化以维持质量平衡；不是百分比或实际产物流量。"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "SPR",
+        "label": "气液闪蒸分离器",
+        "model": "FLASH2",
+        "locator": "INPUT/BLOCK/SPR",
+        "rows": [
+          {
+            "label": "温度",
+            "key": "TEMP",
+            "value": 20.0,
+            "unit": "C",
+            "context": "FLASH2",
+            "raw": "TEMP = 20. <22> <4>"
+          },
+          {
+            "label": "压力",
+            "key": "PRES",
+            "value": 1.0,
+            "unit": "bar",
+            "context": "FLASH2",
+            "raw": "PRES = 1. <20> <5>"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "2AP-SPR",
+        "label": "2-氨基吡啶分离塔",
+        "model": "RADFRAC",
+        "locator": "INPUT/BLOCK/2AP-SPR",
+        "rows": [
+          {
+            "label": "理论级数（含端级）",
+            "key": "NSTAGE",
+            "value": 8.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "NSTAGE = 8"
+          },
+          {
+            "label": "进料级",
+            "key": "FEED-STAGE",
+            "value": 4.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "FEED-STAGE\r\n = 4"
+          },
+          {
+            "label": "摩尔回流比",
+            "key": "BASIS-RR",
+            "value": 5.0,
+            "unit": "mol/mol",
+            "context": "RADFRAC",
+            "raw": "BASIS-RR = 5. <-1> <0>"
+          },
+          {
+            "label": "塔底摩尔流量",
+            "key": "BASIS-B",
+            "value": 1.34,
+            "unit": "kmol/h",
+            "context": "RADFRAC",
+            "raw": "BASIS-B = 1.34 \r\n<-89> <3>"
+          },
+          {
+            "label": "塔顶压力",
+            "key": "PRES1",
+            "value": 10.0,
+            "unit": "kPa",
+            "context": "RADFRAC",
+            "raw": "PRES1 = 10. <20> <10>"
+          },
+          {
+            "label": "冷凝器形式",
+            "key": "CONDENSER",
+            "value": "TOTAL / 全凝器",
+            "unit": "",
+            "context": "RADFRAC",
+            "raw": "CONDENSER = TOTAL"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "3-PY-SPR",
+        "label": "3-甲基吡啶分离塔",
+        "model": "RADFRAC",
+        "locator": "INPUT/BLOCK/3-PY-SPR",
+        "rows": [
+          {
+            "label": "理论级数（含端级）",
+            "key": "NSTAGE",
+            "value": 10.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "NSTAGE = 10"
+          },
+          {
+            "label": "进料级",
+            "key": "FEED-STAGE",
+            "value": 5.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "FEED-STAGE = 5"
+          },
+          {
+            "label": "摩尔回流比",
+            "key": "BASIS-RR",
+            "value": 3.0,
+            "unit": "mol/mol",
+            "context": "RADFRAC",
+            "raw": "BASIS-RR\r\n = 3. <-1> <0>"
+          },
+          {
+            "label": "塔底摩尔流量",
+            "key": "BASIS-B",
+            "value": 1.9,
+            "unit": "kmol/h",
+            "context": "RADFRAC",
+            "raw": "BASIS-B = 1.9 <-89> <3>"
+          },
+          {
+            "label": "塔顶压力",
+            "key": "PRES1",
+            "value": 10.0,
+            "unit": "kPa",
+            "context": "RADFRAC",
+            "raw": "PRES1 = 10. <20> \r\n<10>"
+          },
+          {
+            "label": "冷凝器形式",
+            "key": "CONDENSER",
+            "value": "TOTAL / 全凝器",
+            "unit": "",
+            "context": "RADFRAC",
+            "raw": "CONDENSER = TOTAL"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "PY-SPR",
+        "label": "循环溶剂混合器",
+        "model": "MIXER",
+        "locator": "INPUT/BLOCK/PY-SPR",
+        "rows": [],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "MIXER",
+        "label": "吡啶精制塔",
+        "model": "RADFRAC",
+        "locator": "INPUT/BLOCK/MIXER",
+        "rows": [
+          {
+            "label": "理论级数（含端级）",
+            "key": "NSTAGE",
+            "value": 22.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "NSTAGE = 22"
+          },
+          {
+            "label": "进料级",
+            "key": "FEED-STAGE",
+            "value": 20.0,
+            "unit": "stage",
+            "context": "RADFRAC",
+            "raw": "FEED-STAGE = 20"
+          },
+          {
+            "label": "摩尔回流比",
+            "key": "BASIS-RR",
+            "value": 4.0,
+            "unit": "mol/mol",
+            "context": "RADFRAC",
+            "raw": "BASIS-RR = 4. \r\n<-1> <0>"
+          },
+          {
+            "label": "塔底摩尔流量",
+            "key": "BASIS-B",
+            "value": 20.0,
+            "unit": "kmol/h",
+            "context": "RADFRAC",
+            "raw": "BASIS-B = 20. <-89> <3>"
+          },
+          {
+            "label": "塔顶压力",
+            "key": "PRES1",
+            "value": 1.0,
+            "unit": "bar",
+            "context": "RADFRAC",
+            "raw": "PRES1 = 1. <20> <5>"
+          },
+          {
+            "label": "冷凝器形式",
+            "key": "CONDENSER",
+            "value": "TOTAL / 全凝器",
+            "unit": "",
+            "context": "RADFRAC",
+            "raw": "CONDENSER = TOTAL"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      },
+      {
+        "id": "DECANTER",
+        "label": "液液分相器",
+        "model": "DECANTER",
+        "locator": "INPUT/BLOCK/DECANTER",
+        "rows": [
+          {
+            "label": "温度",
+            "key": "TEMP",
+            "value": 20.0,
+            "unit": "C",
+            "context": "DECANTER",
+            "raw": "TEMP = 20. <22> \r\n<4>"
+          },
+          {
+            "label": "压力",
+            "key": "PRES",
+            "value": 1.0,
+            "unit": "bar",
+            "context": "DECANTER",
+            "raw": "PRES = 1. <20> <5>"
+          },
+          {
+            "label": "第二液相截断值",
+            "key": "L2-CUTOFF",
+            "value": 0.199,
+            "unit": "",
+            "context": "DECANTER",
+            "raw": "L2-CUTOFF = 0.199 <0> <0>"
+          },
+          {
+            "label": "第二液相关键组分",
+            "key": "L2-COMPS",
+            "value": "Water",
+            "unit": "",
+            "context": "DECANTER",
+            "raw": "L2-COMPS = ( WATER )"
+          }
+        ],
+        "note": "设备位号保留原定义，设备类型按模型识别。"
+      }
+    ]
+  }
+}
